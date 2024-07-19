@@ -1,0 +1,24 @@
+<div class="mm">
+    {% render 'blog-comment' %}
+    </div>
+
+    {% schema %}
+    {
+        "name": "Blog Comment",
+        "settings": [
+          {
+            "type": "blog",
+            "id": "comment",
+            "label": "comment"
+          }
+        ],
+
+  "presets": [
+    {
+      "name": "blog comment",
+      "settings": {
+      }
+    }
+  ]
+}
+{% endschema %}

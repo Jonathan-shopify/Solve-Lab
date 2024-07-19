@@ -1,0 +1,71 @@
+<div class="{{ section.settings.custom_class }}">
+<div class="accordion-block">
+  {% for block in section.blocks %}
+    <div class="accordion-section">
+   <!-- {% if forloop.first %}  -->
+      <div class="ingre-image">
+ <img class="lazyloaded1" src="{{ block.settings.mobile_image | img_url: '400x' }}" alt="{{ block.settings.mobile_image }}">
+       
+     <!-- <img src="https://cdn.shopify.com/s/files/1/0777/0718/2389/files/ingredients.png?v=1695599119"> -->
+      </div>
+    <!-- {% endif %}  -->
+    
+      {% if block.settings.acc_title != '' %}
+        <a class="accordion-title" href="#acc_{{ block.id }}">{{ block.settings.acc_title }}</a>
+          <div id="acc_{{ block.id }}" class="accordion-content">
+          {{ block.settings.acc_content }}
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+</div>
+{% schema %}
+{
+  "name": "Accordions",
+  "settings": [
+       {
+		"type": "text",
+		"id": "custom_class",
+		"label": "Custom Class"
+    	}
+  ],
+  "blocks": [
+    {
+    "type": "block",
+    "name": "Accordions",
+    "settings": [
+      {
+        "type": "text",
+        "id": "acc_title",
+        "label": "Accordion title"
+      },
+      {
+        "type": "textarea",
+        "id": "acc_content",
+        "label": "Accordion content"
+      },
+          {
+            "type": "image_picker",
+            "id": "mobile_image",
+            "label": "image"
+          }
+      
+    ]
+  }
+  ],
+  "presets": [
+    {
+      "name": "Accordions",
+      "settings": {
+      }
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,454 @@
+<div data-section-type="blog-template">
+  {% paginate blog.articles by 12 %}
+
+  <div class="container page-header page-header--triplet page-header--middle-main" data-cc-animate>
+    <div class="page-header__left">
+      {% if section.settings.show_filters  and blog.all_tags.size > 0 %}
+        <a href="#" class="toggle-btn js-only" data-toggle-filters>
+          <span class="button-icon">{% render 'svg-filter' %}</span>
+          <span>{{ 'collections.filtering.filter' | t }}</span>
+          {% if current_tags.size > 0 %}
+            <span class="toggle-btn__count">({{ current_tags | size }})</span>
+          {% endif %}
+        </a>
+      {% endif %}
+    </div>
+    <div class="page-header__middle">
+      <h1 class="page-header__title">{{ blog.title | escape }}</h1>
+    </div>
+    <div class="page-header__right">
+      {% if section.settings.show_rss_icon %}
+        <a class="rsslink" href="{{ blog.url }}.atom" title="{{ blog.title | escape }} RSS">{% render 'svg-rss' %}</a>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="filter-modal cc-popup cc-popup--left" aria-hidden="true" data-freeze-scroll="true">
+    <div class="cc-popup-background"></div>
+    <div class="cc-popup-modal" role="dialog" aria-modal="true" aria-labelledby="FilterHeading">
+      <div class="cc-popup-container">
+        <button type="button" class="cc-popup-close tap-target" aria-label="{{ 'general.accessibility_labels.close' | t | escape }}">
+          {%- render 'popup-close' -%}
+        </button>
+        <div class="cc-popup-content" data-ajax-container="filters">
+          <div class="filters">
+            <div class="filters__inner">
+              <div class="filters__heading">
+                <h4 class="filters__heading-text" id="FilterHeading">{{ 'collections.filtering.heading' | t }}</h4>
+              </div>
+
+              <div class="filter-group">
+                <div class="filter-group__items">
+                  <a href="{{ blog.url }}" class="filter-group__item{% if current_tags == blank %} filter-group__item--active{% endif %}">
+                    <input class="filter-group__checkbox" type="checkbox" {% if current_tags == blank %}checked{% endif %} aria-hidden="true">
+                    <span class="filter-group__item__text">{{- 'collections.filtering.all' | t -}}</span>
+                  </a>
+
+                  {% for tag in blog.all_tags %}
+                    <a href="{{ tag | link_to_tag: tag | split: 'href="' | last | split: '"' | first }}" class="filter-group__item{% if current_tags contains tag %} filter-group__item--active{% endif %}">
+                      <input class="filter-group__checkbox" type="checkbox" {% if current_tags contains tag %}checked{% endif %} aria-hidden="true">
+                      <span class="filter-group__item__text">{{ tag }}</span>
+                    </a>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="blogs-content maso maf">
+  {%- if blog.articles.size > 0 -%}
+    <div class="main-post flexible-layout madi">
+      {%- for article in blog.articles -%}
+        {%- render 'maf-article-block', article: article, heading_tag: 'h2' -%}
+      {%- endfor -%}
+    </div>
+  {%- else -%}
+    <h5 class="align-centre spaced-text-row">{{ 'blogs.general.no_matches' | t }}</h5>
+  {%- endif -%}
+ 
+     <div class="blog-sidebar">
+        {% render 'blog-side-search' %}
+        {% render 'blog-side-social' %} 
+        {% render 'blog-side-fb' %} 
+
+          <div class="blog-brand-image">
+          <div class="b-b-i">
+              {% if section.settings.brand1 != blank %}
+                <a href="{{section.settings.brand1url }}" title="{{ section.settings.brand1.alt }}">
+              <img src="{{section.settings.brand1 | img_url: 'master' }}" alt="{{section.settings.brand1.alt  }}">
+                </a>
+              {% endif %}
+          </div>
+          </div>
+          <div class="blog-brand-image">
+          <div class="b-b-i brand-media">
+              {% if section.settings.brand2 != blank %}
+                <a href="{{section.settings.brand2url }}" title="{{ section.settings.brand2.alt }}">
+              <img src="{{section.settings.brand2 |  image_url: width: 920  }}" alt="{{section.settings.brand2.alt }}">
+                </a>
+              {% endif %}
+          </div>
+          </div>
+
+        {% render 'blog-side-list' %} 
+    </div>
+  </div>
+</div>
+</div>
+
+  {% render 'pagination-control', paginate: paginate %}
+
+  {% endpaginate %}
+</div>
+
+
+{% schema %}
+  {
+    "name": "Blog pages",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_filters",
+        "label": "Show tag filter",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_author",
+        "label": "Show author",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_date",
+        "label": "Show date",
+        "default": true
+      },
+	    {
+        "type": "checkbox",
+        "id": "show_excerpts",
+        "label": "Show excerpt",
+        "info": "Change excerpts by editing your blog posts. [Learn more](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_button",
+        "label": "Show button",
+        "default": true
+      }, 
+      {
+        "type": "checkbox",
+        "id": "show_article_tags",
+        "label": "Show tags underneath articles",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_sharing_icons",
+        "label": "Show social sharing icons",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_rss_icon",
+        "label": "Show RSS feed link",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "crop_ratio",
+        "label": "Image size",
+        "options": [
+          {
+            "value": "",
+            "label": "Natural (no crop)"
+          },
+          {
+            "value": "0.67",
+            "label": "Portrait (2:3)"
+          },
+          {
+            "value": "1.0",
+            "label": "Square (1:1)"
+          },
+          {
+            "value": "1.33",
+            "label": "Landscape (4:3)"
+          },
+          {
+            "value": "1.78",
+            "label": "Wide (16:9)"
+          }
+        ],
+        "default": "1.78"
+      },
+      {
+        "type": "select",
+        "id": "color_scheme",
+        "label": "Color scheme",
+        "default": "1",
+        "options": [
+          {
+            "value": "1",
+            "label": "Card 1"
+          },
+          {
+            "value": "2",
+            "label": "Card 2"
+          },
+          {
+            "value": "3",
+            "label": "Card 3"
+          },
+          {
+            "value": "none",
+            "label": "No card"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Featured collection"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_title",
+        "label": "Show heading",
+        "info": "A hidden heading will still be readable by search engines and screen readers",
+        "default": false
+      },
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "Collection"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "Show product vendor",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Layout"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_carousel",
+        "label": "Enable carousel on desktop",
+        "info": "Always a carousel on mobile",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "grid",
+        "label": "Number of columns on desktop",
+        "min": 1,
+        "max": 5,
+        "step": 1,
+        "default": 4
+      },
+      {
+        "type": "range",
+        "id": "rows",
+        "label": "Rows",
+        "info": "Does not apply to carousel layout",
+        "min": 1,
+        "max": 5,
+        "step": 1,
+        "default": 1
+      },
+      {
+        "type": "header",
+        "content": "Title card"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_title_card",
+        "label": "Show title card",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_title_card_image",
+        "label": "Show background image",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "title_card_image",
+        "label": "Custom image"
+      },
+      {
+        "id": "overlay_style",
+        "type": "select",
+        "label": "Overlay style",
+        "default": "shadow",
+        "options": [
+          {
+            "value": "full",
+            "label": "Tint"
+          },
+          {
+            "value": "shadow",
+            "label": "Text shadow"
+          },
+          {
+            "value": "full image-overlay--bg-shadow",
+            "label": "Text shadow and tint"
+          },
+          {
+            "value": "no_background",
+            "label": "No background"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "color_schemes",
+        "label": "Color scheme",
+        "info": "Used when there is no image",
+        "default": "1",
+        "options": [
+          {
+            "value": "1",
+            "label": "Card 1"
+          },
+          {
+            "value": "2",
+            "label": "Card 2"
+          },
+          {
+            "value": "3",
+            "label": "Card 3"
+          },
+          {
+            "value": "none",
+            "label": "No card"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "title-a",
+        "label": "Heading",
+        "default": "Blog posts"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_title-a",
+        "label": "Show heading",
+        "info": "A hidden heading will still be readable by search engines and screen readers",
+        "default": false
+      },
+      {
+        "type": "blog",
+        "id": "blog",
+        "label": "Blog"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_carousel-a",
+        "label": "Enable carousel",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "post_limit",
+        "label": "Posts",
+        "min": 1,
+        "max": 12,
+        "step": 1,
+        "default": 1
+      },
+      {
+        "type": "select",
+        "id": "crop_ratio-m",
+        "label": "Image size",
+        "options": [
+          {
+            "value": "",
+            "label": "Natural (no crop)"
+          },
+          {
+            "value": "0.67",
+            "label": "Portrait (2:3)"
+          },
+          {
+            "value": "1.0",
+            "label": "Square (1:1)"
+          },
+          {
+            "value": "1.33",
+            "label": "Landscape (4:3)"
+          },
+          {
+            "value": "1.78",
+            "label": "Wide (16:9)"
+          }
+        ],
+        "default": "1.78"
+      },
+      {
+        "type": "select",
+        "id": "color_scheme-a",
+        "label": "Color scheme",
+        "default": "1",
+        "options": [
+          {
+            "value": "1",
+            "label": "Card 1"
+          },
+          {
+            "value": "2",
+            "label": "Card 2"
+          },
+          {
+            "value": "3",
+            "label": "Card 3"
+          },
+          {
+            "value": "none",
+            "label": "No card"
+          }
+        ]
+      },
+      {
+        "type":"image_picker",
+        "id": "brand1",
+        "label": "Side Bar 1st Image"
+      },
+      {
+        "type":"url",
+        "id": "brand1url",
+        "label": "Side Bar 1st Image URL"
+      },
+      {
+        "type":"image_picker",
+        "id": "brand2",
+        "label": "Side Bar 2nd Image"
+      },
+      {
+        "type":"url",
+        "id": "brand2url",
+        "label": "Side Bar 2nd Image URL"
+      }
+    ],
+    
+    "presets": [
+      {
+        "name": "Blog pages",
+        "settings": {
+          "title": "Blog pages"
+        }
+      }
+    ]
+  }
+{% endschema %}

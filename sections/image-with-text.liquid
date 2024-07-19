@@ -1,0 +1,173 @@
+{% comment %} {{ 'image-with-text.css' | asset_url | stylesheet_tag }} {% endcomment %}
+ {% render 'image-with-text-css' %}
+{%  style  %}
+    .image-with-text-{{ section.id }} {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+    @media (max-width: 749px) {
+        .image-with-text-{{ section.id }} {
+            padding-top: {{ section.settings.padding_top_mobile }}px;
+            padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+        } 
+    }
+    .image-with-text-{{ section.id }} .image-with-text-left-list-items p::before {
+      background-image: url({{ section.settings.tab_desc_icon | image_url: width: section.settings.tab_desc_icon.width }});
+    }
+{% endstyle %}
+<section class="image-with-text-{{ section.id }}">
+    <div class="image-with-text-section">
+        <div class="image-with-text-container">
+            <div class="image-with-text-content {% if section.settings.revert_section %}revert-image-with-text-content{% endif %} {% if section.settings.hide_left_right_space %}hide-image-space{% endif %}">
+                <div class="image-with-text-left">
+                    <div class="image-with-text-left-inner">
+                      <div class="paddig-bottom-cust">
+                        {% if section.settings.title != blank %}
+                          <div class="subheading subheading--over">{{ section.settings.title }}</div>
+                         {% if section.settings.color_title != blank %}
+                           <h2 class="majortitle h1-style in-content">{{ section.settings.color_title }}</h2>{% endif %}
+                        {% endif %}
+                      </div>
+                        {% if section.settings.content != blank %}
+                            <div class="image-with-text-left-text">
+                                {{ section.settings.content }}
+                            </div>
+                        {% endif %}
+                        {% if section.settings.list_item != blank %}
+                            <div class="image-with-text-left-list-items">
+                                {{ section.settings.list_item }}
+                            </div>
+                        {% endif %}
+                        {% if section.settings.button_text != blank %}
+                            <div class="image-with-text-left-btn-con">
+                                <a href="{{ section.settings.button_url }}" class="overlay-text__button btn btn--secondary btn--link image-with-text-left-btn">
+                                    {{ section.settings.button_text }}
+                                </a>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% if section.settings.hero_image != blank %}
+    <div class="image-with-text-right">
+        {% if section.settings.hero_video != blank %}
+            {{ section.settings.hero_video | video_tag:
+                image_size: 'auto',
+                autoplay: true,
+                loop: true,
+                controls: false,
+                muted: true
+            }}
+        {% else %}
+            <img src="{{ section.settings.hero_image | image_url: width: section.settings.hero_image.width }}" width="513px" height="513px" loading="lazy" class="image-with-text-hero-image speedy" alt="">
+        {% endif %}
+    </div>
+{% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+      "name": "Image with text",
+      "class": "image-with-text",
+      "disabled_on": {
+        "groups": [
+          "aside"
+        ]
+      },
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "revert_section",
+          "label": "Revert section",
+          "default": false
+        },
+        {
+          "type": "liquid",
+          "id": "title",
+          "label": "Section Title",
+          "default": "Do More,<br>Do  Better."
+        },
+        {
+          "type": "text",
+          "id": "color_title",
+          "label": "Section Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "hero_image",
+          "label": "Image"
+        },
+        {
+          "type": "video",
+          "id": "hero_video",
+          "label": "Video"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_left_right_space",
+          "label": "Hide left-right spacing on mobile for image",
+          "default": false
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Description"
+        },
+        {
+          "type": "richtext",
+          "id": "list_item",
+          "label": "List text"
+        },
+        {
+          "type": "image_picker",
+          "id": "tab_desc_icon",
+          "label": "List Item Icon"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL"
+        },
+        {
+          "type": "header",
+          "content": "Section style"
+        },
+        {
+          "type": "number",
+          "id": "padding_top",
+          "label": "Spacing top",
+          "default": 50
+        },
+        {
+          "type": "number",
+          "id": "padding_bottom",
+          "label": "Spacing bottom",
+          "default": 50
+        },
+        {
+          "type": "number",
+          "id": "padding_top_mobile",
+          "label": "Spacing top [mobile]",
+          "default": 50
+        },
+        {
+          "type": "number",
+          "id": "padding_bottom_mobile",
+          "label": "Spacing bottom [mobile]",
+          "default": 50
+        }
+      ],
+      "presets": [
+        {
+          "name": "Image with text"
+        }
+      ]
+    }
+  {% endschema %}

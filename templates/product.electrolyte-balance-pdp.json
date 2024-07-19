@@ -1,0 +1,527 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-v2",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "e5831301-bb14-41e0-bec5-bf6526a76039": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div class=\"custom-btns-pdp\">\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Hydration<\/a>\n    <\/div>\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Recovery<\/a>\n    <\/div>\n<\/div>",
+            "show_in_quickbuy": false
+          }
+        },
+        "a46435e9-903b-4c0e-a0f3-fea02c3be5bd": {
+          "type": "shopify:\/\/apps\/trustoo-io-reviews\/blocks\/star-rating-widget\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {
+            "star_size": 16,
+            "font_size": 14,
+            "block_aligment": "flex-start"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": true,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "156c9a70-793e-4386-a9c7-ecc3412dade1": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "{{ product.metafields.custom.product_description | metafield_tag }}",
+            "icon": "",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-2"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_single": true,
+            "select_first_variant": true,
+            "variant_style": "listed",
+            "disable_unavailable_variants": true,
+            "show_size_chart": true,
+            "size_chart_variant": "size guide",
+            "size_chart_page": "pop-up1"
+          }
+        },
+        "e5216295-d9d1-45f9-8d41-49086103cd68": {
+          "type": "inventory_level",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 21,
+            "enable_box": true,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "724817b5-fb19-46ff-9baa-a75a4e092ce0": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "text": "Learn More About",
+            "style": "primary",
+            "page": "pop-up1",
+            "show_in_quickbuy": false
+          }
+        },
+        "d72c0ef0-2ff4-4be7-9565-ed8b20cfc527": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "cfbb07df-873e-4d23-a0d0-dcd1fb0e192c": {
+          "type": "shopify:\/\/apps\/price-panda-price-per-unit\/blocks\/productBlock\/8fe89266-7c30-4ab1-946d-3dcc05d9c8b2",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_backorder_text": true,
+            "show_pickup_availability": true
+          }
+        },
+        "57f158a3-2de2-4a71-a5a7-5842807117b5": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p>Klarna Available At Checkout<\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/image_8a0533a5-c8c7-46c0-bfca-173cd5a6b3d6.png",
+            "icon_size": "large",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-7"
+          }
+        },
+        "80d408df-4e1c-41e5-9b84-0872e4c917a8": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p>30 Days Money-Back Guarantee<\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/image_1.png",
+            "icon_size": "large",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-8"
+          }
+        },
+        "a2d9590d-7c37-4ee5-b2cf-9567ad7b976f": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "enable_carousel": true,
+            "max_products": 10,
+            "show_in_quickbuy": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "e5831301-bb14-41e0-bec5-bf6526a76039",
+        "a46435e9-903b-4c0e-a0f3-fea02c3be5bd",
+        "price",
+        "divider",
+        "156c9a70-793e-4386-a9c7-ecc3412dade1",
+        "variant_picker",
+        "e5216295-d9d1-45f9-8d41-49086103cd68",
+        "724817b5-fb19-46ff-9baa-a75a4e092ce0",
+        "d72c0ef0-2ff4-4be7-9565-ed8b20cfc527",
+        "cfbb07df-873e-4d23-a0d0-dcd1fb0e192c",
+        "buy_buttons",
+        "57f158a3-2de2-4a71-a5a7-5842807117b5",
+        "80d408df-4e1c-41e5-9b84-0872e4c917a8",
+        "a2d9590d-7c37-4ee5-b2cf-9567ad7b976f"
+      ],
+      "settings": {
+        "custom_rich": "",
+        "show_location_underneath": false,
+        "inventory_transfers_enable": false,
+        "enable_sticky_columns": true,
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "image_cards": "bg",
+        "enable_var_img_grouping": true,
+        "var_img_grouping_option": "Form, Size"
+      }
+    },
+    "8ca489df-71ef-4caf-b25f-0ae13be1e1c1": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19617752383797__8ca489df-71ef-4caf-b25f-0ae13be1e1c1-1687315596cd8775f2-0": {
+          "type": "heading",
+          "settings": {
+            "title": "HYDRATION  FIRST",
+            "title_size": "hsl-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19617752383797__8ca489df-71ef-4caf-b25f-0ae13be1e1c1-1687315596cd8775f2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In sport, one of the most important factors is muscle performance. During intensive training, mountain climbing or assisted activity, muscles use electrolytes to initiate contraction and fibre relaxation, which, combined with intense sweating, significantly depletes internal stores of these elements. Externally supplied electrolytes come to the rescue to provide an optimal environment for the muscles to work and thus support our exercise capacity.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19617752383797__8ca489df-71ef-4caf-b25f-0ae13be1e1c1-1687315596cd8775f2-0",
+        "template--19617752383797__8ca489df-71ef-4caf-b25f-0ae13be1e1c1-1687315596cd8775f2-1"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "color_scheme": "3",
+        "full_width": false
+      }
+    },
+    "b4dbb714-9f66-4149-af16-692bbb15ff1b": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Electrolyte-balancee.png",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "content_max_width": 800,
+        "subheading": "",
+        "title": "",
+        "title_size": "hsl-style",
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "color_scheme": "1",
+        "heading_highlight_text": "",
+        "heading_highlight_font": true,
+        "heading_highlight_stencil": false,
+        "heading_highlight_color": "rgba(0,0,0,0)",
+        "heading_highlight_gradient": ""
+      }
+    },
+    "03ad7a50-b40c-4239-99a0-6949811c9294": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Cordyceps - Cordyceps sinensis",
+            "title_size": "h1-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cordyceps is a fungus naturally occurring in the high Himalayas. It is one of the most fascinating species in the mushroom kingdom. Cordyceps is renowned for its performance-enhancing, fatigue-reducing and immune-supporting properties.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-0",
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "large",
+        "text_alignment": "center",
+        "color_scheme": "1",
+        "full_width": false
+      }
+    },
+    "e4435349-a953-4df3-947d-b63b23c1fc28": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/obrazek-2.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "More. Longer. Better.",
+            "title_size": "hl-style",
+            "text": "<p>Your body is a water environment. Every time you sweat, you lose water and with it valuable minerals. It is the balance of minerals such as magnesium and potassium that creates the right environment for proper muscle function and translates into our physical performance. <br\/><br\/>According to research, as little as a 2% decrease in hydration and electrolytes results in an approx. 10% decrease in the body's exercise capacity. For this reason, electrolyte supplementation is advisable for people with increased physical activity.<br\/><br\/>Take care of the right electrolyte balance and maintain optimal mental and physical state during an intensive training session, mountain hike or sporting activity.<\/p>",
+            "content": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "Brain Tech",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "#cd4d1e",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-0",
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-1"
+      ],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "1604f3bd-bd75-44d0-a3a5-730333f9a72f": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "key elements",
+            "title_size": "hsl-style",
+            "text": "<p>Magnesium is an element whose effects are difficult to overestimate. It participates in approximately 300 biochemical processes in our body and influences many of its systems. It supports the correct functioning of muscles and the nervous system, which is particularly important in the context of exercise capacity. It also reduces the feeling of fatigue, allowing you to adapt even better to tough challenges.<br\/><br\/>Potassium is one of the most important elements found in our body. It is crucial for the proper functioning of the nervous system and is essential in the cycles in which our cells produce energy. It helps to recharge our cellular batteries. For this reason, it ranks first in our electrolyte mix. It also helps maintain normal blood pressure and controls muscle function.<br\/><br\/>Calcium is a building material for the skeleton, teeth and cell walls. It contributes to the normal energy metabolism and influences digestive enzymes to ensure their proper function.<\/p>",
+            "content": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "2",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/zdjecie-nr-2compress.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-1",
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-0"
+      ],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "543ea4ba-cac1-4cd8-b6d8-7703e137db48": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Adaptogens, vitamins and minerals to support the brain and nervous system",
+            "title_size": "h1-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-0",
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "color_scheme": "1",
+        "full_width": true
+      }
+    },
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1": {
+          "type": "question",
+          "settings": {
+            "title": "How to use Electrolytes?",
+            "answer": "<p>Recommended daily dose: one scoop (approximately 9.7 g) dissolved in 200 ml of water twice daily.<br\/>Do not exceed the recommended daily dose.<br\/><br\/>The dietary supplement must not be used as a substitute for a varied diet. Leading a healthy lifestyle and eating a balanced diet are essential for good health.<br\/><br\/>Not recommended for use by pregnant or breastfeeding women. Keep out of the reach of small children, in a dry and cool place.<\/p>"
+          }
+        },
+        "44cc8dd3-03e0-4f2c-92d9-a2a35817485e": {
+          "type": "question",
+          "settings": {
+            "title": "When to take electrolytes?",
+            "answer": "<p>For days of intense physical activity, electrolytes are best taken around workout time, depending on the requirement of 1 to 2 scoops per day.<br\/><br\/>Electrolytes can also be taken on non-training days by drinking 1 scoop dissolved in water throughout the day.<\/p>"
+          }
+        },
+        "de6f2a6e-8806-4452-8622-298fa67d0a93": {
+          "type": "question",
+          "settings": {
+            "title": "How can electrolytes help?",
+            "answer": "<p>An electrolyte mixture replenishes minerals lost with sweat during sporting activities. Deficiency of electrolytes can manifest as a state of dehydration, which can translate into fatigue, muscle cramps, headaches, constipation, brain fog and reduced sports performance.<br\/><br\/>A correct balance of electrolytes supports muscle function, the conduction of impulses in the nervous system and supports an adequate state of hydration in the body.<\/p>"
+          }
+        },
+        "fef10d94-b03d-405a-8a9e-20f3f4b4a9c6": {
+          "type": "question",
+          "settings": {
+            "title": "Can I combine electrolytes with Shroom Force or Keto creatine?",
+            "answer": "<p>All products work complementarily with each other and can be combined.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1",
+        "44cc8dd3-03e0-4f2c-92d9-a2a35817485e",
+        "de6f2a6e-8806-4452-8622-298fa67d0a93",
+        "fef10d94-b03d-405a-8a9e-20f3f4b4a9c6"
+      ],
+      "settings": {
+        "title": "FAQ - Frequently Asked Questions"
+      }
+    },
+    "234c1298-7eda-4adc-a2ab-e8b16e25e8ae": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "title": "Blog posts",
+        "show_title": false,
+        "show_button": true,
+        "blog": "news",
+        "enable_carousel": true,
+        "post_limit": 3,
+        "show_author": false,
+        "show_date": false,
+        "show_excerpts": true,
+        "crop_ratio": "1.78",
+        "color_scheme": "1"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_title": true,
+        "show_vendor": false,
+        "grid": 4
+      }
+    },
+    "1687258188c5af77ac": {
+      "type": "apps",
+      "blocks": {
+        "a63bc6ca-ed60-415c-967d-e49ebe6b4644": {
+          "type": "shopify:\/\/apps\/trustoo-io-reviews\/blocks\/review-widget\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "a63bc6ca-ed60-415c-967d-e49ebe6b4644"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "8ca489df-71ef-4caf-b25f-0ae13be1e1c1",
+    "b4dbb714-9f66-4149-af16-692bbb15ff1b",
+    "03ad7a50-b40c-4239-99a0-6949811c9294",
+    "e4435349-a953-4df3-947d-b63b23c1fc28",
+    "1604f3bd-bd75-44d0-a3a5-730333f9a72f",
+    "543ea4ba-cac1-4cd8-b6d8-7703e137db48",
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1",
+    "234c1298-7eda-4adc-a2ab-e8b16e25e8ae",
+    "related-products",
+    "1687258188c5af77ac"
+  ]
+}

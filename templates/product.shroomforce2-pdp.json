@@ -1,0 +1,574 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-v2",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "e5831301-bb14-41e0-bec5-bf6526a76039": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div class=\"custom-btns-pdp\">\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Athletic Performance<\/a>\n    <\/div>\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Brain Health<\/a>\n    <\/div>\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Digestion<\/a>\n    <\/div>\n<\/div>",
+            "show_in_quickbuy": false
+          }
+        },
+        "a46435e9-903b-4c0e-a0f3-fea02c3be5bd": {
+          "type": "shopify:\/\/apps\/trustoo-io-product-reviews\/blocks\/star-rating-widget\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {
+            "star_size": 16,
+            "font_size": 14,
+            "block_aligment": "flex-start"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": true,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "156c9a70-793e-4386-a9c7-ecc3412dade1": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "{{ product.metafields.custom.product_description | metafield_tag }}",
+            "icon": "",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-2"
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_single": true,
+            "select_first_variant": true,
+            "variant_style": "listed",
+            "disable_unavailable_variants": true,
+            "show_size_chart": true,
+            "size_chart_variant": "size guide",
+            "size_chart_page": "pop-up1"
+          }
+        },
+        "e5216295-d9d1-45f9-8d41-49086103cd68": {
+          "type": "inventory_level",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 21,
+            "enable_box": true,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "724817b5-fb19-46ff-9baa-a75a4e092ce0": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "text": "Learn More About",
+            "style": "primary",
+            "page": "pop-up1",
+            "show_in_quickbuy": false
+          }
+        },
+        "d72c0ef0-2ff4-4be7-9565-ed8b20cfc527": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_backorder_text": true,
+            "show_pickup_availability": true
+          }
+        },
+        "omega_estimated_omega_estimated_shipping_k8ARXM": {
+          "type": "shopify:\/\/apps\/omega-estimated\/blocks\/omega-estimated-shipping\/054646a4-d5ab-4b85-b028-f3b169802e74",
+          "settings": {
+            "color": "#000000"
+          }
+        },
+        "57f158a3-2de2-4a71-a5a7-5842807117b5": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p>Pay Later With Klarna<\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/klarnabig2.png",
+            "icon_size": "large",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-7"
+          }
+        },
+        "80d408df-4e1c-41e5-9b84-0872e4c917a8": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p>30 Days Money-Back Guarantee<\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/image_1.png",
+            "icon_size": "large",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-8"
+          }
+        },
+        "a2d9590d-7c37-4ee5-b2cf-9567ad7b976f": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "enable_carousel": true,
+            "max_products": 5,
+            "show_in_quickbuy": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "e5831301-bb14-41e0-bec5-bf6526a76039",
+        "a46435e9-903b-4c0e-a0f3-fea02c3be5bd",
+        "price",
+        "156c9a70-793e-4386-a9c7-ecc3412dade1",
+        "divider",
+        "variant_picker",
+        "e5216295-d9d1-45f9-8d41-49086103cd68",
+        "724817b5-fb19-46ff-9baa-a75a4e092ce0",
+        "d72c0ef0-2ff4-4be7-9565-ed8b20cfc527",
+        "buy_buttons",
+        "omega_estimated_omega_estimated_shipping_k8ARXM",
+        "57f158a3-2de2-4a71-a5a7-5842807117b5",
+        "80d408df-4e1c-41e5-9b84-0872e4c917a8",
+        "a2d9590d-7c37-4ee5-b2cf-9567ad7b976f"
+      ],
+      "custom_css": [
+        ".inline-image {max-width: 100%;}"
+      ],
+      "settings": {
+        "custom_rich": "",
+        "show_location_underneath": false,
+        "inventory_transfers_enable": false,
+        "enable_sticky_columns": true,
+        "gallery_size": "small",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "image_cards": "bg",
+        "enable_var_img_grouping": true,
+        "var_img_grouping_option": "Form, Size"
+      }
+    },
+    "03ad7a50-b40c-4239-99a0-6949811c9294": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-0": {
+          "type": "heading",
+          "settings": {
+            "title": "6th gear for your stamina",
+            "title_size": "h1-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shroom Force is a natural workout blend to support performance and function based on a combination of Cordyceps mushrooms and plant extracts such as Ashwagandha, Astragalus, Rhodiola and green tea.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-0",
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "large",
+        "text_alignment": "center",
+        "color_scheme": "1",
+        "full_width": false
+      }
+    },
+    "865721e3-a987-40ce-9ce5-db61c98846c6": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/baner_shroom_force.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "content_max_width": 800,
+        "subheading": "",
+        "title": "",
+        "title_size": "hsl-style",
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "color_scheme": "1",
+        "heading_highlight_text": "",
+        "heading_highlight_font": true,
+        "heading_highlight_stencil": false,
+        "heading_highlight_color": "rgba(0,0,0,0)",
+        "heading_highlight_gradient": ""
+      }
+    },
+    "30c8419b-5bbc-4ba3-aefa-caa6b0ad8392": {
+      "type": "media-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/baner-shoom-1_96974a8c-7162-490e-b061-b54475e2a5bf.jpg",
+        "image_link": "",
+        "video_external": "",
+        "autoplay": false,
+        "content_max_width": 500,
+        "subheading": "",
+        "title": "designed for athletes",
+        "title_size": "hsl-style",
+        "use_h1": false,
+        "text": "<p>Shroom Force has been created for people who want to support their body in achieving training results or to ensure they maintain optimal energy levels in their daily life. It is a product with which you will support your performance, natural energy production and overall health.<br\/><br\/><strong>Shroom Force is used by professional athletes, martial arts enthusiasts, crossfit, fitness and endurance sports at all levels.<\/strong><\/p>",
+        "enlarge_text": false,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "text_alignment": "left",
+        "media_position": "left",
+        "enable_media_spacing": false,
+        "media_shape": "1",
+        "color_scheme": "3",
+        "heading_highlight_text": "athletes",
+        "heading_highlight_font": false,
+        "heading_highlight_stencil": false,
+        "heading_highlight_color": "#1e9ecd",
+        "heading_highlight_gradient": ""
+      }
+    },
+    "543ea4ba-cac1-4cd8-b6d8-7703e137db48": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Adaptogens, vitamins and minerals to support the brain and nervous system",
+            "title_size": "h1-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-0",
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "color_scheme": "1",
+        "full_width": true
+      }
+    },
+    "dba07275-a439-4be8-ae60-d9b568174973": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19607011754293__dba07275-a439-4be8-ae60-d9b568174973-16872653674f73aef3-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "YOUR secret weapon",
+            "title_size": "hsl-style",
+            "text": "<p>Mushrooms of the genus cordyceps sinensis have been known for thousands of years by peoples living at high altitudes in the Himalayas. They were discovered by Tibetan nomadic tribes grazing cattle at high altitudes. They noticed that when the animals ate wild mushrooms, they became much more energetic and could stay moving for much longer. Following their example, they began to prepare an infusion of mushrooms to add vigour and combat fatigue.<br\/><br\/>For some time now, mushrooms have been appreciated by professional athletes, fitness and martial arts enthusiasts. They became famous after the Beijing Olympics, where Chinese female runners broke five world records. The team's coach attributed the success to cordyceps supplementation.<\/p>",
+            "content": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "secret",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": "radial-gradient(rgba(255, 154, 98, 1), rgba(255, 204, 75, 1) 100%)"
+          }
+        },
+        "template--19607011754293__dba07275-a439-4be8-ae60-d9b568174973-16872653674f73aef3-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/cordyceps.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19607011754293__dba07275-a439-4be8-ae60-d9b568174973-16872653674f73aef3-1",
+        "template--19607011754293__dba07275-a439-4be8-ae60-d9b568174973-16872653674f73aef3-0"
+      ],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "8af7c8f2-83c4-4608-9e43-5aee133f00d7": {
+      "type": "media-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/baner-shoom-2.jpg",
+        "image_link": "",
+        "video_external": "",
+        "autoplay": false,
+        "content_max_width": 940,
+        "subheading": "",
+        "title": "perfect combination",
+        "title_size": "hsl-style",
+        "use_h1": false,
+        "text": "<p><strong>Corydceps sinensis<\/strong> renowned among athletes for its performance-enhancing properties.<br\/><br\/><strong>Ashwagandha<\/strong> (Withania somnifera) supports the normal functioning of the respiratory and cardiovascular systems, supports the maintenance of optimal energy levels, aids in building muscle mass, and additionally maintains the body's resistance to stress.<br\/><br\/><strong>Astragalus membranaceus<\/strong> maintains joint mobility, supports recovery after physical and mental exertion.<br\/><br\/><strong>Rhodiola rosea<\/strong> supports the body's resistance to stress factors, supports the maintenance of good condition and optimal performance, and contributes to the maintenance of normal cardiovascular function.<br\/><br\/>In addition, Shroom Force contains <strong>grape seed extract<\/strong>, which exhibits antioxidant effects that nullify the accumulation of free radicals. This creates the right environment for optimal functioning and regeneration of the body. <\/p><p>The ingredients in the blend have been chosen synergistically, bringing out the full potential of each substance.<\/p>",
+        "enlarge_text": false,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "text_alignment": "left",
+        "media_position": "left",
+        "enable_media_spacing": false,
+        "media_shape": "1",
+        "color_scheme": "3",
+        "heading_highlight_text": "",
+        "heading_highlight_font": true,
+        "heading_highlight_stencil": false,
+        "heading_highlight_color": "rgba(0,0,0,0)",
+        "heading_highlight_gradient": ""
+      }
+    },
+    "1604f3bd-bd75-44d0-a3a5-730333f9a72f": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/baner-shoom-2.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "RECIPE FOR WINNERS",
+            "title_size": "hsl-style",
+            "text": "<ul><li><strong>Corydceps sinensis<\/strong> renowned among athletes for its performance-enhancing properties.<\/li><li><strong>Ashwagandha<\/strong> (Withania somnifera) supports the normal functioning of the respiratory and cardiovascular systems, supports the maintenance of optimal energy levels, aids in building muscle mass, and additionally maintains the body's resistance to stress.<\/li><li><strong>Astragalus membranaceus<\/strong> maintains joint mobility, supports recovery after physical and mental exertion.<\/li><li><strong>Rhodiola rosea<\/strong> supports the body's resistance to stress factors, supports the maintenance of good condition and optimal performance, and contributes to the maintenance of normal cardiovascular function.<\/li><li>In addition, Shroom Force contains <strong>grape seed extract<\/strong>, which exhibits antioxidant effects that nullify the accumulation of free radicals. This creates the right environment for optimal functioning and regeneration of the body. <\/li><\/ul>",
+            "content": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-0",
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-1"
+      ],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "ec2050ee-9e02-47d6-aa67-495d64f15c79": {
+          "type": "question",
+          "settings": {
+            "title": "What it does?",
+            "answer": "<p><strong>Supports sport performance <\/strong>by optimizing proper energy production (Withania somnifera)<\/p><p><strong>Improves respiratory system<\/strong> for proper oxygen management during intense exercise (Rhodiola rosea)<\/p><p><strong>Fights fatigue<\/strong> and support nervous system regeneration and free radical leveling (Grape seeds)<\/p><p><strong>Development<\/strong> and maintenance of muscle mass (Withania somnifera)<\/p><p><strong>Increases Exercise capacity<\/strong> (Rhodiola rosea)<\/p>"
+          }
+        },
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-0": {
+          "type": "question",
+          "settings": {
+            "title": "For Who?",
+            "answer": "<p>Perfect for athletes, fitness enthusiasts, those in physically demanding professions, and anyone looking to enhance their overall physical stamina and vitality, making it an exceptional choice for anyone striving to achieve their peak physical potential.<\/p>"
+          }
+        },
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1": {
+          "type": "question",
+          "settings": {
+            "title": "How to use?",
+            "answer": "<p>Recommended daily serving to show a beneficial effect: 3 capsules approx. 45 min before exercise.<br\/><\/p><p>Do not exceed the recommended daily serving.<\/p>"
+          }
+        },
+        "44cc8dd3-03e0-4f2c-92d9-a2a35817485e": {
+          "type": "question",
+          "settings": {
+            "title": "Will using Shroom Force during evening workouts disturb my sleep?",
+            "answer": "<p>Shroom Force does not contain caffeine or strong stimulants. As a result, it can even be used during evening workouts without disrupting sleep and circadian rhythms.<\/p>"
+          }
+        },
+        "de6f2a6e-8806-4452-8622-298fa67d0a93": {
+          "type": "question",
+          "settings": {
+            "title": "What is the best way to combine Shroom Force with?",
+            "answer": "<p>We particularly recommend combining it with Keto Creatine. Shroom Force works to stimulate cellular mitochondria to produce ATP. Creatine, on the other hand, participates in the faster reconstitution of ATP from ADP - a process called ATP resynthesis - which contributes to the synergistic effect of both supplements.<\/p>"
+          }
+        },
+        "fef10d94-b03d-405a-8a9e-20f3f4b4a9c6": {
+          "type": "question",
+          "settings": {
+            "title": "Can Shroom Force be used by the elderly?",
+            "answer": "<p>Due to the lack of stimulants, Shroom Force can be used by the elderly.<\/p>"
+          }
+        },
+        "4aa505e7-1f73-411a-870e-a3c44121bba5": {
+          "type": "question",
+          "settings": {
+            "title": "Can I take Shroom Force on non-workout days?",
+            "answer": "<p>To maximise the effects of supplementation, we recommend 2 capsules at a fixed time on non-workout days.<\/p>"
+          }
+        },
+        "60426168-6a04-46f5-bcfa-36ff7a0e3332": {
+          "type": "question",
+          "settings": {
+            "title": "After how long do you notice the first effects?",
+            "answer": "<p>Some people feel the effects already after the first intake of Shroom. The effect of the formula is individual and the adaptation period to the formula can be up to 2 weeks of regular supplementation. We cannot guarantee the effects of supplementation.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "ec2050ee-9e02-47d6-aa67-495d64f15c79",
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-0",
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1",
+        "44cc8dd3-03e0-4f2c-92d9-a2a35817485e",
+        "de6f2a6e-8806-4452-8622-298fa67d0a93",
+        "fef10d94-b03d-405a-8a9e-20f3f4b4a9c6",
+        "4aa505e7-1f73-411a-870e-a3c44121bba5",
+        "60426168-6a04-46f5-bcfa-36ff7a0e3332"
+      ],
+      "settings": {
+        "title": "FAQ - Frequently Asked Questions"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_title": true,
+        "show_vendor": false,
+        "grid": 5
+      }
+    },
+    "234c1298-7eda-4adc-a2ab-e8b16e25e8ae": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "title": "Blog posts",
+        "show_title": false,
+        "show_button": true,
+        "blog": "news",
+        "enable_carousel": true,
+        "post_limit": 3,
+        "show_author": true,
+        "show_date": true,
+        "show_excerpts": true,
+        "crop_ratio": "1.78",
+        "color_scheme": "1"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "03ad7a50-b40c-4239-99a0-6949811c9294",
+    "865721e3-a987-40ce-9ce5-db61c98846c6",
+    "30c8419b-5bbc-4ba3-aefa-caa6b0ad8392",
+    "543ea4ba-cac1-4cd8-b6d8-7703e137db48",
+    "dba07275-a439-4be8-ae60-d9b568174973",
+    "8af7c8f2-83c4-4608-9e43-5aee133f00d7",
+    "1604f3bd-bd75-44d0-a3a5-730333f9a72f",
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1",
+    "related-products",
+    "234c1298-7eda-4adc-a2ab-e8b16e25e8ae"
+  ]
+}

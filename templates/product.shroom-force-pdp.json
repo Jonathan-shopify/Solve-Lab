@@ -1,0 +1,569 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-v2",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "fe87ad9b-6b42-4fe2-9eaf-7c2b5cda5e54": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"custom-btns-pdp\">\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Athletic Performance<\/a>\n    <\/div>\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Energy Levels<\/a>\n    <\/div>\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Immunity<\/a>\n    <\/div>\n<\/div>",
+            "show_in_quickbuy": false
+          }
+        },
+        "ceb14467-7128-4665-9cdb-8c6e39bac3cc": {
+          "type": "shopify:\/\/apps\/trustoo-product-reviews-app\/blocks\/star-rating-widget\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {
+            "star_size": 16,
+            "font_size": 14,
+            "block_aligment": "flex-start"
+          }
+        },
+        "156c9a70-793e-4386-a9c7-ecc3412dade1": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "{{ product.metafields.custom.product_description | metafield_tag }}",
+            "icon": "",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-2"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": true,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_single": true,
+            "select_first_variant": true,
+            "variant_style": "listed",
+            "disable_unavailable_variants": true,
+            "show_size_chart": true,
+            "size_chart_variant": "size guide",
+            "size_chart_page": "pop-up1"
+          }
+        },
+        "edca4cd9-7984-4963-b078-56b1ab034762": {
+          "type": "shopify:\/\/apps\/yotpo-subscriptions\/blocks\/app-block\/ef25e582-ada5-4bb0-b4e7-f94e97ab1bb4",
+          "settings": {}
+        },
+        "e5216295-d9d1-45f9-8d41-49086103cd68": {
+          "type": "inventory_level",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 21,
+            "enable_box": true,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "724817b5-fb19-46ff-9baa-a75a4e092ce0": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "text": "Learn More About",
+            "style": "primary",
+            "page": "pop-up1",
+            "show_in_quickbuy": false
+          }
+        },
+        "d72c0ef0-2ff4-4be7-9565-ed8b20cfc527": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "cfbb07df-873e-4d23-a0d0-dcd1fb0e192c": {
+          "type": "shopify:\/\/apps\/price-panda-price-per-unit\/blocks\/productBlock\/8fe89266-7c30-4ab1-946d-3dcc05d9c8b2",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_backorder_text": true,
+            "show_pickup_availability": true
+          }
+        },
+        "57f158a3-2de2-4a71-a5a7-5842807117b5": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Free Shipping on Orders Over £30<\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/image_caf79ee8-553e-4720-b0ae-d91031b0ef4e.png",
+            "icon_size": "large",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-7"
+          }
+        },
+        "80d408df-4e1c-41e5-9b84-0872e4c917a8": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>30 Days Money-Back Guarantee<\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/image_1.png",
+            "icon_size": "large",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-8"
+          }
+        },
+        "a2d9590d-7c37-4ee5-b2cf-9567ad7b976f": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "enable_carousel": true,
+            "max_products": 10,
+            "show_in_quickbuy": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "fe87ad9b-6b42-4fe2-9eaf-7c2b5cda5e54",
+        "ceb14467-7128-4665-9cdb-8c6e39bac3cc",
+        "156c9a70-793e-4386-a9c7-ecc3412dade1",
+        "price",
+        "divider",
+        "variant_picker",
+        "edca4cd9-7984-4963-b078-56b1ab034762",
+        "e5216295-d9d1-45f9-8d41-49086103cd68",
+        "724817b5-fb19-46ff-9baa-a75a4e092ce0",
+        "d72c0ef0-2ff4-4be7-9565-ed8b20cfc527",
+        "cfbb07df-873e-4d23-a0d0-dcd1fb0e192c",
+        "buy_buttons",
+        "57f158a3-2de2-4a71-a5a7-5842807117b5",
+        "80d408df-4e1c-41e5-9b84-0872e4c917a8",
+        "a2d9590d-7c37-4ee5-b2cf-9567ad7b976f"
+      ],
+      "settings": {
+        "custom_rich": "",
+        "show_location_underneath": false,
+        "inventory_transfers_enable": false,
+        "enable_sticky_columns": true,
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "image_cards": "bg",
+        "enable_var_img_grouping": true,
+        "var_img_grouping_option": "Form, Size"
+      }
+    },
+    "03ad7a50-b40c-4239-99a0-6949811c9294": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Cordyceps - Cordyceps sinensis",
+            "title_size": "h1-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cordyceps is a fungus naturally occurring in the high Himalayas. It is one of the most fascinating species in the mushroom kingdom. Cordyceps is renowned for its performance-enhancing, fatigue-reducing and immune-supporting properties.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-0",
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-1"
+      ],
+      "settings": {
+        "height": "large",
+        "text_alignment": "center",
+        "color_scheme": "1",
+        "full_width": false
+      }
+    },
+    "e4435349-a953-4df3-947d-b63b23c1fc28": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/cordyceps-zdjecie-nr-1.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Functional mushrooms",
+            "title_size": "hl-style",
+            "text": "<p>Due to their health-promoting properties, functional mushrooms have been used for thousands of years in all areas where they are found. By their action, they are supposed to support the health of the host. This is a fact that ancient cultures are well aware of.    <br\/><br\/>Mushrooms are qualified as adaptogens, which means that they support both physical and mental resistance to environmental stimuli and stress. How does this happen? Fungi have spent almost 1.5 billion years optimising their defence strategies, and today we can benefit from them.<\/p>",
+            "content": "<p>Block content<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "Brain Tech",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "#cd4d1e",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-0",
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-1"
+      ],
+      "settings": {
+        "alignment": "top",
+        "color_scheme": "1"
+      }
+    },
+    "1604f3bd-bd75-44d0-a3a5-730333f9a72f": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Energy boost",
+            "title_size": "h1-style",
+            "text": "<p>Cordyceps stands out from other functional mushrooms in a significant way. Beginning with its unusual method of cultivation, to its anecdotal fame as a powerful energy booster among athletes.<br\/><br\/>Cordyceps is often used as an alternative to caffeinated energy drinks, acting at a cellular level, literally recharging our biological batteries.<\/p>",
+            "content": "<p>Block content<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/cordy2compress.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-1",
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-0"
+      ],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "144bfaba-7b41-4f39-8d79-ed64fc74b908": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/cordy1compress.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Cordyceps - recharge your batteries",
+            "title_size": "h1-style",
+            "text": "<p>One of the ways in which Cordyceps supports physical performance and reduces fatigue is through its effect on the production of the basic energy unit, ATP (adenosine triphosphate). We can think of ATP as our body's batteries. The more charged they are, the longer we are able to perform an activity.<br\/><br\/>ATP is produced in the mitochondria - the energy factories inside our cells. Their contribution to energy production is as high as 90%. Cordyceps contains adenosine, which is required to produce ATP.<\/p>",
+            "content": "<p>Block content<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-0",
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-1"
+      ],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "1"
+      }
+    },
+    "543ea4ba-cac1-4cd8-b6d8-7703e137db48": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Adaptogens, vitamins and minerals to support the brain and nervous system",
+            "title_size": "h1-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-0",
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "color_scheme": "1",
+        "full_width": true
+      }
+    },
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "ec2050ee-9e02-47d6-aa67-495d64f15c79": {
+          "type": "question",
+          "settings": {
+            "title": "Why our Cordyceps extract?",
+            "answer": "<p><strong>10:1 extract <\/strong>- concentrated form of extract to ensure bioavailability of raw material<\/p><p><strong>100% Natural<\/strong> - no unnecessary additives or fillers<\/p><p><strong>Vegetable capsules<\/strong> - suitable for vegans and vegetarians<\/p><p><strong>100% Fruiting bodies<\/strong> - no mycelium mixed with grain <\/p><p><strong>Grown on wood<\/strong> - fruited on enriched sawdust to ensure high synthesis of active compounds<\/p><p><strong>High beta-glucan content<\/strong> - tested in independent laboratories to ensure high beta glucan content<\/p>"
+          }
+        },
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-0": {
+          "type": "question",
+          "settings": {
+            "title": "For whom?",
+            "answer": "<p>Cordyceps has been formulated for those looking for increased energy, improved stamina, enhanced lung capacity, better immunity, and improved sleep quality. This solution is perfect for athletes, busy professionals, individuals with active lifestyles, students, and anyone wanting to optimize their sleep and deal with daily challenges more effectively.<\/p>"
+          }
+        },
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1": {
+          "type": "question",
+          "settings": {
+            "title": "How to use Cordyceps?",
+            "answer": "<p>Recommended daily allowance: 1000 mg (2 capsules) sipped with water.<\/p><p>Do not exceed the recommended daily allowance.<\/p><p>This dietary supplement must not be used as a substitute for a varied diet. Leading a healthy lifestyle and eating a balanced diet are essential for good health.<\/p><p>Not recommended for use by pregnant or breastfeeding women. Keep out of the reach of small children, in a dry and cool place.<\/p><p>Check out the other mushrooms in the capsule line<\/p>"
+          }
+        },
+        "44cc8dd3-03e0-4f2c-92d9-a2a35817485e": {
+          "type": "question",
+          "settings": {
+            "title": "Where do the mushrooms come from?",
+            "answer": "<p>Our mushrooms come from farms located in the mountainous regions of China's Fujian Province, where mushrooms have been cultivated using traditional methods for hundreds of years.<\/p><p>They are grown on natural wood where they occur wild in nature. We cut only the fruiting bodies of the mushrooms, without any additives or unnecessary fillers.<\/p><p>All mushrooms undergo testing for the presence of heavy metals, polycyclic aromatic hydrocarbons and key microbiological parameters to ensure maximum food safety.<\/p>"
+          }
+        },
+        "de6f2a6e-8806-4452-8622-298fa67d0a93": {
+          "type": "question",
+          "settings": {
+            "title": "What is the best way to dissolve the mushrooms?",
+            "answer": "<p>If you are having difficulty dissolving the yellow lacquer mushrooms, we recommend adding the extract to the bottom of the cup and then gradually pouring in the coffee\/tea, stirring all the time. <br\/><br\/>You can also use a handheld milk frother to dissolve the mushrooms.<\/p>"
+          }
+        },
+        "fef10d94-b03d-405a-8a9e-20f3f4b4a9c6": {
+          "type": "question",
+          "settings": {
+            "title": "What part of the mushroom was the extract prepared from?",
+            "answer": "<p>We only use the fruiting bodies of the mushroom. This is due to the desire to obtain a pure mushroom extract. When dealing with mycelium-based supplements, unfortunately it may turn out that up to 60-70% of such an extract will be starch instead of mushroom without the health-promoting effects attributed to mushrooms. <\/p><p>This is due to the inability to separate the mycelium from the medium on which it grew. Once the fungus has colonised the medium, the whole thing is ground up and subjected to extraction processes. This is a cheap and quick way of growing mushrooms without bringing them to the fruiting stage.<\/p>"
+          }
+        },
+        "ccf643cd-f9f3-4b65-8b27-f989a2f45ca7": {
+          "type": "question",
+          "settings": {
+            "title": "How many polysaccharides does the extract contain?",
+            "answer": "<p>Our mushroom extracts are not standardised to a specific amount of polysaccharides, as this is not an indicator of the quality of the extract.<br\/><br\/>Mushroom-based products contain many types of polysaccharides (polysaccharides), such as chitin, alpha glucans or beta glucans.<br\/><br\/>Alpha glucans are compounds that do not have the properties attributed to fungi. They are usually derived from the starchy medium on which the fungus grows. They are used in mycelium products or mushroom biomass, which is a mixture of mycelium and fruiting bodies.<br\/><br\/>Active substances are also polysaccharides, but in a different configuration - Beta-D-glucans 1-3 and 1-6. These are found in the fruiting bodies of mushrooms.<br\/><br\/>For more on beta-glucan and a survey of our mushrooms, see the article:<\/p>"
+          }
+        },
+        "b97170dc-da4f-4e53-8f89-72e261330848": {
+          "type": "question",
+          "settings": {
+            "title": "What is the mushroom extraction process like?",
+            "answer": "<p>Dried mushroom fruiting bodies are ground to a fine dust and then extracted using hot water and alcohol.<br\/><br\/>The water dissolves the cell walls of the mushrooms, which are made of chitin, and extracts compounds such as beta glucans (biologically active polysaccharides in mushrooms). Since we do not have an enzyme that can effectively digest chitin - hot water extraction is fundamental to the bioavailability of fungal preparations. Alcohol, on the other hand, allows the extraction of water-insoluble compounds such as triterpenes.<br\/><br\/>Once the extract has been concentrated, spray drying follows, leaving a final dry extract. Spray drying is the optimum dehydration process for wet extracts - keeping nutrient losses to a minimum.<\/p>"
+          }
+        },
+        "87c56917-c435-4e82-b7b3-0012681f9fc6": {
+          "type": "question",
+          "settings": {
+            "title": "What distinguishes an extract from a ground mushroom?",
+            "answer": "<p>Extraction is the optimal way of processing mushrooms to extract the active substances. These are encapsulated in the cell walls of the mushrooms, which are made up of chitin. <\/p><p>We do not have an enzyme that is able to digest chitin and for this reason mushrooms must be subjected to extraction processes. Extraction makes the raw material fully assimilable by our body.<\/p>"
+          }
+        },
+        "c0fe3482-fc0a-4e27-8e39-210fdc2f52a0": {
+          "type": "question",
+          "settings": {
+            "title": "What is the best time to take mushroom supplements?",
+            "answer": "<p>Lion's mane and Cordyceps, as mushrooms support alertness and increase energy levels, are best taken in the first part of the day or before a workout. If you're adding mushrooms to your coffee, it's a good idea to limit your coffee intake to between 13:00 and 14:00. This will reduce the negative effects of caffeine on sleep quality. A good alternative to coffee is to drink mushrooms in tea.<br\/><br\/>Reishi, due to its tonic and calming properties on the nervous system, is worth taking in the evening, preferably with green tea or cocoa.<br\/>In the case of Chaga mushrooms, the time of consumption does not matter.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "ec2050ee-9e02-47d6-aa67-495d64f15c79",
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-0",
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1",
+        "44cc8dd3-03e0-4f2c-92d9-a2a35817485e",
+        "de6f2a6e-8806-4452-8622-298fa67d0a93",
+        "fef10d94-b03d-405a-8a9e-20f3f4b4a9c6",
+        "ccf643cd-f9f3-4b65-8b27-f989a2f45ca7",
+        "b97170dc-da4f-4e53-8f89-72e261330848",
+        "87c56917-c435-4e82-b7b3-0012681f9fc6",
+        "c0fe3482-fc0a-4e27-8e39-210fdc2f52a0"
+      ],
+      "settings": {
+        "title": "FAQ - Frequently Asked Questions"
+      }
+    },
+    "234c1298-7eda-4adc-a2ab-e8b16e25e8ae": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "title": "Blog posts",
+        "show_title": false,
+        "show_button": true,
+        "blog": "news",
+        "enable_carousel": true,
+        "post_limit": 3,
+        "show_author": true,
+        "show_date": true,
+        "show_excerpts": true,
+        "crop_ratio": "1.78",
+        "color_scheme": "1"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_title": true,
+        "show_vendor": false,
+        "grid": 4
+      }
+    },
+    "1687258188c5af77ac": {
+      "type": "apps",
+      "blocks": {
+        "6e2efac2-ed10-472f-acf9-9664d6001d6e": {
+          "type": "shopify:\/\/apps\/trustoo-product-reviews-app\/blocks\/review-widget\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "6e2efac2-ed10-472f-acf9-9664d6001d6e"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "03ad7a50-b40c-4239-99a0-6949811c9294",
+    "e4435349-a953-4df3-947d-b63b23c1fc28",
+    "1604f3bd-bd75-44d0-a3a5-730333f9a72f",
+    "144bfaba-7b41-4f39-8d79-ed64fc74b908",
+    "543ea4ba-cac1-4cd8-b6d8-7703e137db48",
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1",
+    "234c1298-7eda-4adc-a2ab-e8b16e25e8ae",
+    "related-products",
+    "1687258188c5af77ac"
+  ]
+}

@@ -1,0 +1,638 @@
+<div class="card card-scheme card-scheme--{{ section.settings.color_scheme }} card-content-padding-x fully-padded-row--{{ section.settings.height }}" data-cc-animate>
+  <div class="container{% unless section.settings.full_width %} container--reading-width{% endunless %}">
+    <div class="align-{{ section.settings.text_alignment }} spaced-column">
+      {% assign skip_block_count = 0 %}
+      {% for block in section.blocks %}
+        {%- liquid
+          if skip_block_count > 0
+            assign skip_block_count = skip_block_count | minus: 1
+            continue
+          endif
+        -%}
+        {% case block.type %}
+          {% when 'heading' %}
+            {% if block.settings.use_h1 %}
+              <h1 class="majortitle {{ block.settings.title_size }}" {{ block.shopify_attributes }}>{% render 'feature-heading-text', text: block.settings.title, item_settings: block.settings %}</h1>
+            {% else %}
+              <h2 class="majortitle {{ block.settings.title_size }}" {{ block.shopify_attributes }}>{% render 'feature-heading-text', text: block.settings.title, item_settings: block.settings %}</h2>
+            {% endif %}
+
+          {% when 'subheading' %}
+            <div class="subheading subheading--over lightish-spaced-row-above" {{ block.shopify_attributes }}>{{ block.settings.subheading | escape }}</div>
+
+          {% when 'text' %}
+            <div class="rte lightly-spaced-row {% if block.settings.enlarge_text %}large-text{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+
+          {% when 'button' %}
+            <div class="lightish-spaced-row-above lightish-spaced-row button-row" {{ block.shopify_attributes }}>
+              <a class="{% if block.settings.button_style != 'link' %}btn btn--{{ block.settings.button_style }} btn--link{% else %}feature-link{% endif %} button-row__button" href="{{ block.settings.button_link }}"><span class="btn__text">{{ block.settings.button_label | escape }}</span></a>
+              {%- assign skip_block_count = 0 -%}
+              {%- for next_block in section.blocks offset: forloop.index -%}
+                {%- if next_block.type == 'button' -%}
+                  {%- assign skip_block_count = skip_block_count | plus: 1 -%}
+                  <a class="{% if next_block.settings.button_style != 'link' %}btn btn--{{ next_block.settings.button_style }} btn--link{% else %}feature-link{% endif %} button-row__button" href="{{ next_block.settings.button_link }}" {{ block.shopify_attributes }}><span class="btn__text">{{ next_block.settings.button_label | escape }}</span></a>
+                {%- else -%}
+                  {%- break -%}
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+
+          {% when 'image' %}
+            <div class="lightly-spaced-row lightly-spaced-row-above inline-width-container scale-on-hover" style="width: {{ block.settings.image_width }}px" {{ block.shopify_attributes }}>
+              {% if block.settings.url != blank %}<a href="{{ block.settings.url }}">{% endif %}
+                {% if block.settings.image != blank %}
+                  {% render 'responsive-image', image: block.settings.image, extra_classes: 'scale-on-hover__target' %}
+                {% else %}
+                  <div class="placeholder-image">
+                    {{- 'image' | placeholder_svg_tag: 'placeholder-svg' -}}
+                  </div>
+                {% endif %}
+              {% if block.settings.url != blank %}</a>{% endif %}
+            </div>
+
+          {% when 'icon' %}
+            <div class="lightly-spaced-row lightly-spaced-row-above" {{ block.shopify_attributes }}>
+              <span class="large-light-icon">
+                {% render 'icon', icon: block.settings.icon, size: 'medium' %}
+              </span>
+            </div>
+
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div id="section-id-{{ section.id }}">
+  {% style %}
+    {%- for block in section.blocks -%}
+      {%- if block.settings.image_width != 100 %}
+        #section-id-{{ section.id }} #block-id-{{ block.id }} .text-column__image {
+          margin-top: var(--gutter-content);
+          max-width: {{ block.settings.image_width }}%;
+        }
+      {%- endif -%}
+    {%- endfor -%}
+  {% endstyle %}
+
+  {% if section.settings.title != blank %}
+    <h2 class="section-title{% unless section.settings.show_title %} visually-hidden{% endunless %}" data-cc-animate>{{ section.settings.title | escape }}</h2>
+  {% endif %}
+
+  <div class="flexible-layout flexible-layout--variable-columns flexible-layout--columns-{{ section.blocks.size }} align-{{ section.settings.text_alignment }}">
+    {% for block in section.blocks %}
+      <div id="block-id-{{ block.id }}" class="column text-column card-scheme card-scheme--{{ block.settings.color_scheme }} card-br-oh" {{ block.shopify_attributes }}
+            data-cc-animate="cc-fade-in-up" data-cc-animate-delay="{{ forloop.index | times: 0.15 }}s">
+        {% if block.settings.enable_image %}
+          <div class="text-column__image lightly-spaced-row{% if block.settings.link != blank %} scale-on-hover{% endif %}{% if block.settings.color_scheme == 'none' or block.settings.image_width != 100 %} card-br-oh{% endif %}">
+            {%- if block.settings.link != blank -%}<a class="block-link focus-inset" href="{{ block.settings.link }}">{%- endif -%}
+
+            {%- if block.settings.image != blank -%}
+              {%- render 'responsive-image', image: block.settings.image, extra_classes: 'scale-on-hover__target' -%}
+            {%- else -%}
+              <div class="placeholder-image">
+                {{- 'image' | placeholder_svg_tag: 'placeholder-svg' -}}
+              </div>
+            {%- endif -%}
+
+            {%- if block.settings.link != blank -%}</a>{% endif -%}
+          </div>
+        {% endif %}
+
+        <div class="card-content-padding{% if block.settings.enable_image %}-x{% endif %} padded-row-bottom--medium">
+          {% if block.settings.block_title != blank %}
+            <h3 class="text-column__title {{ block.settings.block_title_size }}">{{ block.settings.block_title }}</h3>
+          {% endif %}
+
+          {% if block.settings.block_text != blank %}
+            <div class="text-column__text rte">{{ block.settings.block_text }}</div>
+          {% endif %}
+
+          {% if block.settings.button_label != blank %}
+            <div class="text-column__button-row text-column__button-row--{{ section.settings.button_style }}">
+              <a class="text-column__button {% if section.settings.button_style != 'link' %}btn btn--{{ section.settings.button_style }} btn--link{% else %}feature-link{% endif %}" href="{{ block.settings.link }}"><span class="btn__text">{{ block.settings.button_label | escape }}</span></a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+  
+{% schema %}
+  {
+    "name": "Custom Benefits Section",
+    "class": "section-benefits-custom",
+    "settings": [
+       {
+        "type": "select",
+        "id": "height",
+        "label": "Section height",
+        "default": "medium",
+        "options": [
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "text_alignment",
+        "label": "Text alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "color_scheme",
+        "label": "Color scheme",
+        "default": "1",
+        "options": [
+          {
+            "value": "1",
+            "label": "Card 1"
+          },
+          {
+            "value": "2",
+            "label": "Card 2"
+          },
+          {
+            "value": "3",
+            "label": "Card 3"
+          },
+          {
+            "value": "none",
+            "label": "No card"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Wide display",
+        "default": false
+      }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "Heading",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Rich text"
+          },
+          {
+            "type": "select",
+            "id": "title_size",
+            "label": "Heading size",
+            "default": "h1-style",
+            "options": [
+              {
+                "label": "Extra small",
+                "value": "h3-style"
+              },
+              {
+                "label": "Small",
+                "value": "h2-style"
+              },
+              {
+                "label": "Regular",
+                "value": "h1-style"
+              },
+              {
+                "label": "Impact",
+                "value": "hl-style"
+              },
+              {
+                "label": "Extra impact",
+                "value": "hsl-style"
+              }
+            ]
+          },
+          {
+            "type": "checkbox",
+            "id": "use_h1",
+            "label": "Set as primary page heading",
+            "info": "Use <h1> tag. One per page recommended. [Read more](https://cleancanvas.co.uk/support/mode/section-h1-setting)",
+            "default": false
+          },
+          {
+            "type": "header",
+            "content": "Heading text highlight"
+          },
+          {
+            "type": "text",
+            "id": "heading_highlight_text",
+            "label": "Text to highlight",
+            "info": "Case-sensitive. To highlight words or phrases that are not next to each other, use a comma. For example 'free shipping, returns'"
+          },
+          {
+            "type": "checkbox",
+            "id": "heading_highlight_font",
+            "label": "Enable highlight font",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "heading_highlight_stencil",
+            "label": "Enable stencil",
+            "default": false
+          },
+          {
+            "type": "color",
+            "id": "heading_highlight_color",
+            "label": "Color",
+            "default": "rgba(0,0,0,0)"
+          },
+          {
+            "type": "color_background",
+            "id": "heading_highlight_gradient",
+            "label": "Color gradient",
+            "info": "A gradient stencil is not possible"
+          }
+        ]
+      },
+      {
+        "type": "subheading",
+        "name": "Subheading",
+        "settings": [
+          {
+            "type": "text",
+            "id": "subheading",
+            "label": "Subheading",
+            "default": "Subheading"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "Text",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.</p>"
+          },
+          {
+            "type": "checkbox",
+            "id": "enlarge_text",
+            "label": "Enlarge text",
+            "default": true
+          }
+        ]
+      },
+      {
+        "type": "button",
+        "name": "Button",
+        "settings": [
+          {
+            "type": "paragraph",
+            "content": "Consecutive buttons will show on the same row"
+          },
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button",
+            "default": "Button text"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+          },
+          {
+            "type": "select",
+            "id": "button_style",
+            "label": "Button style",
+            "default": "primary",
+            "options": [
+              {
+                "label": "Button - primary",
+                "value": "primary"
+              },
+              {
+                "label": "Button - secondary",
+                "value": "secondary"
+              },
+              {
+                "label": "Link",
+                "value": "link"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "icon",
+        "name": "Icon",
+        "settings": [
+          {
+            "type": "select",
+            "id": "icon",
+            "label": "Icon",
+            "default": "star",
+            "options": [
+              {
+                "value": "award",
+                "label": "Award"
+              },
+              {
+                "value": "box",
+                "label": "Box"
+              },
+              {
+                "value": "briefcase",
+                "label": "Briefcase"
+              },
+              {
+                "value": "calendar",
+                "label": "Calendar"
+              },
+              {
+                "value": "chat_bubble",
+                "label": "Chat bubble"
+              },
+              {
+                "value": "check_mark",
+                "label": "Check mark"
+              },
+              {
+                "value": "check_mark_in_circle",
+                "label": "Check mark in circle"
+              },
+              {
+                "value": "clock",
+                "label": "Clock"
+              },
+              {
+                "value": "credit_card",
+                "label": "Credit card"
+              },
+              {
+                "value": "dollar_sign",
+                "label": "Dollar sign"
+              },
+              {
+                "value": "dryer",
+                "label": "Dryer"
+              },
+              {
+                "value": "eye",
+                "label": "Eye"
+              },
+              {
+                "value": "feather",
+                "label": "Feather"
+              },
+              {
+                "value": "gift",
+                "label": "Gift"
+              },
+              {
+                "value": "heart",
+                "label": "Heart"
+              },
+              {
+                "value": "iron",
+                "label": "Iron"
+              },
+              {
+                "value": "leaf",
+                "label": "Leaf"
+              },
+              {
+                "value": "leather",
+                "label": "Leather"
+              },
+              {
+                "value": "lock",
+                "label": "Lock"
+              },
+              {
+                "value": "map_pin",
+                "label": "Map pin"
+              },
+              {
+                "value": "pants",
+                "label": "Pants"
+              },
+              {
+                "value": "percent",
+                "label": "Percent"
+              },
+              {
+                "value": "plane",
+                "label": "Plane"
+              },
+              {
+                "value": "price_tag",
+                "label": "Price tag"
+              },
+              {
+                "value": "question_mark",
+                "label": "Question mark"
+              },
+              {
+                "value": "return",
+                "label": "Return"
+              },
+              {
+                "value": "ruler",
+                "label": "Ruler"
+              },
+              {
+                "value": "scissors",
+                "label": "Scissors"
+              },
+              {
+                "value": "shirt",
+                "label": "Shirt"
+              },
+              {
+                "value": "shoe",
+                "label": "Shoe"
+              },
+              {
+                "value": "silhouette",
+                "label": "Silhouette"
+              },
+              {
+                "value": "star",
+                "label": "Star"
+              },
+              {
+                "value": "truck",
+                "label": "Truck"
+              },
+              {
+                "value": "washing",
+                "label": "Washing"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "range",
+            "id": "image_width",
+            "min": 60,
+            "max": 700,
+            "step": 10,
+            "unit": "px",
+            "label": "Image width",
+            "default": 260
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "Link"
+          }
+        ]
+      },
+      {
+      "type": "text_block",
+      "name": "Column",
+      "settings": [
+        {
+          "id": "enable_image",
+          "type": "checkbox",
+          "label": "Enable image",
+          "default": true
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "range",
+          "id": "image_width",
+          "min": 10,
+          "max": 100,
+          "step": 5,
+          "label": "Image width",
+          "unit": "%",
+          "default": 100
+        },
+        {
+          "type": "text",
+          "id": "block_title",
+          "label": "Heading",
+          "default": "Add a title or tagline"
+        },
+        {
+          "type": "select",
+          "id": "block_title_size",
+          "label": "Heading size",
+          "default": "h3-style",
+          "options": [
+            {
+              "label": "Extra small",
+              "value": "h3-style"
+            },
+            {
+              "label": "Small",
+              "value": "h2-style"
+            },
+            {
+              "label": "Regular",
+              "value": "h1-style"
+            },
+            {
+              "label": "Impact",
+              "value": "hl-style"
+            },
+            {
+              "label": "Extra impact",
+              "value": "hsl-style"
+            }
+          ]
+        },
+        {
+          "type": "richtext",
+          "id": "block_text",
+          "label": "Text",
+          "default": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "label": "Color scheme",
+          "default": "1",
+          "options": [
+            {
+              "value": "1",
+              "label": "Card 1"
+            },
+            {
+              "value": "2",
+              "label": "Card 2"
+            },
+            {
+              "value": "3",
+              "label": "Card 3"
+            },
+            {
+              "value": "none",
+              "label": "No card"
+            }
+          ]
+        }
+      ]
+    }
+    ],
+    "presets": [
+      {
+        "name": "Custom Benefits Section",
+        "category": "ADVANCED LAYOUT"
+        
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

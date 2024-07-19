@@ -1,0 +1,435 @@
+<div id="section-id-{{ section.id }}">
+  {% style %}
+    {%- for block in section.blocks -%}
+      {%- if block.settings.image_width != 100 %}
+        #section-id-{{ section.id }} #block-id-{{ block.id }} .text-column__image {
+          margin-top: var(--gutter-content);
+          max-width: {{ block.settings.image_width }}%;
+        }
+      {%- endif -%}
+    {%- endfor -%}
+  {% endstyle %}
+
+  {% if section.settings.title != blank %}
+    <h2 class="section-title{% unless section.settings.show_title %} visually-hidden{% endunless %}" data-cc-animate>
+      {{ section.settings.title | escape }}
+    </h2>
+  {% endif %}
+
+  <div class="main-custom-col {% if section.settings.swap-sec %} swap-section {% else %} main-class {% endif %}">
+    <div class="custom-col">
+      <div
+        class="myclick text-column__image lightly-spaced-row{% if section.settings.main-image != blank %} scale-on-hover{% endif %}card-br-oh"
+        data-drawer-content="section-id-{{ section.id }}"
+      >
+        {%- if section.settings['main-image'] != blank -%}
+          {%- render 'responsive-image',
+            image: section.settings['main-image'],
+            extra_classes: 'scale-on-hover__target'
+          -%}
+        {%- else -%}
+          <div class="placeholder-image">
+            {{- 'image' | placeholder_svg_tag: 'placeholder-svg' -}}
+          </div>
+        {%- endif -%}
+        <div class="ingredientCard__close">
+          <svg class="ingredientCard__closeIcon" width="12" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 .206v12m6-6H0" stroke="#fff"></path>
+          </svg>
+        </div>
+
+        {% if section.settings['main-title'] != blank %}
+          <div class="text-column__text rte">{{ section.settings['main-title'] }}</div>
+        {% endif %}
+        <div class="ingredientCard__taglist">
+          <p class="ingredientCard__tag">
+            <span class="ingredientCard__tagCircle ingredientCard__tagCircle--{{ section.settings.tag }}"></span>
+            <span class="ingredientCard__tagName ingredientCard__tagName--{{ section.settings.tag }}">
+              {{- section.settings.tag -}}
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="sec-custom-col">
+      <div class="flexible-layout flexible-layout--variable-columns flexible-layout--columns-{{ section.blocks.size }} align-{{ section.settings.text_alignment }}">
+        {% for block in section.blocks %}
+          <div
+            id="block-id-{{ block.id }}"
+            class="column text-column card-scheme card-scheme--{{ block.settings.color_scheme }} card-br-oh"
+            {{ block.shopify_attributes }}
+            data-cc-animate="cc-fade-in-up"
+            data-cc-animate-delay="{{ forloop.index | times: 0.15 }}s"
+          >
+            {% if block.settings.enable_image %}
+              <div class="myclick text-column__image lightly-spaced-row{% if block.settings.link != blank %} scale-on-hover{% endif %}{% if block.settings.color_scheme == 'none' or block.settings.image_width != 100 %} card-br-oh{% endif %}">
+                {%- if block.settings.link != blank -%}
+                  <a class="block-link focus-inset" href="{{ block.settings.link }}">
+                {%- endif -%}
+
+                {%- if block.settings.image != blank -%}
+                  {%- render 'responsive-image',
+                    image: block.settings.image,
+                    extra_classes: 'scale-on-hover__target'
+                  -%}
+                {%- else -%}
+                  <div class="placeholder-image">
+                    {{- 'image' | placeholder_svg_tag: 'placeholder-svg' -}}
+                  </div>
+                {%- endif -%}
+
+                {%- if block.settings.link != blank -%}</a>{% endif -%}
+              </div>
+            {% endif %}
+            <div class="ingredientCard__close">
+              <svg
+                class="ingredientCard__closeIcon"
+                width="12"
+                height="13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M6 .206v12m6-6H0" stroke="#fff"></path>
+              </svg>
+            </div>
+
+            <div class="card-content-padding{% if block.settings.enable_image %}-x{% endif %} padded-row-bottom--medium">
+              {% if block.settings.title != blank %}
+                <h3 class="text-column__title {{ block.settings.title_size }}">{{ block.settings.title }}</h3>
+              {% endif %}
+              <div class="ingredientCard__taglist">
+                <p class="ingredientCard__tag">
+                  <span class="ingredientCard__tagCircle ingredientCard__tagCircle--{{ block.settings.tag }}"></span>
+                  <span class="ingredientCard__tagName ingredientCard__tagName--{{ block.settings.tag }}">
+                    {{- block.settings.tag -}}
+                  </span>
+                </p>
+              </div>
+
+              {% if block.settings.button_label != blank %}
+                <div class="text-column__button-row text-column__button-row--{{ section.settings.button_style }}">
+                  <a
+                    class="text-column__button {% if section.settings.button_style != 'link' %}btn btn--{{ section.settings.button_style }} btn--link{% else %}feature-link{% endif %}"
+                    href="{{ block.settings.link }}"
+                    ><span class="btn__text">{{ block.settings.button_label | escape }}</span></a
+                  >
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<div id="drawer" class="drawer">
+  <!-- Drawer Content will be loaded here based on the image clicked -->
+  <div class="section-cont" id="section-id-{{ section.id }}">
+    <div class="section-text">
+      <div class="dimage">
+        {% if section.settings['main-image'] != blank %}
+          <img src="{{section.settings.main-image | img_url: 'master' }}" alt="{{section.settings.main-image.alt }}">
+        {% endif %}
+      </div>
+      <div class="d-title-section">
+        <div class="dtitle-sec">
+          {% if section.settings['d-title'] != blank %}
+            <div class="text-column__text rte">
+              <h2>{{ section.settings['d-title'] | escape }}</h2>
+            </div>
+          {% endif %}
+
+          {% if section.settings['dsub-title'] != blank %}
+            <p>{{ section.settings['dsub-title'] }}</p>
+          {% endif %}
+        </div>
+        <div class="ingredientCard__taglist">
+          <p class="ingredientCard__tag">
+            {% if section.settings.dtag != blank %}
+              <span class="ingredientCard__tagCircle ingredientCard__tagCircle--{{ section.settings.dtag }}"></span>
+              <span class="ingredientCard__tagName ingredientCard__tagName--{{ section.settings.dtag }}">
+                {{- section.settings.dtag -}}
+              </span>
+            {% endif %}
+          </p>
+        </div>
+      </div>
+      <div class="richtext-sec">
+        {% if section.settings['d-richtext-1'] != blank %}
+          {{ section.settings['d-richtext-1'] }}
+        {% endif %}
+        {% if section.settings['d-richtext-2'] != blank %}
+          {{ section.settings['d-richtext-2'] }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<div id="overlay" class="overlay"></div>
+
+{% schema %}
+{
+  "name": "MAF Multi-column",
+  "class": "section-multi-column",
+  "disabled_on": {
+    "groups": ["aside"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "swap-sec",
+      "label": "Swap Section",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "main-image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "main-title",
+      "label": "1st Heading",
+      "default": "Multi-column"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Multi-column"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_title",
+      "label": "Show heading",
+      "info": "A hidden heading will still be readable by search engines and screen readers",
+      "default": false
+    },
+
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button style",
+      "default": "primary",
+      "options": [
+        {
+          "label": "Button - primary",
+          "value": "primary"
+        },
+        {
+          "label": "Button - secondary",
+          "value": "secondary"
+        },
+        {
+          "label": "Link",
+          "value": "link"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "tag",
+      "label": "Tag"
+    },
+    {
+      "type": "image_picker",
+      "id": "dimage",
+      "label": "Drawer Image"
+    },
+    {
+      "type": "text",
+      "id": "d-title",
+      "label": "Drawer title"
+    },
+    {
+      "type": "text",
+      "id": "dsub-title",
+      "label": "Drawer sub title"
+    },
+    {
+      "type": "text",
+      "id": "dtag",
+      "label": "Drawer Tag"
+    },
+    {
+      "type": "richtext",
+      "id": "d-richtext-1",
+      "label": "Key Focus Area"
+    },
+    {
+      "type": "richtext",
+      "id": "d-richtext-2",
+      "label": "Your Content"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "Column",
+      "settings": [
+        {
+          "id": "enable_image",
+          "type": "checkbox",
+          "label": "Enable image",
+          "default": true
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "range",
+          "id": "image_width",
+          "min": 10,
+          "max": 100,
+          "step": 5,
+          "label": "Image width",
+          "unit": "%",
+          "default": 100
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Add a title or tagline"
+        },
+        {
+          "type": "select",
+          "id": "title_size",
+          "label": "Heading size",
+          "default": "h3-style",
+          "options": [
+            {
+              "label": "Extra small",
+              "value": "h3-style"
+            },
+            {
+              "label": "Small",
+              "value": "h2-style"
+            },
+            {
+              "label": "Regular",
+              "value": "h1-style"
+            },
+            {
+              "label": "Impact",
+              "value": "hl-style"
+            },
+            {
+              "label": "Extra impact",
+              "value": "hsl-style"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "label": "Color scheme",
+          "default": "1",
+          "options": [
+            {
+              "value": "1",
+              "label": "Card 1"
+            },
+            {
+              "value": "2",
+              "label": "Card 2"
+            },
+            {
+              "value": "3",
+              "label": "Card 3"
+            },
+            {
+              "value": "none",
+              "label": "No card"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Tag"
+        },
+        {
+          "type": "image_picker",
+          "id": "dimage",
+          "label": "Drawer Image"
+        },
+        {
+          "type": "text",
+          "id": "dtitle",
+          "label": "Drawer title"
+        },
+        {
+          "type": "text",
+          "id": "dsub-title",
+          "label": "Drawer sub title"
+        },
+        {
+          "type": "text",
+          "id": "dtag",
+          "label": "Drawer Tag"
+        },
+        {
+          "type": "richtext",
+          "id": "d-richtext-1",
+          "label": "Key Focus Area"
+        },
+        {
+          "type": "richtext",
+          "id": "d-richtext-2",
+          "label": "Your Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "MAF-Multi-column",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

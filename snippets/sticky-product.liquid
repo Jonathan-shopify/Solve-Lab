@@ -1,0 +1,76 @@
+<div class="sticky-product-container">
+  <div class="sticky-product-wrapper">
+    <div class="sticky-product-content">
+      <div class="sticky-product-content-left">
+        <div class="sticky-product-image-container">
+          <img src="{{ product.selected_or_first_available_variant.featured_image | image_url: width: product.selected_or_first_available_variant.featured_image.width }}" id="sticky-product-image" class="sticky-product-image" height="" width="">
+        </div>
+        <div class="sticky-product-title-review-price">
+          <p>{{ product.title }}</p>
+          {% comment %} <div class="sticky-product-price">
+            {{ product.selected_or_first_available_variant.price | money }}
+          </div> {% endcomment %}
+          <div class="sticky-product-review">
+          
+          </div>
+        </div>
+      </div>
+      <div class="sticky-product-content-right">
+        <div class="sticky-product-variants">
+          {%- if product.has_only_default_variant == false -%}
+            <select id="sticky-product-varinat-select">
+              {% for variant in product.variants %}
+                <option
+                  value="{{ variant.id }}"
+                  data-variant-title="{{ variant.title }}"
+                  data-variant-price="{{ variant.price | money }}"
+                  {% if product.selected_or_first_available_variant.id == variant.id %}
+                    selected
+                  {% endif %}
+                  {% if variant.available == false %}
+                    disabled
+                  {% endif %}
+                >
+                  {{ variant.title }}
+                </option>
+              {% endfor %}
+            </select>
+          {%- endif -%}
+        </div>
+        <div class="sticky-product-subscription-container">
+          {% liquid
+            # assign product_form_id = 'subscription-' | append: product.id
+            assign variant_subscription = product.selected_or_first_available_variant.selling_plan_allocations[0]
+            # echo variant_subscription.selling_plan_id
+            # assign variant_subscription_id = variant_subscription.selling_plan_id
+            # assign subscription_discount = product.selling_plan_groups[0].selling_plans[0].price_adjustments[0].value
+            # assign subscription_discount_type = product.selling_plan_groups[0].selling_plans[0].price_adjustments[0].value_type
+          %}
+          {% if variant_subscription != blank %}
+            <div class="sticky-product-subscribe">
+              <select name="selling_plan-{{ product.id }}" class="selling_plan_dropdown block_product-selling_plan_dropdown" id="selling_plan-sticky">
+                  {% for allocation in product.selling_plan_groups %}
+                    <option value="one-time" data-subscription-price="">One-time</option>
+                    {% for name in allocation.selling_plans %}
+                        {% assign subscription_discount = name.price_adjustments[0].value | plus: 0 %}
+                        {% assign price_discount = product.price | times: subscription_discount | divided_by: 100.00 %}
+                        {% assign main_price = product.price | minus: price_discount %}
+                        <option value="{{ name.id }}" data-subscription-price="{{ main_price | money_without_trailing_zeros }}">{{ name.name }} ({{ subscription_discount }}% off)</option>
+                    {% endfor %}
+                  {% endfor %}
+              </select>
+            </div>
+          {% endif %}
+        </div>
+        <div class="sticky-product-button-container">
+          <a href="javascript(0):void" id="sticky-product-button" class="sticky-product-button button-primary-loader">
+            <span>ADD TO CART</span>
+            <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

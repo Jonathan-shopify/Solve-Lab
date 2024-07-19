@@ -1,0 +1,89 @@
+<div class="customicon-text slider">
+	<div class="list_section">
+		<div class="content-block">
+	    {% if block.settings.text-1 %}
+	      <img src="{{block.settings.img-1 | image_url: width: 100, height: 100  }}">
+			   <p> {{ block.settings.text-1 }} </p>
+			  {% endif %}
+			</div>
+			<div class="content-block">
+			    {% if block.settings.text-2 %}
+			      <img src="{{block.settings.img-2 | image_url: width: 100, height: 100  }}">
+			   <p> {{ block.settings.text-2 }} </p>
+			  {% endif %}
+			</div>
+			<div class="content-block">
+			    {% if block.settings.text-3 %}
+			      <img src="{{block.settings.img-3 | image_url: width: 100, height: 100  }}">
+			   <p> {{ block.settings.text-3 }} </p>
+			  {% endif %}
+			</div>
+	</div>
+	<div class="list_section">
+		<div class="content-block">
+		    {% if block.settings.text-4 %}
+		      <img src="{{block.settings.img-4 | image_url: width: 100, height: 100  }}">
+		   <p> {{ block.settings.text-4 }} </p>
+		  {% endif %}
+		</div>
+		<div class="content-block">
+		    {% if block.settings.text-5 %}
+		      <img src="{{block.settings.img-5 | image_url: width: 100, height: 100  }}">
+		   <p> {{ block.settings.text-5 }} </p>
+		  {% endif %}
+		</div>
+		<div class="content-block">
+		    {% if block.settings.text-6 %}
+		      <img src="{{block.settings.img-6 | image_url: width: 100, height: 100  }}">
+		   <p> {{ block.settings.text-6 }} </p>
+		  {% endif %}
+		</div>
+	</div>
+	<div class="list_section">
+		<div class="content-block">
+		    {% if block.settings.text-7 %}
+		      <img src="{{block.settings.img-7 | image_url: width: 100, height: 100  }}">
+		   <p> {{ block.settings.text-7 }} </p>
+		  {% endif %}
+		</div>
+		<div class="content-block">
+		    {% if block.settings.text-8 %}
+		      <img src="{{block.settings.img-8 | image_url: width: 100, height: 100  }}">
+		   <p> {{ block.settings.text-8 }} </p>
+		  {% endif %}
+		</div>
+		<div class="content-block">
+		    {% if block.settings.text-9 %}
+		      <img src="{{block.settings.img-9 | image_url: width: 100, height: 100  }}">
+		   <p> {{ block.settings.text-9 }} </p>
+		  {% endif %}
+		</div>
+</div>
+</div>
+
+
+<script>
+  $(document).ready(function(){
+        $('.slider').slick({
+ slidesToShow: 2,
+slidesToScroll: 2,
+adaptiveHeight: true,
+autoplay: false,
+autoplaySpeed: 5000,
+dots: true,
+infinite: false, // Disable loop/clone function
+arrows : false,
+responsive: [
+	{
+		breakpoint: 768, // 768px and below
+		settings: {
+			slidesToShow: 1,
+			slidesToScroll: 1
+		}
+	}
+]
+
+});
+  });
+
+</script>

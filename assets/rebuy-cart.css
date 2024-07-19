@@ -1,0 +1,124 @@
+.rebuy-cart__progress-free-products,
+.rebuy-cart__progress-step-icon svg {
+    display: none;
+}
+.rebuy-cart__progress-bar-container {
+    padding: 15px 20px 5px !important;
+    background: #FFF0E2 !important;
+}
+.rebuy-cart__progress-step-wrapper-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.rebuy-cart__progress-step-wrapper-left {
+    width: 130px;
+    padding-right: 10px;
+}
+.rebuy-cart__progress-step-wrapper-right {
+    width: calc(100% - 130px);
+    /* padding-left: 4px; */
+}
+.rebuy-cart__progress-bar-wrapper {
+    position: relative;
+    top: -47px;
+    /* z-index: 9; */
+}
+.rebuy-cart__progress-step-wrapper {
+    position: relative;
+    z-index: 99;
+}
+.rebuy-cart__progress-step-wrapper .rebuy-cart__progress-step .rebuy-cart__progress-step-icon {
+    height: 42px !important;
+    width: 42px !important;
+    background-color: #fff;
+    border: 2px solid #fff;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding: 5px;
+    border-radius: 50%;
+}
+.rebuy-cart__progress-step.complete .rebuy-cart__progress-step-icon {
+    border: 2px solid #cd4d1e;
+}
+.rebuy-cart__progress-step.complete .rebuy-cart__progress-step-icon:after {
+    content: " ";
+    background-image: url(https://cdn.shopify.com/s/files/1/0777/0718/2389/files/check.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    max-width: 15px;
+    position: absolute;
+    top: -14px;
+    right: -4px;
+    z-index: 9;
+}
+.rebuy-cart__progress-step-image-shipping {
+    max-width: 30px;
+}
+.rebuy-cart__progress-bar-meter-fill,
+.rebuy-cart__progress-bar-meter {
+    height: 5px !important;
+}
+.rebuy-cart__progress-bar-prompt,
+.rebuy-cart__progress-step-label,
+.rebuy-cart__progress-step-price {
+    font-family: 'blender pro';
+    /* color: #434343; */
+    color: #000;
+    line-height: 1.2;
+}
+.rebuy-cart__progress-step .rebuy-cart__progress-step-label {
+    padding: 0;
+    padding-bottom: 4px;
+    font-size: 13px;
+    color: #7B7A79;
+}
+.rebuy-cart__progress-step.complete .rebuy-cart__progress-step-label {
+    color: #000;
+}
+.rebuy-cart__progress-step-price {
+    padding: 0;
+    padding-top: 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.rebuy-cart__progress-step-wrapper-container .rebuy-cart__progress-bar-prompt {
+    margin: 0;
+    padding-bottom: 23px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #7B7A79;
+    font-family: 'blender pro';
+    text-align: left;
+}
+.rebuy-cart__progress-bar-meter {
+    background: #fff !important;
+}
+
+/* Global Style */
+li.rebuy-cart__flyout-item .rebuy-cart__flyout-item-product-title,
+li.rebuy-cart__flyout-item .rebuy-cart__flyout-item-variant-title
+li.rebuy-cart__flyout-item .rebuy-cart__flyout-item-property *,
+li.rebuy-cart__flyout-item .rebuy-cart__flyout-item-property * {
+    color: #434343;
+}
+.rebuy-cart__flyout {
+    width: 533px !important;
+}
+
+@media (max-width: 375px) {
+    .rebuy-cart__progress-step-wrapper-container {
+        flex-wrap: wrap;
+    }
+    .rebuy-cart__progress-step-wrapper-left {
+        width: 80px;
+        padding-right: 5px;
+    }
+    .rebuy-cart__progress-step-wrapper-right {
+        width: calc(100% - 85px);
+    }
+}

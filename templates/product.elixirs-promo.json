@@ -1,0 +1,474 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": true,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_single": false,
+            "select_first_variant": true,
+            "variant_style": "listed",
+            "disable_unavailable_variants": true,
+            "show_size_chart": false,
+            "size_chart_variant": "size guide",
+            "size_chart_page": "pop-up1"
+          }
+        },
+        "cfbb07df-873e-4d23-a0d0-dcd1fb0e192c": {
+          "type": "shopify:\/\/apps\/price-panda-price-per-unit\/blocks\/productBlock\/8fe89266-7c30-4ab1-946d-3dcc05d9c8b2",
+          "settings": {}
+        },
+        "e5216295-d9d1-45f9-8d41-49086103cd68": {
+          "type": "inventory_level",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 21,
+            "enable_box": true,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "724817b5-fb19-46ff-9baa-a75a4e092ce0": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "text": "Learn More About",
+            "style": "primary",
+            "page": "pop-up1",
+            "show_in_quickbuy": false
+          }
+        },
+        "d72c0ef0-2ff4-4be7-9565-ed8b20cfc527": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": true,
+            "show_backorder_text": true,
+            "show_pickup_availability": true
+          }
+        },
+        "a2d9590d-7c37-4ee5-b2cf-9567ad7b976f": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "enable_carousel": true,
+            "max_products": 10,
+            "show_in_quickbuy": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "divider",
+        "variant_picker",
+        "cfbb07df-873e-4d23-a0d0-dcd1fb0e192c",
+        "e5216295-d9d1-45f9-8d41-49086103cd68",
+        "724817b5-fb19-46ff-9baa-a75a4e092ce0",
+        "d72c0ef0-2ff4-4be7-9565-ed8b20cfc527",
+        "buy_buttons",
+        "a2d9590d-7c37-4ee5-b2cf-9567ad7b976f"
+      ],
+      "settings": {
+        "show_location_underneath": false,
+        "inventory_transfers_enable": false,
+        "enable_sticky_columns": true,
+        "gallery_size": "small",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "image_cards": "bg",
+        "enable_var_img_grouping": true,
+        "var_img_grouping_option": "Form, Size"
+      }
+    },
+    "03ad7a50-b40c-4239-99a0-6949811c9294": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-0": {
+          "type": "heading",
+          "settings": {
+            "title": "TOO MUCH COFFEE?",
+            "title_size": "hsl-style",
+            "use_h1": false,
+            "heading_highlight_text": "COFFEE",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": "linear-gradient(300deg, rgba(129, 94, 70, 1) 15%, rgba(249, 208, 163, 1) 100%)"
+          }
+        },
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you are not fond of the taste of coffee or want to reduce the amount of coffee in your life, then Mushroom Matcha will be perfect for you.<br\/><br\/>It reduces fatigue and gives a light and pleasant energy boost without the annoying jittery feeling. It is also a great source of antioxidants. In addition, it pleases the senses with its creamy texture and aroma of spices - nutmeg and ginger.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-0",
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "large",
+        "text_alignment": "center",
+        "color_scheme": "3",
+        "full_width": false
+      }
+    },
+    "e4435349-a953-4df3-947d-b63b23c1fc28": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/mushroommatcha3compress.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Energy from nature",
+            "title_size": "hsl-style",
+            "text": "<p>Tasks multiply on the list and energy is lacking? We have the solution! Mushroom Matcha is a drink based on the sensational quality of Japanese Matcha tea, supplemented with Lion's mane extracts and Peruvian Maca root to further support mental and physical performance.<br\/><br\/>The whole creates an invigorating elixir for people of action who wish to raise their physical and mental capabilities to the highest level.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "Brain Tech",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "#cd4d1e",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-0",
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "1604f3bd-bd75-44d0-a3a5-730333f9a72f": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Do like green tea? you will love Matcha",
+            "title_size": "hl-style",
+            "text": "<p>This product uses organic Japanese Matcha tea from the Kagoshima region. It is the highest quality Matcha sourced from the first harvest. It contains a high amount of chlorophyll and amino acids. It is characterised by low bitterness and excellent taste.<br\/><br\/>By nature, Matcha contains higher amounts of caffeine and l-theanine than ordinary green tea leaves. According to experts, the synergistic effect of both substances is noteworthy, and they are gaining great popularity among people with high mental activity.<br\/><br\/>Combined with functional additives, this blend is green fuel for your body.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "love",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": "linear-gradient(54deg, rgba(146, 194, 34, 1) 14%, rgba(96, 165, 126, 1) 85%)"
+          }
+        },
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/mushroommatcha1compress.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-1",
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "144bfaba-7b41-4f39-8d79-ed64fc74b908": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/mushroommatcha2compress.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Create your own elixir",
+            "title_size": "hl-style",
+            "text": "<p>Do you like to go outside the box? No problem! Experiment with mushroom Matcha and consume it in different ways.<br\/><br\/>Mix it with water, milk (cow or vegetable), or a fruit smoothie. Oat milk is our favourite!<br\/><br\/>Try it hot and cold. Both variants have their amateurs.<br\/><br\/>Add healthy fats to give yourself energy and to replenish your diet with fatty acids and missing macronutrients.<br\/><br\/>Create a personalised health-promoting elixir by using the addition of other medicinal mushrooms. Try Cordyceps, Reishi or Chaga. Any of these will blend perfectly with the ingredients of Mushroom Matcha<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "elixir",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": "linear-gradient(98deg, rgba(169, 214, 66, 1) 8%, rgba(146, 194, 34, 1) 83%)"
+          }
+        }
+      },
+      "block_order": [
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-0",
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "543ea4ba-cac1-4cd8-b6d8-7703e137db48": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Adaptogens, vitamins and minerals to support the brain and nervous system",
+            "title_size": "h1-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-0",
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "color_scheme": "1",
+        "full_width": true
+      }
+    },
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "8048da81-f445-4068-a777-dff475fbb329": {
+          "type": "question",
+          "settings": {
+            "title": "Ingredients",
+            "answer": "<p>Coconut pulp extract (46%), organic matcha (22%), Lion's Mane extract 10:1, sweetener: erythritol, Peruvian pepper root extract (Maca) 4:1, ginger, nutmeg, sweetener: steviol glycosides.<\/p>"
+          }
+        },
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-0": {
+          "type": "question",
+          "settings": {
+            "title": "For Who?",
+            "answer": "<p>For people who want to achieve more. It will work well for those with busy lifestyles to boost energy levels and achieve optimal productivity.<br\/><br\/>It will work well as a coffee substitute for those wishing to cut down on coffee or looking for a new taste experience. It will be an invaluable support for those struggling to cope with an intense period in their lives, such as during a college session or while completing an important project at work.<br\/><br\/>The convenient sachets will work well for people on the go all the time. You can carry them with you at all times, the sachet will even fit in your wallet. With the Mushroom Matcha sachet, a sudden drop in energy will not frighten you under any circumstances.<\/p>"
+          }
+        },
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1": {
+          "type": "question",
+          "settings": {
+            "title": "When?",
+            "answer": "<p>When you want to energise yourself and restore optimal productivity throughout the day.<br\/><br\/>When you want to boost your flow while writing, studying or doing creative work.<br\/><br\/>When you experience a sudden drop in energy and fatigue.<br\/><br\/>Before physical activity, such as a workout at the gym or jogging.<br\/><br\/>Whenever you like, if you love the deep taste of matcha<\/p>"
+          }
+        },
+        "44cc8dd3-03e0-4f2c-92d9-a2a35817485e": {
+          "type": "question",
+          "settings": {
+            "title": "How?",
+            "answer": "<p>Recommended Daily Allowance: One sachet per day, dissolved in hot water or a vegetable beverage.<br\/><br\/>Do not exceed the recommended daily serving.<br\/><br\/>The dietary supplement must not be used as a substitute for a varied diet. Leading a healthy lifestyle and eating a balanced diet are essential for good health.<br\/><br\/>Not recommended for use by pregnant or breastfeeding women. Keep out of reach of small children, in a dry and cool place. Do not use in the case of hypersensitivity to the ingredients of the preparation.<\/p>"
+          }
+        },
+        "de6f2a6e-8806-4452-8622-298fa67d0a93": {
+          "type": "question",
+          "settings": {
+            "title": "Does Mushroom Matcha need to be applied daily?",
+            "answer": "<p><br\/>No. You can use Elixir Blends products when you feel like it, even once every few days. We treat them just like regular coffee and tea - daily drinking is possible, but not necessary.<\/p>"
+          }
+        },
+        "fef10d94-b03d-405a-8a9e-20f3f4b4a9c6": {
+          "type": "question",
+          "settings": {
+            "title": "What to combine Mushroom Matcha with?",
+            "answer": "<p>On the days between using Mushroom Matcha, you can supplement with Lion's Mane mushroom extract. If you are already supplementing with Lion's Mane, then you can use Mushroom Matcha as a replacement for one serving of the mushroom. A sachet of Mushroom Matcha contains 500 mg of Lion's Mane extract, which is exactly the equivalent of one suggested serving of this mushroom.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "8048da81-f445-4068-a777-dff475fbb329",
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-0",
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1",
+        "44cc8dd3-03e0-4f2c-92d9-a2a35817485e",
+        "de6f2a6e-8806-4452-8622-298fa67d0a93",
+        "fef10d94-b03d-405a-8a9e-20f3f4b4a9c6"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "FAQ - Frequently Asked Questions"
+      }
+    },
+    "234c1298-7eda-4adc-a2ab-e8b16e25e8ae": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "title": "Blog posts",
+        "show_title": false,
+        "blog": "news",
+        "enable_carousel": true,
+        "post_limit": 3,
+        "show_author": true,
+        "show_date": true,
+        "show_excerpts": true,
+        "crop_ratio": "1.78",
+        "color_scheme": "1"
+      }
+    },
+    "1687258188c5af77ac": {
+      "type": "apps",
+      "settings": {}
+    },
+    "169382681228080859": {
+      "type": "apps",
+      "blocks": {
+        "366f6e38-285d-4a42-afae-3086baced7f1": {
+          "type": "shopify:\/\/apps\/trustoo-product-reviews-app\/blocks\/review-widget\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "366f6e38-285d-4a42-afae-3086baced7f1"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "03ad7a50-b40c-4239-99a0-6949811c9294",
+    "e4435349-a953-4df3-947d-b63b23c1fc28",
+    "1604f3bd-bd75-44d0-a3a5-730333f9a72f",
+    "144bfaba-7b41-4f39-8d79-ed64fc74b908",
+    "543ea4ba-cac1-4cd8-b6d8-7703e137db48",
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1",
+    "234c1298-7eda-4adc-a2ab-e8b16e25e8ae",
+    "1687258188c5af77ac",
+    "169382681228080859"
+  ]
+}

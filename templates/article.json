@@ -1,0 +1,48 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "settings": {
+        "show_date": true,
+        "show_author": true,
+        "show_article_tags": true,
+        "show_sharing_icons": true,
+        "show_featured_image": true,
+        "featured_image_height": "natural",
+        "enable_title_overlay": false,
+        "overlay_style": "full",
+        "title": "",
+        "show_title": false,
+        "collection": "all-products",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 1,
+        "rows": 1,
+        "show_title_card": true,
+        "show_title_card_image": true,
+        "overlay_styles": "shadow",
+        "color_schemes": "1"
+      }
+    },
+    "f942393c-1b00-4a54-a254-a6b7a54fbb5c": {
+      "type": "featured-blog",
+      "settings": {
+        "title": "More reading",
+        "show_title": true,
+        "show_button": true,
+        "blog": "news",
+        "enable_carousel": true,
+        "post_limit": 6,
+        "show_author": true,
+        "show_date": true,
+        "show_excerpts": true,
+        "crop_ratio": "",
+        "color_scheme": "none"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f942393c-1b00-4a54-a254-a6b7a54fbb5c"
+  ]
+}

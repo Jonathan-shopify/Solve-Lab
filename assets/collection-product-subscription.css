@@ -1,0 +1,108 @@
+/* .block-inner-inner .product-info .product-link {
+    min-height: 72px;
+} */
+.collection-product-variants-container {
+  padding-top: 5px;
+}
+.collection-product-variant-select,
+.collection-product-selling_plan_dropdown {
+  font-family: "blender pro";
+  color: #000;
+  border: 1px solid #eaeaea;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: normal;
+  padding: 10px 25px 10px 15px;
+  min-height: 40px;
+  border-radius: 10px;
+  border: 1px solid #cd4d1e;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url(/cdn/shop/files/Border.png) 95% / 15% no-repeat;
+  background-color: #fff;
+  background-size: auto;
+  width: 100%;
+}
+.collection-product-variant-select,
+label.collection-product-rebuy-checkbox-label,
+.collection-product-selling_plan_dropdown {
+  margin-bottom: 10px;
+}
+label.collection-product-rebuy-checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+}
+.collection-product-variants-container span.checkbox-label {
+  font-family: "blender pro";
+  color: #000;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: normal;
+  padding-left: 6px;
+  text-align: left;
+}
+.collection-product-subscription-checkbox .rebuy-checkbox {
+  width: 16px;
+  height: 16px;
+}
+.collection-product-button {
+  font-family: "blender pro";
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: normal;
+  border-radius: 10px;
+  min-height: 40px;
+  max-height: 40px;
+  background: #000;
+  color: #fff;
+  padding: 1.1rem 1.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+}
+.product-price__from {
+  display: none;
+}
+.collection-product-rebuy-checkbox-label span.rebuy-underline {
+  border-bottom: solid 2px #000;
+}
+.collection-product-subcription-price {
+  display: none;
+  font-weight: 600;
+  color: #44BE70;
+}
+.product-has-compare-price {
+  display: flex !important;
+  align-items: center;
+}
+.product-has-compare-price .collection-product-subcription-price {
+  display: block;
+}
+.product-has-compare-price .product-price__amount,
+.product-has-compare-price .product-price__amount span {
+  font-weight: 400;
+  text-decoration: line-through;
+  color: #9a9a9a;
+}
+
+.product-list .block-inner {
+  background: unset !important;
+  border-radius: 0 !important;
+}
+
+.product-list .block-inner .image-cont {
+  background: #E7E7E7;
+  margin: 15px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .collection-product-variants-container span.checkbox-label {
+    font-size: 12px;
+  }
+}

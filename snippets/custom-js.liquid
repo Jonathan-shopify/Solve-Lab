@@ -1,0 +1,309 @@
+<script>
+{% comment %} MAS js from theme js     {% endcomment %}
+
+  /// Galleries (inc. product page)
+
+  // when variant changes, and the variant has an image
+  $(document).on('variantImageSelected', '.gallery', function(e, data, isFirstRun){
+    const $gallery = $(this);
+    const $galleryCollageContainer = $gallery.filter('.gallery--layout-columns-1, .gallery--layout-columns-2, .gallery--layout-collage-1, .gallery--layout-collage-2').find('.product-slideshow:not(.slick-slider)');
+    let collageGroupedImagesChanged = false;
+    let $slideshow = null;
+
+    if($gallery.attr('data-variant-image-grouping-option-index') !== '') {
+      // when images are grouped, we use options instead of variants
+      const pivotOptionIndex = $gallery.attr('data-variant-image-grouping-option-index');
+      const selectedGroupOption = data.options[pivotOptionIndex];
+      const $thumbnails = $gallery.find('.thumbnails');
+      $slideshow = $gallery.find('.slideshow')
+
+      // slideshow - filter
+      if($slideshow.hasClass('slick-slider')) {
+        // is variant image visible?
+        const currentIsVisible = !!$slideshow.find(`.slide[data-media-id="${data.featured_media.id}"]`).length;
+        // filter (By option name: standard. By media id: when multiple variants have same media)
+        $slideshow.slick('slickUnfilter').slick('slickFilter', `.slide[data-media-id="${data.featured_media.id}"], [data-variant-image-group="${selectedGroupOption.replace('"','&quot;').replace(/<>/g,'')}"]`);
+        // weird hack required for Slick
+        $slideshow.find('.slide').css({ position: '', left: '', top: '', zIndex: '', opacity: '' });
+        // jump to correct slide immediately after filtering
+        if(!currentIsVisible) {
+          $slideshow.slick('slickGoTo', 0, true); // reset - hack for a bug
+          $slideshow.slick('slickGoTo', $slideshow.find(`.slide[data-media-id="${data.featured_media.id}"]`).data('slick-index'), true);
+        }
+      }
+
+      // carousel - add/remove as required
+      if($thumbnails.hasClass('owl-carousel')) {
+        let $hiddenThumbnails = $gallery.find('.hidden-thumbnails');
+        if(!$hiddenThumbnails.length) {
+          $hiddenThumbnails = $('<div class="hidden-thumbnails hidden">').insertAfter($thumbnails);
+        }
+
+        // move to hidden thumbnails container (and show() in case hide() called prior)
+        $thumbnails.find('.thumbnail').show().each(function(){
+          if($(this).attr('data-variant-image-group') != selectedGroupOption && $(this).attr('data-media-id') != data.featured_media.id) {
+            $(this).appendTo($hiddenThumbnails);
+          }
+        });
+
+        // add from hidden thumbnails container
+        $hiddenThumbnails.find('.thumbnail').each(function(){
+          if($(this).attr('data-variant-image-group') == selectedGroupOption || $(this).attr('data-media-id') == data.featured_media.id) {
+            $(this).show().appendTo($thumbnails);
+          }
+        });
+      } else {
+        // show/hide elements
+        $thumbnails.find('.thumbnail').each(function(){
+          if($(this).attr('data-variant-image-group') == selectedGroupOption || $(this).attr('data-media-id') == data.featured_media.id) {
+            $(this).show();
+          } else {
+            $(this).hide();
+          }
+        });
+      }
+
+      // carousel - visibility by class & moving visible to top (for nth-child styling)
+      if($galleryCollageContainer.length) {
+        $galleryCollageContainer.find('.slide').each(function(){
+          if($(this).attr('data-variant-image-group') == selectedGroupOption || $(this).attr('data-media-id') == data.featured_media.id) {
+            if($(this).hasClass('slide--inactive-option')) {
+              collageGroupedImagesChanged = true;
+            }
+            $(this).removeClass('slide--inactive-option');
+          } else {
+            if(!$(this).hasClass('slide--inactive-option')) {
+              collageGroupedImagesChanged = true;
+            }
+            $(this).addClass('slide--inactive-option');
+          }
+        });
+        $galleryCollageContainer.find('.slide--inactive-option').appendTo($galleryCollageContainer);
+      }
+    }
+
+    // select matching thumbnail
+    $gallery.find('.thumbnails a[data-media-id="' + data.featured_media.id + '"]:first').trigger('select');
+
+    // collage - highlight selected, if not first run.
+    if($galleryCollageContainer.length) {
+      const $active = $gallery.find('.slide[data-media-id="' + data.featured_media.id + '"]:first');
+      if($active.length) {
+        if(isFirstRun && !collageGroupedImagesChanged) {
+          // only scroll on first run, no visual highlight
+          let isFeaturedProduct = $gallery.closest('.featured-product').length;
+          if (!isFeaturedProduct) {
+            theme.scrollToRevealElement($active[0]);
+          }
+        } else if(collageGroupedImagesChanged) {
+          // assume first image is highlighted by the change
+          $gallery.find('.slide--was-highlighted').removeClass('slide--was-highlighted');
+          $active.addClass('slide--was-highlighted');
+        } else if(!$active.hasClass('slide--was-highlighted')) {
+          // reset
+          clearTimeout(theme.variantImageFadeTimeout);
+          $gallery.find('.slide--highlight-on').removeClass('slide--highlight-on');
+          $gallery.find('.slide--highlight-off').removeClass('slide--highlight-off');
+          $gallery.find('.slide--was-highlighted').removeClass('slide--was-highlighted');
+
+          // highlight
+          $active.addClass('slide--highlight-on slide--was-highlighted').siblings().addClass('slide--highlight-off');
+          theme.variantImageFadeTimeout = setTimeout(function(){
+            $gallery.find('.slide--highlight-on').removeClass('slide--highlight-on');
+            $gallery.find('.slide--highlight-off').removeClass('slide--highlight-off');
+          }, 1200);
+
+          // scroll if needed
+          theme.scrollToRevealElement($active[0]);
+        }
+      }
+    }
+  });
+
+
+  // click main product image (launch gallery)
+  $(document).on('click', '.product-detail .gallery .main-image a.show-gallery', function(){
+    var images = [],
+        $imgs = $(this).closest('.product-slideshow').find('.slide:not(.slide--inactive-option) .show-gallery'),
+        clickedHref = $(this).attr('href');
+
+    if($imgs.length) {
+      $imgs.each(function(){
+        var $imgThumb = $('.inline-image', this).clone();
+        images.push({
+          thumbTag: $imgThumb,
+          zoomUrl: $(this).attr('href')
+        });
+      });
+    } else {
+      var $img = $('.inline-image', this).clone();
+      images.push({
+        thumbTag: $img,
+        zoomUrl: $(this).attr('href')
+      });
+    }
+
+    let galleryConfig = {
+      images: images,
+      currentImage: clickedHref,
+      prev: theme.icons.chevronLeft,
+      next: theme.icons.chevronRight,
+      close: theme.icons.close
+    };
+
+    const qbCont = this.closest('.quickbuy-modal');
+    if (qbCont) {
+      galleryConfig.galleryParent = qbCont.querySelector('.cc-popup-modal');
+    }
+
+    theme.buildGalleryViewer(galleryConfig);
+
+
+    // copy card scheme class to gallery-viewer
+    const galleryEl = $(this).closest('.gallery')[0];
+    for (let value of galleryEl.classList.entries()) {
+      if (value[1].indexOf('card-scheme-vars--') === 0 && value[1] !== 'card-scheme-vars--none') {
+        const gv = document.querySelector('.gallery-viewer');
+        gv.classList.add('gallery-viewer--card-scheme', value[1]);
+        const customBg = getComputedStyle(galleryEl.querySelector('.gallery__inner')).getPropertyValue('--bg');
+        if(customBg) {
+          gv.style.setProperty('--bg', customBg);
+        }
+      }
+    }
+
+    return false;
+  });
+
+  
+  // forms don't all have correct label attributes
+  $('#template label').each(function(){
+    var $sibinputs = $(this).siblings('input:not([type="submit"]), textarea');
+    if($sibinputs.length == 1 && $sibinputs.attr('id').length > 0) {
+      $(this).attr('for', $sibinputs.attr('id'));
+    }
+  });
+
+  $(document).on('click', '.quantity-wrapper [data-quantity]', function(){
+    var adj = $(this).data('quantity') == 'up' ? 1 : -1;
+    var $qty = $(this).closest('.quantity-wrapper').find('[name=quantity]');
+    if($qty.attr('step')) {
+      adj *= parseInt($qty.attr('step'));
+    }
+    $qty.val( Math.max(1, parseInt($qty.val()) + adj) ).trigger('change');
+    return false;
+  });
+
+  /// Responsive tables
+  $('.responsive-table').on('click', '.responsive-table__cell-head', function(){
+    if($(window).width()<768) {
+      $(this).closest('tr').toggleClass('expanded');
+      return false;
+    }
+  });
+
+  // Enhance video sections for overlays
+  if(typeof cc !== 'undefined' && cc.sections) {
+    for(let sectionKey in cc.sections) {
+      const ccSection = cc.sections[sectionKey];
+      if(ccSection.name === 'video') {
+        var t = ccSection.section.onSectionLoad;
+        ccSection.section.onSectionLoad = function(container){
+          // Tidier typography
+          $('.overlay-text__title, .overlay-text__rte', container).each(function(){
+            theme.avoidUnecessaryOrphans(this);
+          });
+          t.call(this, container);
+        }
+      }
+    }
+  }
+
+  // Watch for play/stop video events
+  $(document).on('cc:video:play',function() {
+    if ($(window).outerWidth() < 768) {
+      $('body').addClass('video-modal-open');
+    }
+  }).on('cc:video:stop',function() {
+    if ($(window).outerWidth() < 768) {
+      $('body').removeClass('video-modal-open');
+    }
+  });
+
+{% comment %} end mas js {% endcomment %}
+
+jQuery(document).ready(function() {
+    function close_accordion_section() {
+        jQuery('.accordion-block .accordion-title').removeClass('active');
+        jQuery('.accordion-block .accordion-content').slideUp(300).removeClass('open');
+    }
+  
+    jQuery('.accordion-title').click(function(e) {
+        var currentAttrValue = jQuery(this).attr('href');
+  
+        if(jQuery(e.target).is('.active')) {
+            close_accordion_section();
+        }else {
+            close_accordion_section();
+  
+            jQuery(this).addClass('active');
+            jQuery('.accordion-block ' + currentAttrValue).slideDown(300).addClass('open');
+        }
+  
+        e.preventDefault();
+    });
+  });
+  jQuery(document).ready(function(){      
+  
+  var paragraph = document.querySelector('.custom-style-2 .metafield-rich_text_field');
+  var words = paragraph.innerHTML.trim().split(' ');
+  var trimmedText = words.slice(0, 20).join(' ');
+  var fullText = words.join(' ');
+  
+  var isTrimmed = true;
+  
+  paragraph.innerHTML = trimmedText + '... ';
+  var paragraph2 = document.querySelector('.custom-style-2');
+  paragraph2.insertAdjacentHTML('beforeend', '<button id="readMoreBt">Read More</button>');
+  
+  var readMoreBtn = document.getElementById('readMoreBt');
+  readMoreBtn.addEventListener('click', function() {
+  if (isTrimmed) {
+    paragraph.innerHTML = fullText + ' ';
+    readMoreBtn.textContent = 'Read Less';
+    isTrimmed = false;
+  } else {
+    paragraph.innerHTML = trimmedText + '... ';
+    readMoreBtn.textContent = 'Read More';
+    isTrimmed = true;
+  }
+  });
+  
+  })
+  jQuery(window).on('load', function () {
+  var ratingText = document.querySelector(".tt-rating-text");
+  var textContent = ratingText.textContent;
+  var parts = textContent.split("(");
+  if (parts.length === 2) {
+  var coloredText = parts[0] + "<span style='color: #D05E24;'>(" + parts[1] + "</span>";
+  ratingText.innerHTML = coloredText;
+  }          
+  })
+  
+  $(document).ready(function(){
+  $('.accordion-title').click(function(){
+    const accordionSection = $(this).parent();
+    if($(this).hasClass('active')){
+      setTimeout(() => {
+        $('html, body').animate({
+          scrollTop: accordionSection.offset().top -70
+        }, 500);
+      }, 400)
+    }
+  });
+  });
+  
+  
+
+  
+</script>

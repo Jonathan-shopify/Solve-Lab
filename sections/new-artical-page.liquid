@@ -1,0 +1,467 @@
+<div class="art-top">
+  {% if section.settings.com-text != blank %}
+    <div class="top-text">
+        {{ section.settings.com-text }}
+    </div>   
+  {% endif %}
+
+  <nav class="breadcrumbs">
+    <ol class="breadcrumbs-list">
+      <li class="breadcrumbs-item">
+      <a href="/">Home  {% render 'right-arrows' %}</a>
+      </li>
+      <li class="breadcrumbs-item">
+      <a href="/blogs/news">{{ blog.title }} {% render 'right-arrows' %}</a>
+      </li>
+      <li class="breadcrumbs-item">
+      <span>{{ article.title }}</span>
+      </li>
+   </ol>
+ </nav>
+</div>
+
+<div class="main-blogs-sec">
+ <div class="blogs-tops">
+  <div class="t-cont">
+      {% if section.settings.enable_title_overlay == false or section.settings.show_featured_image == false or article.image == blank %}
+    <div class="container" data-cc-animate>
+      <div class="page-header cf">
+        <h1 class="majortitle">{{ article.title | escape }}</h1>
+      </div>
+    </div>
+      {% endif %}
+ <div class="article-meta art-date">
+{% if section.settings.show_date or section.settings.show_author %}
+  <span class="iconmeta time">
+    {% if section.settings.show_date %}
+      Updated on {{ article.published_at | date: format: 'month_date_year' }}
+    {% endif %}
+  </span>
+</div>
+    <hr class="art-hr">
+<div class="article-info__authors-block article-info__authors-block__no-show-more">
+      <div class="article-info__author ">
+          <img class="article-info__image lazyloaded" data-src="https://media.healthnews.com/images/124w/2023/03/heather-smith.png" alt="Heather Smith, RN BSN, CWCA" src="https://media.healthnews.com/images/124w/2023/03/heather-smith.png" width="48" height="48">
+          <div class="article-info__author-credentials">
+             <div class="article-info__date">
+                <a class="article-info__link content__tag_unstyled" href="https://healthnews.com/author/heather-smith/">
+                    <span class="article-info__text">Written by </span><span class="article-info__link-text">{{ article.author }}</span>
+                </a>
+             </div>
+           </div>
+        </div>
+   <div class="article-info__author article-info__fact-checked">
+      <img class="article-info__image lazyloaded" data-src="https://media.healthnews.com/images/124w/2022/09/HN-logo-sm.jpg" alt="Healthnews Research Team" src="https://media.healthnews.com/images/124w/2022/09/HN-logo-sm.jpg" width="48" height="48">
+        <div class="article-info__author-credentials">
+          <div class="article-info__date article-info__date-column">
+             <div class="article-info__fact-wrapper ">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M 20.292969 5.2929688 L 9 16.585938 L 4.7070312 12.292969 L 3.2929688 13.707031 L 9 19.414062 L 21.707031 6.7070312 L 20.292969 5.2929688 z"></path>
+                 </svg>
+                        Fact checked
+              </div>
+                  <a class="article-info__link content__tag_unstyled" href="https://healthnews.com/author/hn-research/">
+                      <span class="article-info__text">by </span><span class="article-info__link-text">Healthnews Research Team</span>
+                   </a>
+     </div>
+  </div>
+  </div>
+  </div>
+    </div>
+
+   <div class="myblog">
+    <div class="new-blogs">
+   <div class="for-left"> 
+  <div class="three-cols">
+    {% if section.settings.show_featured_image and article.image != blank %}
+        <div class="article-image article-image--large align-center">
+          {% if section.settings.featured_image_height == 'natural' %}
+            <div class="height--adapt page-header card-br-oh {% if section.settings.enable_title_overlay %}image-overlay image-overlay--bg-{{ section.settings.overlay_style }}{% endif %}">
+              {%- render 'background-image', image: article.image -%}
+              {% if section.settings.enable_title_overlay %}
+                <div class="overlay-text overlay--v-center overlay--h-center image-overlay__over" data-cc-animate data-cc-animate-delay="0.2s">
+                  <div class="overlay-text__inner">
+                    <div class="overlay-text__text">
+                      <h1 class="overlay-text__title super-large-text">{{ article.title | escape }}</h1>
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+            </div>
+      
+          {% else %}
+            <div class="page-header page-header--with-background card-br-oh {% if section.settings.enable_title_overlay %}image-overlay image-overlay--bg-{{ section.settings.overlay_style }}{% endif %} page-header--padded-{{ section.settings.featured_image_height }}">
+              {%- render 'background-image', image: article.image, wide: true -%}
+              {% if section.settings.enable_title_overlay %}
+                <div class="overlay-text overlay-text--inline overlay--v-center overlay--h-center image-overlay__over" data-cc-animate data-cc-animate-delay="0.2s">
+                  <div class="overlay-text__inner">
+                    <div class="overlay-text__text">
+                      <h1 class="overlay-text__title super-large-text">{{ article.title | escape }}</h1>
+                    </div>
+                  </div>
+                </div>
+              {% else %}
+                <div class="overlay-text overlay-text--inline">{% comment %}For padding{% endcomment %}</div>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <div class="social-i" >
+        {% if section.settings.show_sharing_icons %}  
+          {% render 'social-sharing', share_title: blog.title, share_permalink: blog.url, share_image: false %}
+        {% endif %}
+      </div>
+      
+      <div class="article-meta" style="display:none;" data-cc-animate>
+            {% if section.settings.show_author %}
+              {% if section.settings.show_date %}&mdash;{% endif %}
+              <span  class="author">{{ article.author }}</span>
+            {% endif %}
+        {% endif %}
+      
+        {% if section.settings.show_article_tags %}
+        {% capture tag_markup %}
+        <div class="iconmeta tags">
+          <span class="label">{{ 'blogs.article.tags' | t }}:</span>
+          {% for tag in article.tags %}
+            {{ tag | link_to_tag: tag }}
+          {% endfor %}
+        </div>
+        {% endcapture %}
+        {% if tag_markup contains '</a>' %}{{ tag_markup }}{% endif %}
+        {% endif %}
+      </div>
+      <div class="container container--reading-width">
+      
+        <div class="rte cf lightly-spaced-row" data-cc-animate>
+          {{ article.content }}
+        </div>
+      
+        {% comment %} {% if section.settings.show_sharing_icons %}
+        <div class="lightly-spaced-row" data-cc-animate>
+          {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+        </div>
+        {% endif %}
+      
+       
+      
+        <div class="pagination-row pagination-row-tabular" data-cc-animate>
+          <span class="prev">
+            {% if blog.previous_article %}
+              <a class="with-icon" href="{{ blog.previous_article }}">
+                <span class="icon-container icon icon--small icon-natcol ltr-icon">{% render 'svg-chevron-left' %}</span>
+                <div class="cont-blog">
+                <span class="with-icon__beside">Previous article</span>
+               <span class="bbtitle">{{ blog.previous_article.title }}</span>
+                </div>
+              </a>
+            {% endif %}
+          </span>
+      
+          <span class="back">{{ 'blogs.article.back_to_blog_html' | t: blog: blog.title | link_to: blog.url }}</span>
+      
+          <span class="next">
+            {% if blog.next_article %}
+              <a class="with-icon" href="{{ blog.next_article }}">
+                <div class="cont-blog two-blog-cont">
+                <span class="with-icon__beside">Next Article</span>
+                <span class="bbtitle"> {{ blog.next_article.title }}</span>
+                </div>
+                <span class="icon-container icon icon--small icon-natcol ltr-icon">{% render 'svg-chevron-right' %}</span>
+              </a>
+            {% endif %}
+          </span>
+        </div>
+       {% endcomment %}
+      </div>
+      
+      <hr class="wp-block-separator has-css-opacity">
+     
+  </div>
+   </div>
+   </div>
+
+   <div class="blogs-list">
+  {% render 'blog-list' %}
+   </div>  
+</div>
+</div>
+</div>  
+<div class="mblog">
+  {% render 'blog-sidebar' %}
+</div>  
+
+{% comment %} <div class="blogs-list">
+  {% render 'blog-comment' %}
+</div>   {% endcomment %}
+      {% render 'structured-data-article', article: article %}
+      
+
+      {% schema %}
+        {
+          "name": "Maf page",
+          "class": "page-section-spacing section-main-article",
+          "settings": [
+            {
+                "type": "richtext",
+                "id": "com-text",
+                "label": "Top Text"
+            },
+              {
+              "type": "checkbox",
+              "id": "show_date",
+              "label": "Show date",
+              "default": true
+            },
+            {
+              "type": "checkbox",
+              "id": "show_author",
+              "label": "Show author",
+              "default": true
+            },
+              {
+              "type": "checkbox",
+              "id": "show_article_tags",
+              "label": "Show article tags",
+              "default": true
+            },
+            {
+              "type": "checkbox",
+              "id": "show_sharing_icons",
+              "label": "Show social sharing icons",
+              "default": true
+            },
+            {
+              "type": "header",
+              "content": "Featured image"
+            },
+            {
+              "type": "checkbox",
+              "id": "show_featured_image",
+              "label": "Show featured image",
+              "default": true
+            },
+            {
+              "type": "select",
+              "id": "featured_image_height",
+              "label": "Height",
+              "options": [
+                {
+                  "value": "small",
+                  "label": "Compact"
+                },
+                {
+                  "value": "medium",
+                  "label": "Small"
+                },
+                {
+                  "value": "large",
+                  "label": "Medium"
+                },
+                {
+                  "value": "huge",
+                  "label": "Large"
+                },
+                {
+                  "value": "natural",
+                  "label": "Natural"
+                }
+              ],
+              "default": "huge"
+            },
+              {
+              "type": "checkbox",
+              "id": "enable_title_overlay",
+              "label": "Show title over featured image",
+              "default": false
+            },
+            {
+              "id": "overlay_style",
+              "type": "select",
+              "label": "Overlay style",
+              "default": "shadow",
+              "options": [
+                {
+                  "value": "full",
+                  "label": "Tint"
+                },
+                {
+                  "value": "shadow",
+                  "label": "Text shadow"
+                },
+                {
+                  "value": "full image-overlay--bg-shadow",
+                  "label": "Text shadow and tint"
+                },
+                {
+                  "value": "no_background",
+                  "label": "No background"
+                }
+              ]
+            },
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Heading",
+                "default": "Blog posts"
+              },
+              {
+                "type": "checkbox",
+                "id": "show_title",
+                "label": "Show heading",
+                "info": "A hidden heading will still be readable by search engines and screen readers",
+                "default": false
+              },
+              {
+                "type": "checkbox",
+                "id": "show_button",
+                "label": "Show Button",
+                "default": true
+              },
+              {
+                "type": "blog",
+                "id": "blog",
+                "label": "Blog"
+              },
+              {
+                "type": "checkbox",
+                "id": "enable_carousel",
+                "label": "Enable carousel",
+                "default": true
+              },
+              {
+                "type": "range",
+                "id": "post_limit",
+                "label": "Posts",
+                "min": 1,
+                "max": 11,
+                "step": 1,
+                "default": 1
+              },
+              {
+                "type": "checkbox",
+                "id": "show_author_side",
+                "label": "Show author",
+                "default": true
+              },
+                {
+                "type": "checkbox",
+                "id": "show_date_side",
+                "label": "Show date",
+                "default": true
+              },
+                {
+                "type": "checkbox",
+                "id": "show_excerpts",
+                "label": "Show excerpt",
+                "info": "Change excerpts by editing your blog posts. [Learn more](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)",
+                "default": true
+              },
+              {
+                "type": "select",
+                "id": "crop_ratio",
+                "label": "Image size",
+                "options": [
+                  {
+                    "value": "",
+                    "label": "Natural (no crop)"
+                  },
+                  {
+                    "value": "0.67",
+                    "label": "Portrait (2:3)"
+                  },
+                  {
+                    "value": "1.0",
+                    "label": "Square (1:1)"
+                  },
+                  {
+                    "value": "1.33",
+                    "label": "Landscape (4:3)"
+                  },
+                  {
+                    "value": "1.78",
+                    "label": "Wide (16:9)"
+                  }
+                ],
+                "default": "1.78"
+              },
+              {
+                "type": "select",
+                "id": "color_scheme",
+                "label": "Color scheme",
+                "default": "1",
+                "options": [
+                  {
+                    "value": "1",
+                    "label": "Card 1"
+                  },
+                  {
+                    "value": "2",
+                    "label": "Card 2"
+                  },
+                  {
+                    "value": "3",
+                    "label": "Card 3"
+                  },
+                  {
+                    "value": "none",
+                    "label": "No card"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "id": "btitle",
+                "label": "Heading",
+                "default": "Blog posts"
+              }
+          ],
+          "blocks": [
+            {
+              "name": "Right Blogs",
+              "type": "blog",
+              "settings": [
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Upload image here"
+            },
+            {
+              "type": "text",
+              "id": "btitle",
+              "label": "Title"
+            },
+            {
+              "type": "url",
+              "id": "burl",
+              "label": "paste your link here"
+            }
+          ]
+        },
+        {
+          "name": "Left Blogs",
+          "type": "text",
+          "settings": [
+        {
+          "type": "image_picker",
+          "id": "image-left",
+          "label": "Upload image here"
+        },
+        {
+          "type": "text",
+          "id": "btitle-left",
+          "label": "Title"
+        },
+        {
+          "type": "url",
+          "id": "burl-left",
+          "label": "paste your link here"
+        }
+      ]
+    }
+      ]
+        }
+      {% endschema %}
+      

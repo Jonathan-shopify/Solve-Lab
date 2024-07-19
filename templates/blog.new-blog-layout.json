@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "custom_css": [
+        ".heading-font {font-size: 20px;}"
+      ],
+      "settings": {
+        "show_filters": true,
+        "show_author": false,
+        "show_date": false,
+        "show_excerpts": true,
+        "show_article_tags": true,
+        "show_sharing_icons": false,
+        "show_rss_icon": false,
+        "crop_ratio": "",
+        "color_scheme": "1"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

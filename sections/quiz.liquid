@@ -1,0 +1,161 @@
+
+
+<div id="section-id-{{ section.id }}" class="fully-spaced-row--medium section-id-{{ section.id }}" data-section-type="custom-liquid">
+    <div class="custom-html">
+      {{ section.settings.code }}
+    </div>
+  </div>
+  
+  {% comment %} <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var images = document.querySelectorAll('.myclick');
+      var drawer = document.getElementById('drawer');
+      var overlay = document.getElementById('overlay');
+  
+      images.forEach(function(img) {
+        img.addEventListener('click', function() {
+          var sectionId = findClosestSectionId(img);
+          console.log('Clicked Image - Section ID:', sectionId);
+  
+          loadDrawerContent(sectionId);
+  
+          drawer.style.right = '0';
+          overlay.style.display = 'block';
+        });
+      });
+  
+      overlay.addEventListener('click', function() {
+        drawer.style.right = '-100%';
+        overlay.style.display = 'none';
+      });
+    });
+  
+    function findClosestSectionId(element) {
+      var sectionElement = element.closest('[id^="section-id-"]');
+      var sectionId = sectionElement ? sectionElement.id : null;
+      return sectionId;
+    }
+  
+    function loadDrawerContent(sectionId) {
+      var drawerContent = document.querySelector('.drawer .section-text');
+  
+      // Example content mapping based on section ID
+      var contentMap = {
+        'section-id-template--21947678294325__f8d3c1e4-e1b9-47bd-a756-12865f384fcd': {
+          title: 'section.settings.d-title',
+          description: 'Description for Section 1',
+        },
+        'section-id-template--21947678294325__9bb9c3ce-8b55-4543-97a6-cdb4ac98e3b8': {
+          title: 'Section 2 Content',
+          description: 'Description for Section 2',
+        },
+        // Add content for other sections as needed
+      };
+  
+      var content = contentMap[sectionId] || {};
+  
+      // Update the content inside the drawer based on the fetched data
+      var drawerTitle = drawerContent.querySelector('.dtitle-sec h2');
+      drawerTitle.textContent = content.title || '';
+  
+      var drawerDescription = drawerContent.querySelector('.richtext-sec');
+      drawerDescription.innerHTML = content.description || '';
+    }
+  
+ 
+    <script> 
+    document.addEventListener('DOMContentLoaded', function() {
+      var images = document.querySelectorAll('.myclick');
+      var drawer = document.getElementById('drawer');
+      var overlay = document.getElementById('overlay');
+    
+      images.forEach(function(img) {
+        img.addEventListener('click', function() {
+          var sectionId = findClosestSectionId(img);
+          console.log('Clicked Image - Section ID:', sectionId);
+    
+          loadDrawerContent(sectionId);
+    
+          drawer.style.right = '0';
+          overlay.style.display = 'block';
+        });
+      });
+    
+      overlay.addEventListener('click', function() {
+        drawer.style.right = '-100%';
+        overlay.style.display = 'none';
+      });
+    });
+    
+    function findClosestSectionId(element) {
+      var sectionElement = element.closest('[id^="section-id-"]');
+      var sectionId = sectionElement ? sectionElement.id : null;
+      return sectionId;
+    }
+    
+    function loadDrawerContent(sectionId) {
+      var drawerContent = document.querySelector('.drawer .section-text');
+    
+      // Get the Liquid context for the current section
+      var liquidContext = window.Shopify && window.Shopify.designMode ? window.Shopify.designMode : null;
+    
+      // Example content mapping based on section ID
+      var contentMap = {
+        'section-id-template--21947678294325__f8d3c1e4-e1b9-47bd-a756-12865f384fcd': {
+          title: '{{ section.settings.d-title | escape }}',
+          description: '{{ section.settings.d-richtext-1 | escape }}',
+        },
+        'section-id-template--21947678294325__9bb9c3ce-8b55-4543-97a6-cdb4ac98e3b8': {
+          title: '{{ section.settings.d-title | escape }}',
+          description: '{{ section.settings.d-richtext-1 | escape }}',
+        },
+        // Add content for other sections as needed
+      };
+    
+      var content = contentMap[sectionId] || {};
+    
+      // Replace Liquid placeholders with actual values
+      var replaceLiquidPlaceholders = function(input) {
+        return input.replace(/{{\s*(.*?)\s*}}/g, function(match, liquidCode) {
+          // Execute Liquid code in the context of the current section
+          return liquidContext ? liquidContext.evalOutput(liquidCode.trim()) : '';
+        });
+      };
+    
+      // Update the content inside the drawer based on the fetched data
+      var drawerTitle = drawerContent.querySelector('.dtitle-sec h2');
+      drawerTitle.textContent = replaceLiquidPlaceholders(content.title) || '';
+    
+      var drawerDescription = drawerContent.querySelector('.richtext-sec');
+      drawerDescription.innerHTML = replaceLiquidPlaceholders(content.description) || '';
+    }
+    
+  
+</script>  
+  {% endcomment %}
+    
+  {% schema %}
+    {
+      "name": "Quiz Code",
+      "disabled_on": {
+        "groups": [
+          "aside"
+        ]
+      },
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "code",
+          "label": "Custom Liquid"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Quiz Code",
+          "settings": {
+          }
+        }
+      ]
+    }
+  {% endschema %}
+  

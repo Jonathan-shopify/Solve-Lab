@@ -1,0 +1,511 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-v2",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "e5831301-bb14-41e0-bec5-bf6526a76039": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div class=\"custom-btns-pdp\">\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Recovery<\/a>\n    <\/div>\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Mood<\/a>\n    <\/div>\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Digestion<\/a>\n    <\/div>\n<\/div>",
+            "show_in_quickbuy": false
+          }
+        },
+        "a46435e9-903b-4c0e-a0f3-fea02c3be5bd": {
+          "type": "shopify:\/\/apps\/trustoo-io-reviews\/blocks\/star-rating-widget\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {
+            "star_size": 16,
+            "font_size": 14,
+            "block_aligment": "flex-start"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": true,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "156c9a70-793e-4386-a9c7-ecc3412dade1": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "{{ product.metafields.custom.product_description | metafield_tag }}",
+            "icon": "",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-2"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_single": false,
+            "select_first_variant": true,
+            "variant_style": "listed",
+            "disable_unavailable_variants": true,
+            "show_size_chart": false,
+            "size_chart_variant": "size guide",
+            "size_chart_page": "pop-up1"
+          }
+        },
+        "cfbb07df-873e-4d23-a0d0-dcd1fb0e192c": {
+          "type": "shopify:\/\/apps\/price-panda-price-per-unit\/blocks\/productBlock\/8fe89266-7c30-4ab1-946d-3dcc05d9c8b2",
+          "disabled": true,
+          "settings": {}
+        },
+        "e5216295-d9d1-45f9-8d41-49086103cd68": {
+          "type": "inventory_level",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 21,
+            "enable_box": true,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "724817b5-fb19-46ff-9baa-a75a4e092ce0": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "text": "Learn More About",
+            "style": "primary",
+            "page": "pop-up1",
+            "show_in_quickbuy": false
+          }
+        },
+        "d72c0ef0-2ff4-4be7-9565-ed8b20cfc527": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_backorder_text": true,
+            "show_pickup_availability": true
+          }
+        },
+        "57f158a3-2de2-4a71-a5a7-5842807117b5": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p>Pay In 3 With Klarna<\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/image_8a0533a5-c8c7-46c0-bfca-173cd5a6b3d6.png",
+            "icon_size": "large",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-7"
+          }
+        },
+        "80d408df-4e1c-41e5-9b84-0872e4c917a8": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p>30 Days Money-Back Guarantee<\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/image_1.png",
+            "icon_size": "large",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-8"
+          }
+        },
+        "a2d9590d-7c37-4ee5-b2cf-9567ad7b976f": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "enable_carousel": true,
+            "max_products": 10,
+            "show_in_quickbuy": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "e5831301-bb14-41e0-bec5-bf6526a76039",
+        "a46435e9-903b-4c0e-a0f3-fea02c3be5bd",
+        "price",
+        "divider",
+        "156c9a70-793e-4386-a9c7-ecc3412dade1",
+        "variant_picker",
+        "cfbb07df-873e-4d23-a0d0-dcd1fb0e192c",
+        "e5216295-d9d1-45f9-8d41-49086103cd68",
+        "724817b5-fb19-46ff-9baa-a75a4e092ce0",
+        "d72c0ef0-2ff4-4be7-9565-ed8b20cfc527",
+        "buy_buttons",
+        "57f158a3-2de2-4a71-a5a7-5842807117b5",
+        "80d408df-4e1c-41e5-9b84-0872e4c917a8",
+        "a2d9590d-7c37-4ee5-b2cf-9567ad7b976f"
+      ],
+      "settings": {
+        "custom_rich": "",
+        "show_location_underneath": false,
+        "inventory_transfers_enable": false,
+        "enable_sticky_columns": true,
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "image_cards": "bg",
+        "enable_var_img_grouping": true,
+        "var_img_grouping_option": "Form, Size"
+      }
+    },
+    "03ad7a50-b40c-4239-99a0-6949811c9294": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-0": {
+          "type": "heading",
+          "settings": {
+            "title": "MORE THAN JUST PROTEIN",
+            "title_size": "hsl-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Complete Plant-based Protein composition is the result of long-term consultations and numerous technological trials, for optimum taste and consistency, without sacrificing quality or compromising the amino acid composition. The result has exceeded our wildest expectations. No compromises.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-0",
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-1"
+      ],
+      "settings": {
+        "height": "large",
+        "text_alignment": "center",
+        "color_scheme": "3",
+        "full_width": false
+      }
+    },
+    "e4435349-a953-4df3-947d-b63b23c1fc28": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/veganprotein2compress.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "health-based  plant-based",
+            "title_size": "hsl-style",
+            "text": "<p><br\/>The difficulty of getting enough complete protein is the biggest concern for active people on a vegan diet. Remember that protein contributes to the growth and maintenance of muscle mass, as well as to the maintenance of healthy bones. If you want to have a healthy and strong body, making sure you get adequate protein intake in your diet is a must. <br\/><br\/>Complete Plant-based Protein provides as much as 22 g of protein in a single serving, but only 3 g of fat and 2.4 g of carbohydrates.<\/p>",
+            "content": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "Brain Tech",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "#cd4d1e",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-0",
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-1"
+      ],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "1604f3bd-bd75-44d0-a3a5-730333f9a72f": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "The magic of functional mushrooms",
+            "title_size": "hsl-style",
+            "text": "<p>We have taken the best of the mushroom kingdom and encapsulated it in our protein nutrient. Complete Plant-based Protein is not only an excellent protein from the yeast S. cerevisiae, but also a mix of extracts from 4 powerful vital mushrooms with a rich history of use.<br\/><br\/>Many athletes, and not just vegan athletes, value the functional properties of mushrooms, which are recognised as adaptogens that support adaptation to stress. The icing on the cake is the effect of regular use of the DigeZyme® complex on the reduction of delayed post-exercise muscle soreness (i.e. the popular soreness) for eccentric exercise, as found in a clinical study*.<\/p>",
+            "content": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "magic",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": "linear-gradient(133deg, rgba(250, 220, 54, 1) 11%, rgba(254, 98, 146, 1) 49%, rgba(250, 220, 54, 1) 87%)"
+          }
+        },
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/vanilla_2_copy_858ffe57-43de-4b8a-96b0-7d5e14dde5a0.jpg",
+            "height": "fixed",
+            "height_desktop": 800,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-1",
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-0"
+      ],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "144bfaba-7b41-4f39-8d79-ed64fc74b908": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/veganprotein1compress.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Excellent digestibility",
+            "title_size": "hsl-style",
+            "text": "<p>Sensitive stomachs can grimace at many plant-based nutrients. They are generally considered to be less digestible than whey protein. But not this time! <\/p><p>To avoid weighing on the stomach and excessive fermentation in the intestines, Complete Plant-based Protein has been enriched with the highly regarded digestive enzyme complex DigeZyme®. <\/p><p>This is a composition of 5 enzymes for the digestion of various nutrients, consisting of:<br\/>- <strong>α-amylase<\/strong> (enzyme for the digestion of starch),<br\/>- <strong>protease<\/strong> (enzyme for the digestion of proteins),<br\/>- <strong>lipase<\/strong> (enzyme for the digestion of fats),<br\/>- <strong>cellulase<\/strong> (enzyme for the hydrolysis of cellulose),<br\/>- <strong>lactase<\/strong> (enzyme for the hydrolysis of lactose).<\/p>",
+            "content": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "2",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-0",
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-1"
+      ],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "543ea4ba-cac1-4cd8-b6d8-7703e137db48": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Adaptogens, vitamins and minerals to support the brain and nervous system",
+            "title_size": "h1-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-0",
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "color_scheme": "1",
+        "full_width": true
+      }
+    },
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-0": {
+          "type": "question",
+          "settings": {
+            "title": "For Who?",
+            "answer": "<ul><li>For people on a vegan and vegetarian diet who have problems supplementing sufficient amino acids,<br\/><\/li><li>for athletes wishing to increase the amount of protein in their diet in an easy and enjoyable way,<br\/><\/li><li>as a whey protein alternative for those who are lactose or milk protein intolerant,<br\/><\/li><li>for fans of the mushroom kingdom and the enormous benefits we can derive from it.<\/li><\/ul>"
+          }
+        },
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1": {
+          "type": "question",
+          "settings": {
+            "title": "When?",
+            "answer": "<p>When you are overwhelmed by excessive stress and anxiety.<br\/><br\/>When you need relaxation after a challenging day.<br\/><br\/>When you need to improve the quality of your sleep and rejuvenate yourself.<br\/><br\/>When you want to create a pleasant and health-enhancing ritual.<br\/><br\/>When you crave delicious, well-being-enhancing cocoa.<\/p>"
+          }
+        },
+        "44cc8dd3-03e0-4f2c-92d9-a2a35817485e": {
+          "type": "question",
+          "settings": {
+            "title": "How?",
+            "answer": "<p>One scoop (35 g), dissolved in 250 ml of water or your favourite plant-based beverage. Do not exceed the recommended daily serving.<br\/><br\/>The dietary supplement must not be used as a substitute (replacement) for a varied diet. A varied diet and a healthy lifestyle are recommended. Not recommended for pregnant or lactating women or persons under 18 years of age. Do not use in the case of hypersensitivity to preparation ingredients.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-0",
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1",
+        "44cc8dd3-03e0-4f2c-92d9-a2a35817485e"
+      ],
+      "settings": {
+        "title": "FAQ - Frequently Asked Questions"
+      }
+    },
+    "234c1298-7eda-4adc-a2ab-e8b16e25e8ae": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "title": "Blog posts",
+        "show_title": false,
+        "show_button": true,
+        "blog": "news",
+        "enable_carousel": true,
+        "post_limit": 3,
+        "show_author": true,
+        "show_date": true,
+        "show_excerpts": true,
+        "crop_ratio": "1.78",
+        "color_scheme": "1"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_title": true,
+        "show_vendor": false,
+        "grid": 5
+      }
+    },
+    "1687258188c5af77ac": {
+      "type": "apps",
+      "blocks": {
+        "68790b9a-f026-46ee-95fa-bd105fe152f3": {
+          "type": "shopify:\/\/apps\/trustoo-io-reviews\/blocks\/review-widget\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "68790b9a-f026-46ee-95fa-bd105fe152f3"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "03ad7a50-b40c-4239-99a0-6949811c9294",
+    "e4435349-a953-4df3-947d-b63b23c1fc28",
+    "1604f3bd-bd75-44d0-a3a5-730333f9a72f",
+    "144bfaba-7b41-4f39-8d79-ed64fc74b908",
+    "543ea4ba-cac1-4cd8-b6d8-7703e137db48",
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1",
+    "234c1298-7eda-4adc-a2ab-e8b16e25e8ae",
+    "related-products",
+    "1687258188c5af77ac"
+  ]
+}

@@ -1,0 +1,546 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-v2",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "e5831301-bb14-41e0-bec5-bf6526a76039": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"custom-btns-pdp\">\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Deeper Sleep<\/a>\n    <\/div>\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Faster Recovery<\/a>\n    <\/div>\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Vivid Dreams<\/a>\n    <\/div>\n<\/div>",
+            "show_in_quickbuy": false
+          }
+        },
+        "a46435e9-903b-4c0e-a0f3-fea02c3be5bd": {
+          "type": "shopify:\/\/apps\/trustoo-io-reviews\/blocks\/star-rating-widget\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {
+            "star_size": 16,
+            "font_size": 14,
+            "block_aligment": "flex-start"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": true,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "156c9a70-793e-4386-a9c7-ecc3412dade1": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "{{ product.metafields.custom.product_description | metafield_tag }}",
+            "icon": "",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-2"
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_single": true,
+            "select_first_variant": true,
+            "variant_style": "listed",
+            "disable_unavailable_variants": true,
+            "show_size_chart": false,
+            "size_chart_variant": "size guide",
+            "size_chart_page": "pop-up1"
+          }
+        },
+        "cfbb07df-873e-4d23-a0d0-dcd1fb0e192c": {
+          "type": "shopify:\/\/apps\/price-panda-price-per-unit\/blocks\/productBlock\/8fe89266-7c30-4ab1-946d-3dcc05d9c8b2",
+          "disabled": true,
+          "settings": {}
+        },
+        "e5216295-d9d1-45f9-8d41-49086103cd68": {
+          "type": "inventory_level",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 21,
+            "enable_box": true,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "724817b5-fb19-46ff-9baa-a75a4e092ce0": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "text": "Learn More About",
+            "style": "primary",
+            "page": "pop-up1",
+            "show_in_quickbuy": false
+          }
+        },
+        "d72c0ef0-2ff4-4be7-9565-ed8b20cfc527": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_backorder_text": true,
+            "show_pickup_availability": true
+          }
+        },
+        "57f158a3-2de2-4a71-a5a7-5842807117b5": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p>Klarna Available at Checkout<\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/image_8a0533a5-c8c7-46c0-bfca-173cd5a6b3d6.png",
+            "icon_size": "large",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-7"
+          }
+        },
+        "80d408df-4e1c-41e5-9b84-0872e4c917a8": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p>30 Days Money-Back Guarantee<\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/image_1.png",
+            "icon_size": "large",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-8"
+          }
+        },
+        "20976403-c53e-4f91-9d39-6a40c397754a": {
+          "type": "shopify:\/\/apps\/clearpay-on-site-messaging\/blocks\/payments-messaging\/5d763983-d3e6-4888-9966-4e1170b26ae9",
+          "disabled": true,
+          "settings": {
+            "text_align": "center",
+            "margin_top": 16,
+            "margin_bottom": 16,
+            "color": "",
+            "size": "xs",
+            "intro_text": "or",
+            "show_interest_free": true,
+            "payment_amount_is_bold": true,
+            "show_with": true,
+            "logo_type": "badge",
+            "logo_theme": "black-on-mint",
+            "modal_link_style": "circled-info-icon",
+            "modal_theme": "mint",
+            "breakpoint": 749,
+            "text_align_mobile": "center",
+            "margin_top_mobile": 16,
+            "margin_bottom_mobile": 16,
+            "show_lower_limit": true,
+            "show_upper_limit": true,
+            "show_if_outside_limits": true,
+            "product": "{{product}}"
+          }
+        },
+        "a2d9590d-7c37-4ee5-b2cf-9567ad7b976f": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "enable_carousel": true,
+            "max_products": 10,
+            "show_in_quickbuy": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "e5831301-bb14-41e0-bec5-bf6526a76039",
+        "a46435e9-903b-4c0e-a0f3-fea02c3be5bd",
+        "price",
+        "156c9a70-793e-4386-a9c7-ecc3412dade1",
+        "divider",
+        "variant_picker",
+        "cfbb07df-873e-4d23-a0d0-dcd1fb0e192c",
+        "e5216295-d9d1-45f9-8d41-49086103cd68",
+        "724817b5-fb19-46ff-9baa-a75a4e092ce0",
+        "d72c0ef0-2ff4-4be7-9565-ed8b20cfc527",
+        "buy_buttons",
+        "57f158a3-2de2-4a71-a5a7-5842807117b5",
+        "80d408df-4e1c-41e5-9b84-0872e4c917a8",
+        "20976403-c53e-4f91-9d39-6a40c397754a",
+        "a2d9590d-7c37-4ee5-b2cf-9567ad7b976f"
+      ],
+      "settings": {
+        "custom_rich": "",
+        "show_location_underneath": false,
+        "inventory_transfers_enable": false,
+        "enable_sticky_columns": true,
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "image_cards": "bg",
+        "enable_var_img_grouping": false,
+        "var_img_grouping_option": "Form, Size"
+      }
+    },
+    "03ad7a50-b40c-4239-99a0-6949811c9294": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-0": {
+          "type": "heading",
+          "settings": {
+            "title": "CACAO RELAXATION",
+            "title_size": "hsl-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>There is a reason why people love cocoa. It is inherently infused with substances that effervesce our emotions. Rich in theobromine and brain-active flavonoids, it is a concoction that evokes blissful feelings.<br\/><br\/>In convenient sachets we have enclosed a cocoa elixir that soothes the mind and body. Whenever you feel the need to relax and improve your mood, mix the contents of a Mushroom Cacao sachet with your favourite beverage (we prefer oat milk) and indulge in a relaxing pleasure.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-0",
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-1"
+      ],
+      "settings": {
+        "height": "large",
+        "text_alignment": "center",
+        "color_scheme": "3",
+        "full_width": false
+      }
+    },
+    "e4435349-a953-4df3-947d-b63b23c1fc28": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/mushroomcacao3compress.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "sleep better",
+            "title_size": "hsl-style",
+            "text": "<p>Is there anything that improves the mood better than warm, aromatic cocoa? YES! Creamy Mushroom Cacao with spices and functional additives. The addition of Reishi extract, valerian and magnesium citrate effectively supports the effects of the cocoa.<br\/><br\/>This cocoa beverage supports mental wellbeing in case of tension and stress and contributes to optimal relaxation. Its complex composition promotes relaxation and toning of the nervous system and helps to maintain normal psychological functions.<\/p>",
+            "content": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "Brain Tech",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "#cd4d1e",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-0",
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-1"
+      ],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "1604f3bd-bd75-44d0-a3a5-730333f9a72f": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Functional Elixir",
+            "title_size": "hsl-style",
+            "text": "<p>Mushroom Cacao is enriched with:<br\/><br\/><strong>Functional additives<\/strong> (Reishi, magnesium, valerian), known for their relaxing effects,<br\/><br\/><strong>Coconut extract<\/strong> to make the drink delightfully creamy,<br\/><br\/><strong>Aromatic spices<\/strong> (cinnamon and cardamom) to enhance the bouquet of aromas and indulge the senses.<\/p>",
+            "content": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "2",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/mushroomcacao1compress.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-1",
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-0"
+      ],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "144bfaba-7b41-4f39-8d79-ed64fc74b908": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/mushroomcacao2compress.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Create your own elixir",
+            "title_size": "hl-style",
+            "text": "<p>Not everyone takes the easiest path. And we respect that! Experiment and play with the flavour of your mushroom cocoa, using different ingredients.<br\/><br\/>You don't have to limit yourself to water! Mix the contents of the sachet with your favourite drink or shake. Try it with: hot plant milk, coffee, tea or a fruit smoothie. Oat milk is our favourite!<br\/><br\/>Try it hot and cold. Both variants have their amateurs.<br\/><br\/>Add healthy fats to give yourself energy and replenish your diet with fatty acids and missing macronutrients.<br\/><br\/>Create a personalised health elixir by adding other medicinal mushrooms. Try Cordyceps, Chaga or Lion's Mane. Any will work great.<\/p>",
+            "content": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-0",
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-1"
+      ],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "543ea4ba-cac1-4cd8-b6d8-7703e137db48": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Adaptogens, vitamins and minerals to support the brain and nervous system",
+            "title_size": "h1-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-0",
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "color_scheme": "1",
+        "full_width": true
+      }
+    },
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-0": {
+          "type": "question",
+          "settings": {
+            "title": "For Who?",
+            "answer": "<p>The composition of Mushroom Cacao is very versatile, but it will work best for people who need to relieve symptoms of stress and calm their emotions. It is recommended for those who want to facilitate evening relaxation and maintain natural sleep.<br\/><br\/>As long as you like cacao and have a head open to new sensations, just give it a try!<\/p>"
+          }
+        },
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1": {
+          "type": "question",
+          "settings": {
+            "title": "When?",
+            "answer": "<p>When you are overwhelmed by excessive stress and anxiety.<br\/><br\/>When you need relaxation after a challenging day.<br\/><br\/>When you need to improve the quality of your sleep and rejuvenate yourself.<br\/><br\/>When you want to create a pleasant and health-enhancing ritual.<br\/><br\/>When you crave delicious, well-being-enhancing cocoa.<\/p>"
+          }
+        },
+        "44cc8dd3-03e0-4f2c-92d9-a2a35817485e": {
+          "type": "question",
+          "settings": {
+            "title": "How?",
+            "answer": "<p>How to use Mushroom Cacao ?<br\/>Recommended Daily Allowance: One sachet per day, dissolved in hot water or a vegetable drink.<br\/><br\/>Do not exceed the recommended daily serving.<br\/><br\/>The dietary supplement must not be used as a substitute for a varied diet. Leading a healthy lifestyle and eating a balanced diet are essential for good health.<br\/><br\/>Not recommended for use by pregnant or breastfeeding women. Keep out of reach of small children, in a dry and cool place. Do not use in the case of hypersensitivity to the ingredients of the preparation.<\/p>"
+          }
+        },
+        "de6f2a6e-8806-4452-8622-298fa67d0a93": {
+          "type": "question",
+          "settings": {
+            "title": "Does Mushroom Cacao need to be applied daily?",
+            "answer": "<p>No. You can use Elixir Blends products when you feel like it, even once every few days. We treat them just like regular coffee and tea - daily drinking is possible, but not necessary.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-0",
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1",
+        "44cc8dd3-03e0-4f2c-92d9-a2a35817485e",
+        "de6f2a6e-8806-4452-8622-298fa67d0a93"
+      ],
+      "settings": {
+        "title": "FAQ - Frequently Asked Questions"
+      }
+    },
+    "234c1298-7eda-4adc-a2ab-e8b16e25e8ae": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "title": "Blog posts",
+        "show_title": false,
+        "show_button": true,
+        "blog": "news",
+        "enable_carousel": true,
+        "post_limit": 3,
+        "show_author": true,
+        "show_date": true,
+        "show_excerpts": true,
+        "crop_ratio": "1.78",
+        "color_scheme": "1"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_title": true,
+        "show_vendor": false,
+        "grid": 5
+      }
+    },
+    "1687258188c5af77ac": {
+      "type": "apps",
+      "blocks": {
+        "5181093f-2af8-49b4-83f6-22d0fce00f65": {
+          "type": "shopify:\/\/apps\/trustoo-io-reviews\/blocks\/review-widget\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "5181093f-2af8-49b4-83f6-22d0fce00f65"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "03ad7a50-b40c-4239-99a0-6949811c9294",
+    "e4435349-a953-4df3-947d-b63b23c1fc28",
+    "1604f3bd-bd75-44d0-a3a5-730333f9a72f",
+    "144bfaba-7b41-4f39-8d79-ed64fc74b908",
+    "543ea4ba-cac1-4cd8-b6d8-7703e137db48",
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1",
+    "234c1298-7eda-4adc-a2ab-e8b16e25e8ae",
+    "related-products",
+    "1687258188c5af77ac"
+  ]
+}

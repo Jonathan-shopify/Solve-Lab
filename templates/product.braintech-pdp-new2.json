@@ -1,0 +1,1055 @@
+{
+  "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {}
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-product-v2",
+      "blocks": {
+        "e5831301-bb14-41e0-bec5-bf6526a76039": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div class=\"custom-btns-pdp\">\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Enhanced Cognition<\/a>\n    <\/div>\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Brain Longevity<\/a>\n    <\/div>\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Brain-Gut Axis<\/a>\n    <\/div>\n<\/div>",
+            "show_in_quickbuy": false
+          }
+        },
+        "239bae7d-a373-41a9-bf93-5f28360e521b": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"icons-wrapper\">\n<div class=\"icon-wrap\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0777\/0718\/2389\/files\/Group_26335.png?v=1696456817\">Focus\n<\/div>\n<div class=\"icon-wrap\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0777\/0718\/2389\/files\/Group_26293.png?v=1696456817\">brain HEALTH\n<\/div>\n<div class=\"icon-wrap\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0777\/0718\/2389\/files\/Group_26275.png?v=1696456817\">digestion\n<\/div>\n<\/div>",
+            "show_in_quickbuy": false
+          }
+        },
+        "a46435e9-903b-4c0e-a0f3-fea02c3be5bd": {
+          "type": "shopify:\/\/apps\/trustoo-io-reviews\/blocks\/star-rating-widget\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {
+            "star_size": 16,
+            "font_size": 16,
+            "block_aligment": "flex-start"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "be3d8a7a-b6cc-4d7a-9fb4-946069a14300": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": false
+          }
+        },
+        "icon_4MDk4V": {
+          "type": "icon",
+          "settings": {
+            "img-1": "shopify:\/\/shop_images\/Brain_Tech__Enhances_mental_agility.png",
+            "text-1": "Enhances mental agility",
+            "img-2": "shopify:\/\/shop_images\/Proteins-18.svg",
+            "text-2": "4 functional mushrooms",
+            "img-3": "shopify:\/\/shop_images\/Proteins_Digezyme_Formula.svg",
+            "text-3": "5 Digestive Enzymes",
+            "img-4": "shopify:\/\/shop_images\/Uniqe_yeast_protins.svg",
+            "text-4": "Unique yeasts protein",
+            "img-5": "shopify:\/\/shop_images\/Len_muscle_mass.svg",
+            "text-5": "Lean muscle mass",
+            "img-6": "shopify:\/\/shop_images\/Lions_Mane_Capsules-_benefits_icons-06.svg",
+            "text-6": "100% Organic Fruiting bodies",
+            "img-7": "shopify:\/\/shop_images\/Proteins_Energy.svg",
+            "text-7": "Enhances energy levels",
+            "img-8": "shopify:\/\/shop_images\/Resihi_Tested_by_Eurofins.svg",
+            "text-8": "Certified by Eurofins",
+            "img-9": "shopify:\/\/shop_images\/Resihi_Pure_mushroom_zero_fillers.svg",
+            "text-9": "Pure Mushrooms, Zero Fillers"
+          }
+        },
+        "clearpay_on_site_messaging_payments_messaging_Qidwz3": {
+          "type": "shopify:\/\/apps\/clearpay-on-site-messaging\/blocks\/payments-messaging\/5d763983-d3e6-4888-9966-4e1170b26ae9",
+          "disabled": true,
+          "settings": {
+            "text_align": "inherit",
+            "margin_top": 16,
+            "margin_bottom": 16,
+            "color": "",
+            "size": "md",
+            "intro_text": "or",
+            "show_interest_free": true,
+            "payment_amount_is_bold": true,
+            "show_with": true,
+            "logo_type": "badge",
+            "logo_theme": "black-on-mint",
+            "modal_link_style": "circled-info-icon",
+            "modal_theme": "mint",
+            "breakpoint": 749,
+            "text_align_mobile": "inherit",
+            "margin_top_mobile": 16,
+            "margin_bottom_mobile": 16,
+            "show_lower_limit": true,
+            "show_upper_limit": true,
+            "show_if_outside_limits": true,
+            "product": "{{product}}"
+          }
+        },
+        "156c9a70-793e-4386-a9c7-ecc3412dade1": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "{{ product.metafields.custom.product_description | metafield_tag }}",
+            "icon": "",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-2"
+          }
+        },
+        "richtext_6VxgTD": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p>Supports Cognition and Guts Health<\/p>",
+            "icon": "star",
+            "custom_icon": "shopify:\/\/shop_images\/SolveLabs_-_Superman_-_Black.png",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#e0f4d5",
+            "show_in_quickbuy": false,
+            "class0": ""
+          }
+        },
+        "custom_liquid_qdd3Wp": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "inventory_level_rjKHqk": {
+          "type": "inventory_level",
+          "settings": {
+            "show_inventory_notice": "always",
+            "show_inventory_count": "always",
+            "inventory_threshold": 10,
+            "enable_box": false,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_single": true,
+            "select_first_variant": true,
+            "variant_style": "listed",
+            "disable_unavailable_variants": true,
+            "show_size_chart": false,
+            "size_chart_variant": "size guide",
+            "size_chart_page": "pop-up1"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "below-button": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"19\" height=\"18\" viewBox=\"0 0 19 18\" fill=\"none\">\n<rect y=\"-0.000976562\" width=\"18.4247\" height=\"17.5662\" rx=\"8.78308\" fill=\"url(#paint0_linear_2055_50)\"\/>\n<path d=\"M5.60938 9.21833L8.84176 12.0165C9.09428 12.2351 9.48601 12.1495 9.62421 11.8454L12.8185 4.81738\" stroke=\"url(#paint1_linear_2055_50)\" stroke-width=\"2\"\/>\n<defs>\n<linearGradient id=\"paint0_linear_2055_50\" x1=\"9.21233\" y1=\"-0.000976563\" x2=\"9.21233\" y2=\"17.5652\" gradientUnits=\"userSpaceOnUse\">\n<stop stop-color=\"#D05E24\"\/>\n<\/linearGradient>\n<linearGradient id=\"paint1_linear_2055_50\" x1=\"9.21395\" y1=\"4.81738\" x2=\"9.21395\" y2=\"12.4543\" gradientUnits=\"userSpaceOnUse\">\n<stop stop-color=\"white\"\/>\n<\/linearGradient>\n<\/defs>\n<\/svg>",
+            "below-btn-text": "60-day money back guarantee",
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_backorder_text": false,
+            "show_pickup_availability": false
+          }
+        },
+        "richtext_QiTcGj": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p><strong>COGNITIVE SUPPORT<br\/><\/strong>By promoting neuronal health, enhancing neurogenesis and modulating neurotransmitter levels, Lion's Mane can improve cognitive function and reduce the symptoms of brain fog. † (1),(6)<\/p>",
+            "icon": "check_mark_in_circle",
+            "custom_icon": "shopify:\/\/shop_images\/BRAINBLACK.png",
+            "icon_size": "large",
+            "enable_box": true,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": ""
+          }
+        },
+        "richtext_EG8azc": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p><strong>BRAIN LONGEVITY<br\/><\/strong>Hericenones found in the fruiting body of the Lion's Mane have been shown to stimulate the synthesis of Nerve Growth Factor (NGF), a protein that plays a crucial role in the growth of neurones.<\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/neuron3.png",
+            "icon_size": "large",
+            "enable_box": true,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": ""
+          }
+        },
+        "richtext_UXWB3D": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p><strong>MODULATION OF GUT FLORA<br\/><\/strong>High levels of beta-glucans can serve as prebiotics. This includes the promotion of bacteria that produce short-chain fatty acids (SCFAs), such as butyrate, which play a crucial role in gut health and have anti-inflammatory effects. †(4)(5)<\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/guts2.png",
+            "icon_size": "large",
+            "enable_box": true,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": ""
+          }
+        },
+        "richtext_DCGzbF": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p><strong>THIRD-PARTY TESTED<br\/><\/strong>Quality of every batch is certified by Eurofins.<\/p><p><\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/test2.png",
+            "icon_size": "large",
+            "enable_box": true,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": ""
+          }
+        },
+        "accordion_RM8mfQ": {
+          "type": "accordion",
+          "settings": {
+            "title": "Description",
+            "icon": "",
+            "content": "<p>Your brain requires a properly balanced composition of ingredients to achieve optimal functioning.<\/p><p>Brain Tech is a carefully designed blend of plant extracts, nutrients, adaptogens and vitamin B6 - selected to support mental function and provide support for healthy brain function.<\/p>",
+            "page": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_NPey4z": {
+          "type": "accordion",
+          "settings": {
+            "title": "How to use",
+            "icon": "",
+            "content": "<p><strong>Recommended daily dose for consumption showing a beneficial effect: <\/strong>2 capsules daily after a meal. Do not exceed the recommended daily dose. In order to reduce fatigue and additional, immediate support before mental activity, a serving of Braintech can be combined with caffeine in the form of a cup of coffee or a dietary supplement (100-200 mg of caffeine per serving).<\/p>",
+            "page": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_ykJqeP": {
+          "type": "accordion",
+          "settings": {
+            "title": "Shipping & Delivery",
+            "icon": "",
+            "content": "<p><strong>For UK orders<br\/><\/strong>All orders are dispatched from our UK warehouse.<br\/>- Orders over £50: Free shipping<br\/>- Orders under £50: Standard delivery (2-3 days) costs £3.99, with an option for next-day delivery at £4.99<br\/><\/p><p><strong>For EU orders <\/strong><br\/>Orders are fulfilled from our EU warehouse.<br\/>- Orders over €50: Free shipping<br\/>- Orders under €50: Standard delivery (2-3 days) costs €4.29, with a next-day delivery option at €5.23.<br\/><\/p><p><strong>International orders <\/strong><br\/>- Orders over €150: Free shipping<br\/>- Orders under €150: Standard delivery (5-7 days) at €14.29<\/p>",
+            "page": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_FFgNCi": {
+          "type": "accordion",
+          "settings": {
+            "title": "Guarantee",
+            "icon": "",
+            "content": "<p>We stand by our products with a 60-day satisfaction guarantee. If you are not completely satisfied within this period, please contact us for a full refund or exchange to ensure your satisfaction is met.<\/p>",
+            "page": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_fHJn8W": {
+          "type": "accordion",
+          "settings": {
+            "title": "Ingredients",
+            "icon": "",
+            "content": "<p>Centella asiatica leaf extract, ginseng root extract, hydroxypropyl methylcellulose (capsule shell), choline bitartrate, green tea leaf extract standardized to 98% theanine, bacopa monnieri whole plant extract standardized to 45% bacosides, phosphatidylserine, zinc gluconate, inulin, Rhodiola rosea root extract standardized to 3% rosavins and 1% salidrosides, pyridoxine hydrochloride, black pepper fruit extract standardized to 95% piperine.<\/p><p>A dietary supplement cannot be used as a substitute for a varied diet. Maintaining a healthy lifestyle and eating a balanced diet are essential for maintaining good health.<\/p><p>The product should not be consumed in case of taking sedative, hypnotic or antiepileptic drugs, do not use in children, pregnant or lactating women.<\/p>",
+            "page": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "57f158a3-2de2-4a71-a5a7-5842807117b5": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p><strong>PRO TIP<\/strong><\/p><p>Enhance your cognitive regimen by integrating Brain Tech with your daily coffee and a dose of Lion's Mane mushroom. This combination not only boosts your mental alertness but also enhances the nootropic effects, ensuring you stay sharp and focused.<\/p>",
+            "icon": "",
+            "icon_size": "large",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "mission-simple"
+          }
+        },
+        "80d408df-4e1c-41e5-9b84-0872e4c917a8": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p>30 Days Money-Back Guarantee<\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/image_1.png",
+            "icon_size": "large",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-8"
+          }
+        },
+        "734b49d0-9d63-4219-9ec9-a554ad1a84ed": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Looking for capsules?",
+            "enable_carousel": true,
+            "max_products": 10,
+            "show_in_quickbuy": true
+          }
+        }
+      },
+      "block_order": [
+        "e5831301-bb14-41e0-bec5-bf6526a76039",
+        "239bae7d-a373-41a9-bf93-5f28360e521b",
+        "a46435e9-903b-4c0e-a0f3-fea02c3be5bd",
+        "title",
+        "be3d8a7a-b6cc-4d7a-9fb4-946069a14300",
+        "icon_4MDk4V",
+        "clearpay_on_site_messaging_payments_messaging_Qidwz3",
+        "156c9a70-793e-4386-a9c7-ecc3412dade1",
+        "richtext_6VxgTD",
+        "custom_liquid_qdd3Wp",
+        "inventory_level_rjKHqk",
+        "variant_picker",
+        "buy_buttons",
+        "richtext_QiTcGj",
+        "richtext_EG8azc",
+        "richtext_UXWB3D",
+        "richtext_DCGzbF",
+        "accordion_RM8mfQ",
+        "accordion_NPey4z",
+        "accordion_ykJqeP",
+        "accordion_FFgNCi",
+        "accordion_fHJn8W",
+        "57f158a3-2de2-4a71-a5a7-5842807117b5",
+        "80d408df-4e1c-41e5-9b84-0872e4c917a8",
+        "734b49d0-9d63-4219-9ec9-a554ad1a84ed"
+      ],
+      "custom_css": [],
+      "settings": {
+        "below-image": "\"feel more alert and less anxious throughout the day\"",
+        "best_deal_value": "",
+        "new_value": "",
+        "custom_rich": "",
+        "show_location_underneath": false,
+        "inventory_transfers_enable": false,
+        "enable_sticky_columns": true,
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-beside",
+        "enable_zoom": true,
+        "enable_video_looping": true,
+        "image_cards": "bg",
+        "enable_var_img_grouping": true,
+        "var_img_grouping_option": "Form, choose your plan, Only, Size, Flavour",
+        "bg_color": "#f7f7f7"
+      }
+    },
+    "scrolling_banner_yCBVVd": {
+      "type": "scrolling-banner",
+      "blocks": {
+        "text_jPnELW": {
+          "type": "text",
+          "settings": {
+            "text": "FOOD FOR THOUGHT",
+            "color": "rgba(0,0,0,0)",
+            "link": "",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "text_EKF9dp": {
+          "type": "text",
+          "settings": {
+            "text": "FOOD FOR THOUGHT",
+            "color": "rgba(0,0,0,0)",
+            "link": "",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "text_PmNVbG": {
+          "type": "text",
+          "settings": {
+            "text": "FOOD FOR THOUGHT",
+            "color": "rgba(0,0,0,0)",
+            "link": "",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_jPnELW",
+        "text_EKF9dp",
+        "text_PmNVbG"
+      ],
+      "settings": {
+        "custom-class": "pdp-scroll-text",
+        "text_size": 50,
+        "vertical_padding": 20,
+        "speed": 14.5,
+        "direction": "left",
+        "font": "heading",
+        "space": 140,
+        "color_scheme": "none",
+        "custom_scheme_bg": "#292929",
+        "custom_scheme_bg_second": "#e27d2a"
+      }
+    },
+    "custom_liquid_FtxF84": {
+      "type": "custom-liquid",
+      "settings": {
+        "code": "<div class=\"marquee-custom-mobile\">\n<span class=\"text-marquee-inner\" style=\"\">THE DREAM FUEL<\/span>\n<\/div>",
+        "custom_class": "brain-marquee-mobile"
+      }
+    },
+    "text_with_buttonstyle_EiEJLz": {
+      "type": "text-with-buttonstyle",
+      "blocks": {
+        "heading_DwemDA": {
+          "type": "heading",
+          "settings": {
+            "title": "Achieve Peak Mental Performance the Natural Way with Brain Tech",
+            "title_size": "h1-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "text_BmB9QF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In a world awash with synthetic enhancers that often come with undesirable side effects, Brain Tech stands out by offering a truly natural boost to your mental faculties. Our blend is rooted in nature, crafted from earth-grown ingredients known for their cognitive benefits. Ideal for thinkers, creators, and anyone looking to sustain their mental edge safely and naturally.<\/p>",
+            "enlarge_text": false
+          }
+        },
+        "texts_6NHMfz": {
+          "type": "texts",
+          "settings": {
+            "tite1": "Highly Concentrated Formula",
+            "tite2": "Pure Natural Ingredients",
+            "tite3": "Fast Acting",
+            "tite4": "",
+            "tite5": "",
+            "tite6": ""
+          }
+        },
+        "texts_7pp7Ra": {
+          "type": "texts",
+          "settings": {
+            "tite1": "Neuroprotective Properties",
+            "tite2": "4-6 hours of Focus",
+            "tite3": "Backed by Science",
+            "tite4": "",
+            "tite5": "",
+            "tite6": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_DwemDA",
+        "text_BmB9QF",
+        "texts_6NHMfz",
+        "texts_7pp7Ra"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "color_scheme": "1",
+        "full_width": false
+      }
+    },
+    "scrolling_banner_Reb4g3": {
+      "type": "scrolling-banner",
+      "blocks": {
+        "text_qLiLy8": {
+          "type": "text",
+          "settings": {
+            "text": "Sustainable growth protocols",
+            "color": "rgba(0,0,0,0)",
+            "link": "",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "text_gbCMxh": {
+          "type": "text",
+          "settings": {
+            "text": "100% fruiting bodies",
+            "color": "rgba(0,0,0,0)",
+            "link": "",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "text_Ninrpi": {
+          "type": "text",
+          "settings": {
+            "text": "Absolutely ZERO fillers",
+            "color": "rgba(0,0,0,0)",
+            "link": "",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_qLiLy8",
+        "text_gbCMxh",
+        "text_Ninrpi"
+      ],
+      "settings": {
+        "custom-class": "mobile-scroll-custom",
+        "text_size": 16,
+        "vertical_padding": 28,
+        "speed": 12,
+        "direction": "left",
+        "font": "heading",
+        "space": 50,
+        "color_scheme": "none",
+        "custom_scheme_bg": "#f6f6ef",
+        "custom_scheme_bg_second": ""
+      }
+    },
+    "scrolling_banner_gzmbfm": {
+      "type": "scrolling-banner",
+      "blocks": {
+        "text_rPb8t6": {
+          "type": "text",
+          "settings": {
+            "text": "35-45% of Beta-D-Glucans",
+            "color": "rgba(0,0,0,0)",
+            "link": "",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "text_8QmPgD": {
+          "type": "text",
+          "settings": {
+            "text": "Certified Organic",
+            "color": "rgba(0,0,0,0)",
+            "link": "",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "text_Paqxdz": {
+          "type": "text",
+          "settings": {
+            "text": "High Potency",
+            "color": "rgba(0,0,0,0)",
+            "link": "",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_rPb8t6",
+        "text_8QmPgD",
+        "text_Paqxdz"
+      ],
+      "settings": {
+        "custom-class": "mobile-scroll-custom",
+        "text_size": 16,
+        "vertical_padding": 20,
+        "speed": 12,
+        "direction": "right",
+        "font": "heading",
+        "space": 50,
+        "color_scheme": "none",
+        "custom_scheme_bg": "#f6f6ef",
+        "custom_scheme_bg_second": ""
+      }
+    },
+    "custom_testimonial_ibMgfa": {
+      "type": "custom-testimonial",
+      "blocks": {
+        "testimonial_yrYCCi": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "Brain Tech took me to a higher cognitive level. Incredible creativity, energy, concentration and at the same time a wonderful mood. This is a solution I did not know, but I really needed. Not only in terms of the highest quality, but also the price. I recommend it with all my heart!",
+            "author": "Jack W., Verified Buyer",
+            "image_caption": ""
+          }
+        },
+        "testimonial_yYVqta": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "Great stuff, I recommend it! It's hard to believe that you can feel the effects so quickly.",
+            "author": "- Peter M., Verified Buyer",
+            "image_caption": ""
+          }
+        },
+        "testimonial_Kr3Hhh": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "Add customer reviews and testimonials to showcase your store’s happy customers.",
+            "author": "Author's name",
+            "image_caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_yrYCCi",
+        "testimonial_yYVqta",
+        "testimonial_Kr3Hhh"
+      ],
+      "settings": {
+        "title": "Customer reviews",
+        "show_title": false,
+        "enable_images": false,
+        "image_shape": "square",
+        "color_scheme": "1",
+        "text_caps": false,
+        "title_size": "h1-style",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "title": "You may also like:",
+        "show_title": true,
+        "show_vendor": false,
+        "grid": 5
+      }
+    },
+    "image_with_text_iazWMC": {
+      "type": "image-with-text",
+      "settings": {
+        "revert_section": true,
+        "title": "Natural Nootropic Boost",
+        "hero_image": "shopify:\/\/shop_images\/image-2-test.png",
+        "hide_left_right_space": false,
+        "content": "Brain Tech leverages the power of natural nootropics to stimulate cognitive functions by enhancing neural connectivity and neurotransmitter activity. These compounds work by boosting synaptic plasticity, which improves learning and memory, and enhancing the metabolic activity within the brain cells, thereby increasing mental alertness and reducing cognitive fatigue.",
+        "list_item": "<p><strong>Enhances Memory Formation<\/strong><\/p><p><strong>Improves Focus & Alertness<\/strong><\/p><p><strong>Supports Neurological Health<\/strong><\/p><p><strong>Reduces Cognitive Decline<\/strong><\/p>",
+        "tab_desc_icon": "shopify:\/\/shop_images\/Group_1000004319_b230f1d1-1951-47a0-8d14-112d26518d4a.svg",
+        "button_text": "",
+        "button_url": "\/",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "pdp_image_with_text_7FV3bt": {
+      "type": "pdp-image-with-text",
+      "settings": {
+        "title": "<strong>Backed by Science<\/strong>",
+        "hero_image": "shopify:\/\/shop_images\/hexagon-grafika-zabawy-gruby_3d4f1139-5c3b-4098-956e-b6e7553c918a.jpg",
+        "desc_title_1": "",
+        "content_1": "<p><strong>Bacopa monieri<\/strong> - It has a positive effect on the brain, supports short and long-term memory, increases concentration, supports learning ability and affects intelligence.<\/p><p><strong>Gotu kola<\/strong> - is an adaptogen that affects mental health and the cardiovascular system.<\/p><p><strong>Rhadiola rosea<\/strong> - classified as an adaptogen, supports proper blood circulation, which contributes to optimal mental and cognitive activity.<\/p><p><strong>Ginseng<\/strong> - contains substances that support mental efficiency and cognitive abilities, has antioxidant properties and improves physical condition.<br\/><br\/><strong>Zinc gluconate<\/strong> - helps maintain proper cognitive functions, supports proper DNA synthesis, supports vitamin A metabolism and participates in protein synthesis.<\/p><p><strong>Choline<\/strong> - affects the proper metabolism of homocysteine, too much of which promotes the development of dementia and Alzheimer's disease.<\/p><p><strong>Vitamin B6<\/strong> - helps in the proper functioning of the nervous system and mental functions. Additionally, it helps to reduce the feeling of tiredness and fatigue.<\/p>",
+        "desc_title_2": "",
+        "content_2": "",
+        "desc_title_3": "",
+        "content_3": "",
+        "desc_title_4": "",
+        "content_4": "",
+        "desc_title_5": "",
+        "content_5": "",
+        "desc_title_6": "",
+        "content_6": "",
+        "tab_title": "RESEARCH",
+        "tab_desc": "<p>“Bacopa monnieri has been shown to improve cognitive function, particularly memory, attention, and information processing speed. Studies have found that it enhances various aspects of cognitive performance, including learning and memory retention. These effects are likely due to its antioxidant properties and its role in promoting synaptic plasticity <a href=\"https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC3746283\/\" target=\"_blank\" title=\"https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC3746283\/\">(Nathan et al., 2001)<\/a>.<\/p><p>“Gotu kola (Centella asiatica) has been found to have potential cognitive benefits, particularly in improving memory and cognitive function. This effect is likely due to its antioxidant properties and its ability to enhance neuronal dendritic growth and synaptic density <a>(Farhana & Zahiruddin, 2021)<\/a>.<\/p><p>“Rhodiola rosea is recognized for its adaptogenic properties, which help mitigate fatigue and enhance mental performance. It has been shown to improve cognitive functions, particularly in reducing fatigue and improving attention and mental endurance, which are critical for optimal cognitive activity <a>(Ishaque et al., 2012)<\/a>.<\/p><p>\"Ginseng, particularly Panax ginseng, has been extensively studied for its cognitive benefits. It has been shown to improve various cognitive functions, including memory, attention, and processing speed. Ginseng's efficacy is attributed to its ginsenosides, which exert neuroprotective effects, enhance synaptic plasticity, and reduce oxidative stress <a href=\"https:\/\/consensus.app\/papers\/ginseng-cognition-geng\/5482dbda07ac5393ab8378a5e168af05\">(Geng et al., 2010)<\/a>.<\/p>",
+        "tab_desc_icon": "shopify:\/\/shop_images\/icon.png",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "image_with_text_AhQLJh": {
+      "type": "image-with-text",
+      "settings": {
+        "revert_section": true,
+        "title": "From Classroom to Boardroom",
+        "hero_image": "shopify:\/\/shop_images\/BrainTech_1.png",
+        "hide_left_right_space": false,
+        "content": "Engineered for high achievers, Brain Tech is essential for anyone stretching their cognitive limits—from students in rigorous academics to professionals navigating complex careers. Our diverse user base, from academics to executives, praises Brain Tech for its ability to enhance focus and mental clarity.",
+        "list_item": "<p><strong>Students:<\/strong> Excel in academics, manage coursework<\/p><p><strong>Professionals:<\/strong> Enhance focus, strategic decision-making<\/p><p><strong>Researchers:<\/strong> Tackle complex challenges efficiently<\/p><p><strong>Elderly:<\/strong> Support cognitive health, memory<\/p><p><strong>Athletes:<\/strong> Improve reaction times, strategic thinking<\/p>",
+        "tab_desc_icon": "shopify:\/\/shop_images\/check.svg",
+        "button_text": "",
+        "button_url": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "slideshow_8gFK88": {
+      "type": "slideshow",
+      "blocks": {
+        "image_7XdmDF": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ezgif.com-animated-gif-maker_4.gif",
+            "mobile_image": "shopify:\/\/shop_images\/ezgif.com-animated-gif-maker_2.gif",
+            "slide_link": "",
+            "custom_class": "protocol-slider",
+            "content_max_width": 1200,
+            "subheading": "",
+            "title": "Mushroom Effect",
+            "title_size": "hsl-style",
+            "use_h1": false,
+            "text": "<p>For the best results we suggest taking mushrooms <b>consistently for four months<\/b>. This lets its active ingredients build up in your system, offering optimal benefits. After this period, take a <b>two-week break<\/b> before starting a new cycle. For enhanced effects, consider combining it with other functional mushrooms to experience a synergistic benefit.<br><\/p><b>\n<div class=\"row\">\n  <div class=\"column first\">\n    <p>WHEN<\/p>\n    <p>SIZE<\/p>\n    <p>HOW LONG?<\/p>\n  <\/div>\n  <div class=\"column second\">\n    <p>|<\/p>\n    <p>|<\/p>\n    <p>|<\/p>\n  <\/div>\n  <div class=\"column third\">\n    <p>AM\/PM<\/p>\n    <p>1 SERVING<\/p>\n    <p>4+ MONTHS <br>FOLLOWED BY 2 WEEKS BREAK<\/p>\n  <\/div>\n<\/div><\/b>",
+            "enlarge_text": false,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center right",
+            "heading_highlight_text": "",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_7XdmDF"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "color_scheme": "none",
+        "slide_transition": "fade",
+        "slide_navigation": "arrows top-right",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "image_text_block_6Mp9C3": {
+      "type": "image-text-block",
+      "blocks": {
+        "text_RGfnje": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "Only From",
+            "title": "The Source",
+            "title_size": "h1-style",
+            "text": "<p>Our Mushroom extracts are sourced from its native habitat in Siberia, Fujian (China) or Mongolia. Regions renowned for its optimal growing conditions. Nestled at ideal elevations and benefiting from perfect humidity levels, they have fostered a mushroom cultivation tradition that spans over hundreds of years.<\/p><p>Our mushrooms are nurtured on secluded, family-owned farms that adhere to strict growth protocols, ensuring the highest quality. Each batch is rigorously tested by Eurofins and regularly checked for heavy metals to meet our exacting standards.<\/p><p>Certified organic and crafted by only the finest herbalists, our Lion’s Mane extract is a testament to centuries of expertise, delivering purity and tradition in every dose, optimally grown in the world's most suitable environment.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "Only From",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "image_eeKAbB": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/Group_1000004544_8d617485-d345-421d-bf98-a0c5e4db1083.png",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_RGfnje",
+        "image_eeKAbB"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "1",
+        "custom_class": ""
+      }
+    },
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "ec2050ee-9e02-47d6-aa67-495d64f15c79": {
+          "type": "question",
+          "settings": {
+            "title": "What are nootropics?",
+            "answer": "<p><strong>Nootropics <\/strong>are a term for substances (natural and synthetic) that are intended to safely support brain function. By definition, nootropics improve (restore to optimal levels) memory and overall cognitive functions even in distracting conditions, while being non-toxic and having a protective effect on the brain.<\/p>"
+          }
+        },
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-0": {
+          "type": "question",
+          "settings": {
+            "title": "What are adaptogens?",
+            "answer": "<p><strong>Adaptogens <\/strong>are substances and raw materials (mainly botanicals) that support the body's adaptation (adaptation) to difficult, stressful conditions. This stress can include emotional, metabolic or physical factors. Some of the most popular adaptogens are: Rhodiola rosea, Ginseng, Bacopa monnieri and Gotu kola. Each adaptogen, apart from reducing the effects of stress, also has its own unique set of properties. Often, a whole<strong>complex of adaptogens<\/strong>is used , combining several species with different effects to obtain more comprehensive effects.<\/p>"
+          }
+        },
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1": {
+          "type": "question",
+          "settings": {
+            "title": "What influences brain performance?",
+            "answer": "<p>The brain needs an efficient <strong>supply of substrates for cellular respiration<\/strong> (glucose, oxygen) to provide the neurons with energy on an ongoing basis. It also needs <strong>the right amounts of essential vitamins (including B6) and minerals (including zinc) . The good condition of cell membranes<\/strong> is also essential , as they protect the neurons and determine the efficiency of communication between them. Cell membranes are composed of phospholipids, such as <strong>phosphatidylserine<\/strong> and phosphatidylcholine.<\/p>"
+          }
+        },
+        "question_NnDEkk": {
+          "type": "question",
+          "settings": {
+            "title": "Is Brain Tech suitable for all ages?",
+            "answer": "<p>Brain Tech is intended for adult use. It is not recommended for children, pregnant or breastfeeding women without consulting a healthcare provider.<\/p>"
+          }
+        },
+        "question_ABrtGD": {
+          "type": "question",
+          "settings": {
+            "title": "How long does it take to notice benefits from Brain Tech?",
+            "answer": "<p>Users often report feeling enhanced mental clarity and focus within a few hours of taking Brain Tech. For long-term cognitive benefits, consistent use over several weeks is recommended.<\/p>"
+          }
+        },
+        "question_eT4gC8": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "References",
+            "answer": "<p>Answer<\/p>"
+          }
+        },
+        "question_XgVBGa": {
+          "type": "question",
+          "settings": {
+            "title": "How can I maximise the effects of Brain Tech?",
+            "answer": "<p>To maximise the benefits of Brain Tech, consider combining it with caffeine, such as a cup of coffee, and Lion's Mane mushroom. This combination enhances mental alertness and cognitive function, providing a synergistic effect that supports overall brain health and performance.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "ec2050ee-9e02-47d6-aa67-495d64f15c79",
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-0",
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1",
+        "question_NnDEkk",
+        "question_ABrtGD",
+        "question_eT4gC8",
+        "question_XgVBGa"
+      ],
+      "settings": {
+        "title": "FAQ"
+      }
+    },
+    "1687258188c5af77ac": {
+      "type": "apps",
+      "settings": {}
+    },
+    "92e25663-f484-4c7b-b8f8-832076f4805d": {
+      "type": "accordions",
+      "blocks": {
+        "d9f1e469-eb5f-4713-a658-b0ca7c33ded7": {
+          "type": "block",
+          "settings": {
+            "acc_title": "Ingredients",
+            "acc_content": "<ul class=\"features-list list1\">\n<li>100% Fruiting Body of Lion’s Mane<\/li>\n<\/ul>",
+            "mobile_image": "shopify:\/\/shop_images\/ingredients.png"
+          }
+        },
+        "ae47bb9e-07df-4639-bfaa-cae023221dde": {
+          "type": "block",
+          "settings": {
+            "acc_title": "The Benefits",
+            "acc_content": "<p>Let’s take a moment for Lion’s Mane and how beneficial it can be for our brains. Heightened focus, mental clarity, improved cognitive function, better moods... Lion's Mane mushroom can provide all that and more.\n<\/p>\n<ul class=\"features-list list1\">\n   <li>\n      <strong>Enhanced Cognitive Function<\/strong> - Known to enhance cognitive function, Lion's Mane may help to improve memory, focus, and mental clarity. The vital bioactive compound found in Lion's Mane is Hericenones. Research indicates that this particular compound could help to improve cognitive function, stimulate neuronal growth and possibly even generate damaged cells. [1]\n   <\/li>\n   <li>\n      <strong>NGF (Nerve Growth Factor)<\/strong> - Lion's mane mushroom is known for its ability to stimulate the production of Nerve Growth Factor (NGF). NGF is a protein that plays a crucial role in the growth, maintenance, and survival of neurons, both in the central and peripheral nervous systems. By promoting NGF production, Lion's Mane may support the development of new neurons and the overall health of the nervous system. [1] [9]\n   <\/li>\n   <li>\n      <strong>Neuroprotection<\/strong> - Lion's mane mushroom exhibits incredible neuroprotective properties. It can help protect brain cells from damage caused by oxidative stress and inflammation. This neuroprotective effect contributes to long-term brain health and may potentially reduce the risk of developing neurodegenerative diseases later in life. We are pretty convinced that that isn’t a risk worth taking. [1] [3]\n   <\/li>\n   <li>\n      <strong>Mood & Mental Wellness<\/strong> - Lion's mane isn't just about cognition though. It's also your secret weapon for mood and mental well-being. By modulating neurotransmitters like serotonin and dopamine, lion’s mane helps to regulate your mood and emotions while reducing feelings of anxiety and depression. Studies have indicated that this is especially so for menopausal women. So, whether you're feeling low or just want to maintain your good mood, Lion's Mane can support a positive outlook and overall mental wellbeing. [1] [3]\n      \n       <\/li>\n<li>\n      <strong>Improved Brain-Gut-Axis<\/strong> - Nicknamed the \"second brain,\" the gut is replete with a vast neuron network, comparable in number to the spinal cord, ranging from 200 to 600 million. This neural web is intricately connected to the brain and is also the residence of two-thirds of the body's immune cells. So Mane mushroom has the potential to not only enhance cognitive function, but also gut health and mental well-being. Not to mention your immune system. [3]\n<\/li>\n<\/ul>"
+          }
+        },
+        "2adacef5-e988-442a-b083-7e10428bc04b": {
+          "type": "block",
+          "settings": {
+            "acc_title": "Comparison Table",
+            "acc_content": "Information can be overwhelming sometimes, and there’s a lot of it out there. So we\nwanted to show you a few differences between Solve Labs and Other brands on the market.<br>\n<table class=\"data-table\">\n   <tbody>\n<tr>\n      <th><\/th>\n      <th style=\"\n    background-color: #ffbb6b;\n    opacity: 69%;\n\">Solve Labs<\/th>\n      <th>Competitors<\/th>\n   <\/tr>\n   \n   \n   \n   <tr>\n      <td>Beta-d-glucans derived from mushrooms\n      \n      \n      <\/td>\n<td style=\"\n    background-color: #ffbb6b;\n    opacity: 69%;\n\"><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n      <td><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/cross.svg\" class=\"cross\" alt=\"cross\"><\/td>\n      \n  <\/tr>\n   \n   \n      <tr>\n      <td>Regular testing for beta-D-glucan levels\n      \n      \n      <\/td>\n<td style=\"\n    background-color: #ffbb6b;\n    opacity: 69%;\n\"><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n      <td><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/cross.svg\" class=\"cross\" alt=\"cross\"><\/td>\n      \n  <\/tr>\n<tr>\n      <td>100% Fruiting Bodies\n      \n      \n      <\/td>\n<td style=\"\n    background-color: #ffbb6b;\n    opacity: 69%;\n\"><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n      <td><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/cross.svg\" class=\"cross\" alt=\"cross\"><\/td>\n      \n  <\/tr>\n      <tr>\n      <td> Non-standardised Process\n      \n      \n      <\/td>\n<td style=\"\n    background-color: #ffbb6b;\n    opacity: 69%;\n\"><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n      <td><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/cross.svg\" class=\"cross\" alt=\"cross\"><\/td>\n      \n  <\/tr>\n      <tr>\n      <td>No binders, fillers or preservatives\n      \n      \n      <\/td>\n<td style=\"\n    background-color: #ffbb6b;\n    opacity: 69%;\n\"><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n       <td><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/cross.svg\" class=\"cross\" alt=\"cross\"><\/td>\n  <\/tr>\n      <tr>\n      <td>Real Plant-based capsules\n      \n      \n      <\/td>\n<td style=\"\n    background-color: #ffbb6b;\n    opacity: 69%;\n\"><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n      <td><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n      \n  <\/tr>\n      <tr>\n      <td>Bioavailable nutrient forms\n      \n      \n      <\/td>\n<td style=\"\n    background-color: #ffbb6b;\n    opacity: 69%;\n\"><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n      <td><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/cross.svg\" class=\"cross\" alt=\"cross\"><\/td>\n      \n  <\/tr>\n<tr>\n      <td>Vegan\n      \n      \n      <\/td>\n<td style=\"\n    background-color: #ffbb6b;\n    opacity: 69%;\n\"><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n     <td><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n      \n  <\/tr>\n<\/tbody>\n<\/table>"
+          }
+        },
+        "b54b9ae3-19da-4c73-b858-d1f3b76015d8": {
+          "type": "block",
+          "settings": {
+            "acc_title": "Beta-D-Glucans",
+            "acc_content": "<p>What are Beta-D-glucans? Great question!<\/p>\n\nBeta-D-glucans are a type of complex sugar made from long chains of glucose molecules. They are found in nature, especially in mushrooms, and are known for their strong ability to support and regulate the immune system. [2]\n<br><br>\n\nBeta-D-glucans from mushrooms are considered to be more beneficial than those sourced from cereals like oats and barley, yeasts, or certain algae. This is due to their distinct structural features and the health advantages they offer. At Solve Labs, we exclusively utilise mushroom-sourced Beta-D-Glucans for these reasons. There are two key attributes that are particularly noteworthy about mushroom beta-d-glucans:\n\n\t<div class=\"recipes-block\" style=\"text-align: center;align-items: center;\">\n                \n                \n\t\t\t\t\t<div class=\"recip-box\">\n\t\t\t\t\t\t<strong class=\"heading\">MOLECULAR STRUCTURE<\/strong>\n\t\t\t\t\t<\/div>\n\t\t\t\t\t\t<d style=\"font-size: 68px;\">=<\/d>\n\t\t\t\t\n                    \n                \n                    \n\t\t\t\t\t<div class=\"recip-box\">\n\t\t\t\t\t\t<strong class=\"heading\">HIGHER BIO ACTIVITY<\/strong>\n\t\t\t\t\t<\/div>\n\n\n<\/div>\n                \n       Beta-D-glucans from mushrooms have a complex branching structure with β-(1,3) and β-(1,6) linkages. These is different from those found in grains, yeasts and algae. This branching pattern is believed to be responsible for their biological activity and potential health benefits.<strong> The unique molecular structure of mushroom beta-d-glucans allows them to interact with specific receptors in the immune system and exert immunomodulatory effects.<\/strong><br><br>"
+          }
+        },
+        "0def6217-65ca-48e6-b0cd-71a08444ef09": {
+          "type": "block",
+          "settings": {
+            "acc_title": "Not All Lion’s Mane Supplements are equal",
+            "acc_content": "<p>When it comes to choosing the best Lion’s Mane product, SolveLabs™ Lion’s Mane stands out as the clear choice - prioritising concentration and potency above all else.<\/p>\n\t\t\t\t<ul class=\"features-list list1\">\n\t\t\t\t\t<li>\n<strong>Concentration<\/strong> refers to the quantity of active compounds found within the supplement, including terpenoids, hericenones and beta-d-Glucans, all of which contribute to the mushroom's cognitive benefits [1]. Solve Labs Lion’s Mane is a 10:1 extract, meaning that for every gram of our extract, it's as if you're consuming ten grams of the pure mushroom. \n\n.<\/li>\n\t\t\t\t\t<li>\n\n\n<strong>Potency <\/strong>is therefore high thanks to the concentration of mushroom and active compounds. Solve Labs Lion’s Mane supplement is derived exclusively from 100% mature dry fruiting bodies, guaranteeing that you will receive the maximum benefits of the mushroom's natural properties.<\/li>\n<\/ul>\n\t\t\t\t\t<p>\nEqually important is the <strong>avoidance of fillers derived from starch and grains<\/strong>. These fillers not only dilute the concentration and potency of the active compounds but may also introduce unnecessary additives or allergens. It is, after all, Beta-D-Glucans 1,3 and 1,6 that we are after.\n\n<\/p>"
+          }
+        },
+        "efacc71b-3bc3-4334-aafb-c74087b04d6e": {
+          "type": "block",
+          "settings": {
+            "acc_title": "What are Nootropics?",
+            "acc_content": "<ul class=\"features-list list2\">\n\n   <li>\n<div class=\"text-frm\">\n         <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0777\/0718\/2389\/files\/AdobeStock_587884897_Preview_1.png?v=1697991118\"> \n     <div>\n<h6>Level up your brain power!\n\n<\/h6>Natural nootropics are a category of substances focused on enhancing cognitive functions [10]. They're like nature's own 'cognitive enhancers', helping people to increase their focus and spark their creativity. Many people use nootropics to give their mental performance a little extra edge, whether they're tackling a challenging work task or diving into a creative endeavour. And the best part? Nootropics are completely legal <\/div>\n<\/div>\n   <\/li>\n     \n   <li style=\"\n    margin: 0 0 24px;\n\">\n     and naturally occurring. They are also believed to stimulate the production of nerve growth factor (NGF), which plays a crucial role in the growth and maintenance of brain cells. By supporting brain cell health and aiding in the growth of new cells, nootropics such as Lion's Mane may improve memory, focus, overall mental performance, as well as a better mood.\n<\/li>\n<\/ul>"
+          }
+        },
+        "b308b5a3-402d-4083-9376-138d522567ab": {
+          "type": "block",
+          "settings": {
+            "acc_title": "References",
+            "acc_content": "<ol class=\"features-list number-list\">\n\n\n   <li>\n   David Dudgeon, W. (2017) ‘The effects of high and low-dose cordyceps militaris-containing mushroom blend supplementation after seven and twenty-eight days’, American Journal of Sports Science, 6(1), pp. 1–7. doi:10.11648\/j.ajss.20180601.11.\u2028\n\n   <\/li>\n   \n    <br>\n   \n   <li>\n   Issa, ‏Qays M. (2023) ‘Medicinal and nutritional importance of mushrooms’, South Asian Research Journal of Pharmaceutical Sciences, 5(03), pp. 48–52. doi:10.36346\/sarjps.2023.v05i03.002.\n   <\/li>\n   <br>\n   \n   \n   \n   <li>\n    Khan, Md.A. et al. (2010) ‘Cordyceps mushroom: A potent anticancer nutraceutical’, The Open Nutraceuticals Journal, 3(1), pp. 179–183. doi:10.2174\/18763960010030100179.\n   <\/li>\n   <br>\n\n   \n   <li>\n     Kumar, R. et al. (2011) ‘Cordyceps sinensis promotes exercise endurance capacity of rats by activating skeletal muscle metabolic regulators’, Journal of Ethnopharmacology, 136(1), pp. 260–266. doi:10.1016\/j.jep.2011.04.040.\u2028\n   \n\n   \n   <\/li>\n   \n    <br>\n   \n<li>\n     Mayer, E.A. (2011) ‘Gut feelings: The emerging biology of Gut–Brain Communication’, Nature Reviews Neuroscience, 12(8), pp. 453–466. doi:10.1038\/nrn3071.\u2028\n\n   \n   <\/li>\n   <br>\n   \n<li>\n     Mirończuk-Chodakowska, I. et al. (2017) ‘QUANTITATIVE EVALUATION OF 1,3-1,6-β-D-GLUCAN CONTENTS IN WILD–GROWING SPECIES OF EDIBLE POLISH MUSHROOMS’, National Institute of Public Health, 68(3), pp. 281–290. doi:PMID: 28895671.\u2028<br>\n     \n     <br>\n   \n    <\/li>\n<li> \n     Najafzadeh, M. et al. (2008) ‘Chaga mushroom extract inhibits oxidative DNA damage in lymphocytes of patients with inflammatory bowel disease’, BioFactors, 31(3–4), pp. 191–200. doi:10.1002\/biof.5520310306.\u2028\n     \n     <\/li>\n     <br>\n     <li> \n     \n     Peng, H. and Shahidi, F. (2020) ‘Bioactive compounds and bioactive properties of chaga (inonotus obliquus) mushroom: A Review’, Journal of Food Bioactives, 12. doi:10.31665\/jfb.2020.12245.\u2028\n     <\/li>\n     <br>\n     <li> \n     \n     SAITSU, Y. et al. (2019) ‘Improvement of cognitive functions by oral intake of Hericium erinaceus’, Biomedical Research, 40(4), pp. 125–131. doi:10.2220\/biomedres.40.125.\u2028\n      <\/li>\n     <br>\n     <li>\n     \n     Tan, L. et al. (2020) ‘Anti‐inflammatory effects of cordycepin: A Review’, Phytotherapy Research, 35(3), pp. 1284–1297. doi:10.1002\/ptr.6890.\u2028\n     \n      <\/li>\n     <br>\n     <li>\n     Z Assefa, S. et al. (2015) ‘The functions of sleep’, AIMS Neuroscience, 2(3), pp. 155–171. doi:10.3934\/neuroscience.2015.3.155.\n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n<\/li>\n<\/ol>"
+          }
+        },
+        "block_ztcCCe": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "acc_title": "TEST ACCORDION",
+            "acc_content": "<strong>10:1 extract<\/strong> - concentrated form of extract to ensure bioavailability of raw material\n\n100% Natural - no unnecessary additives or fillers\n\nVegetable capsules - suitable for vegans and vegetarian\n\n100% Fruiting bodies - no mycelium mixed with grain\n\nGrown on wood - fruited on enriched sawdust to ensure high synthesis of active compounds\n\nHigh beta-glucan content - tested in independent laboratories to ensure high beta glucan content",
+            "mobile_image": "shopify:\/\/shop_images\/FocusBundle.png"
+          }
+        }
+      },
+      "block_order": [
+        "d9f1e469-eb5f-4713-a658-b0ca7c33ded7",
+        "ae47bb9e-07df-4639-bfaa-cae023221dde",
+        "2adacef5-e988-442a-b083-7e10428bc04b",
+        "b54b9ae3-19da-4c73-b858-d1f3b76015d8",
+        "0def6217-65ca-48e6-b0cd-71a08444ef09",
+        "efacc71b-3bc3-4334-aafb-c74087b04d6e",
+        "b308b5a3-402d-4083-9376-138d522567ab",
+        "block_ztcCCe"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "custom_class": ""
+      }
+    },
+    "1692984230d96ed4a1": {
+      "type": "apps",
+      "blocks": {
+        "90de9f95-5b04-425c-ba5b-bb0f17ad423a": {
+          "type": "shopify:\/\/apps\/trustoo-io-reviews\/blocks\/review-widget\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "90de9f95-5b04-425c-ba5b-bb0f17ad423a"
+      ],
+      "settings": {}
+    },
+    "featured_collection_dEdRJF": {
+      "type": "featured-collection",
+      "settings": {
+        "custom-class": "",
+        "title": "Featured collection",
+        "show_title": false,
+        "collection": "pure-mushrooms",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "show_title_card": false,
+        "show_title_card_image": false,
+        "title_card_image": "shopify:\/\/shop_images\/CloseUPLM.png",
+        "overlay_style": "shadow",
+        "color_scheme": "1"
+      }
+    },
+    "shogun-below": {
+      "type": "shogun-below",
+      "settings": {}
+    }
+  },
+  "order": [
+    "shogun-helper",
+    "shogun-above",
+    "main",
+    "scrolling_banner_yCBVVd",
+    "custom_liquid_FtxF84",
+    "text_with_buttonstyle_EiEJLz",
+    "scrolling_banner_Reb4g3",
+    "scrolling_banner_gzmbfm",
+    "custom_testimonial_ibMgfa",
+    "recommendations",
+    "image_with_text_iazWMC",
+    "pdp_image_with_text_7FV3bt",
+    "image_with_text_AhQLJh",
+    "slideshow_8gFK88",
+    "image_text_block_6Mp9C3",
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1",
+    "1687258188c5af77ac",
+    "92e25663-f484-4c7b-b8f8-832076f4805d",
+    "1692984230d96ed4a1",
+    "featured_collection_dEdRJF",
+    "shogun-below"
+  ]
+}

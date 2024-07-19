@@ -1,0 +1,63 @@
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "1601308717434": {
+          "type": "text",
+          "settings": {
+            "title": "About",
+            "text": "<p>Since 2016, we've been at the cutting edge of the mushroom revolution, championing the belief that nature - and particularly mushrooms holds the key to dramatically improving our lives. We're dedicated to developing the world's purest and most potent natural supplements. Without compromises.<\/p>",
+            "image_width": 200,
+            "enable_follow_on_shop": true,
+            "show_social_icons": true,
+            "soc_icons_large": false
+          }
+        },
+        "3110ab92-de39-4c1a-afa1-d5d9ee547ab0": {
+          "type": "menu",
+          "settings": {
+            "title": "Help",
+            "menu": "footer"
+          }
+        },
+        "1601308671932": {
+          "type": "menu",
+          "settings": {
+            "title": "Store",
+            "menu": "help"
+          }
+        },
+        "newsletter_tUT7JH": {
+          "type": "newsletter",
+          "settings": {
+            "title": "Newsletter",
+            "text": "<p>Sign up for exclusive offers, original stories, events and more.<\/p>",
+            "button_style": "primary",
+            "show_social_icons": false,
+            "soc_icons_large": false
+          }
+        }
+      },
+      "block_order": [
+        "1601308717434",
+        "3110ab92-de39-4c1a-afa1-d5d9ee547ab0",
+        "1601308671932",
+        "newsletter_tUT7JH"
+      ],
+      "custom_css": [],
+      "settings": {
+        "lower_menu": "",
+        "show_powered_by": false,
+        "show_payment_icons": true,
+        "show_country_selector": true,
+        "show_language_selector": false
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

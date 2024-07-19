@@ -1,0 +1,41 @@
+{
+  "type": "aside",
+  "name": "Overlay Group",
+  "sections": {
+    "cart-drawer": {
+      "type": "cart-drawer",
+      "settings": {
+        "enable_cart_notes": true,
+        "show_tax_and_shipping": true,
+        "cart_terms_page": "",
+        "enable_direct_cart": true,
+        "show_additional_checkout_buttons": true,
+        "show_backorder_text": true,
+        "enable_cross_sells": true,
+        "cross_sell_title": "You may like",
+        "cross_sell_products": [
+          "shroom-foce",
+          "myco-defend"
+        ],
+        "enable_automatic_cross_sells": true
+      }
+    },
+    "popup": {
+      "type": "popup",
+      "settings": {
+        "mode": "disabled",
+        "popup_delay_seconds": 5,
+        "popup_dismiss_for_days": 2,
+        "position": "bottom-right",
+        "title": "Sign up and save",
+        "text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers.<\/p>",
+        "show_newsletter": true,
+        "show_social_icons": true
+      }
+    }
+  },
+  "order": [
+    "cart-drawer",
+    "popup"
+  ]
+}

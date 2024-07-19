@@ -1,0 +1,211 @@
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_ANmbQB": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Announce <a href=\"#\">something<\/a> here<\/p>",
+            "bg_col": "rgba(0,0,0,0)",
+            "text_col": "rgba(0,0,0,0)"
+          }
+        },
+        "1478526632861": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "<p>CHECK OUR MUSHROOM STARTER PACKS <a href=\"\/products\/mushroom-starter-pack\" title=\"4 Mushroom Starter-Pack\">HERE<\/a><\/p>",
+            "bg_col": "#cd4d1e",
+            "text_col": "rgba(0,0,0,0)"
+          }
+        },
+        "48a44825-ae58-4613-840c-260a5bdcfc52": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "<p>FREE GIFT WORTH £55 FOR ALL ORDERS £100+ | <a href=\"https:\/\/solvelabs.world\/collections\/shop-all\" title=\"https:\/\/solvelabs.world\/collections\/shop-all\"><span style=\"text-decoration:underline\">Shop Now<\/span><\/a><\/p>",
+            "bg_col": "rgba(0,0,0,0)",
+            "text_col": "rgba(0,0,0,0)"
+          }
+        },
+        "d7e36ed7-3179-401a-83ed-44c665155c83": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>Free Shipping for £50+ Orders |  <a href=\"https:\/\/solvelabs.world\/collections\/shop-all\" title=\"https:\/\/solvelabs.world\/collections\/shop-all\"><span style=\"text-decoration:underline\">Shop Now<\/span><\/a><\/p>",
+            "bg_col": "#cd4d1e",
+            "text_col": "rgba(0,0,0,0)"
+          }
+        },
+        "3489567f-7ed9-43eb-b020-7caee27caa49": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>Receive extra products when you spend £150<\/p>",
+            "bg_col": "rgba(0,0,0,0)",
+            "text_col": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_ANmbQB",
+        "1478526632861",
+        "48a44825-ae58-4613-840c-260a5bdcfc52",
+        "d7e36ed7-3179-401a-83ed-44c665155c83",
+        "3489567f-7ed9-43eb-b020-7caee27caa49"
+      ],
+      "custom_css": [
+        ".announcement-bar {background: linear-gradient( 90deg, rgba(205, 77, 30, 1) 0%, rgba(255, 130, 14, 1) 85%, rgba(255, 130, 14, 1) 100% );}",
+        ".announcement-bar {font-family: \"FuturaPT Bold\"; font-weight: 200;}",
+        ".header-disclosures {font-family: \"FuturaPT Book\";}"
+      ],
+      "settings": {
+        "announcement_bar_col": "#141414",
+        "announcement_text_col": "#ffffff",
+        "message_font_size": 12,
+        "show_social_icons": false,
+        "menu": "",
+        "show_country_selector": false,
+        "show_language_selector": true
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "2972d5ae-8c7c-4dae-b1bb-63d586007004": {
+          "type": "menu-promotion-small",
+          "settings": {
+            "dropdown_link_title": "Plans",
+            "image": "shopify:\/\/shop_images\/Lion_s_Mane_474ea02f-b9f8-458d-ba43-062176b36ca3.png",
+            "bg_col": "#fcf8ef",
+            "text_col": "rgba(0,0,0,0)",
+            "title": "",
+            "text": "",
+            "link_url": "shopify:\/\/products\/lions-mane"
+          }
+        },
+        "9da95e54-761f-4755-aad5-48c47fdf44f1": {
+          "type": "menu-promotion-small",
+          "settings": {
+            "dropdown_link_title": "Plans",
+            "image": "shopify:\/\/shop_images\/DoMore-1_7df71fa0-9dcc-46e8-92c5-710e11a16d11.png",
+            "bg_col": "#fcf8ef",
+            "text_col": "rgba(0,0,0,0)",
+            "title": "",
+            "text": "",
+            "link_url": "shopify:\/\/products\/reishi"
+          }
+        },
+        "fa4e8090-bc6a-4c25-85c8-fc40b85958fa": {
+          "type": "menu-promotion-small",
+          "settings": {
+            "dropdown_link_title": "Plans",
+            "image": "shopify:\/\/shop_images\/Chaga_fad049d9-5d19-4af8-9368-c28d32cf8517.png",
+            "bg_col": "#fcf8ef",
+            "text_col": "rgba(0,0,0,0)",
+            "title": "",
+            "text": "",
+            "link_url": "shopify:\/\/products\/chaga"
+          }
+        },
+        "e0f49ca7-eca5-4115-af9b-99e81afbf625": {
+          "type": "menu-promotion-small",
+          "settings": {
+            "dropdown_link_title": "Plans",
+            "image": "shopify:\/\/shop_images\/Cordyceps_757a5734-34b6-4679-958b-5a25872357a4.png",
+            "bg_col": "#fcf8ef",
+            "text_col": "rgba(0,0,0,0)",
+            "title": "Sleep Plan",
+            "text": "",
+            "link_url": "shopify:\/\/products\/cordyceps"
+          }
+        },
+        "a3cab011-44b3-4b36-aa94-2c50fe6105f9": {
+          "type": "menu-promotion-small",
+          "settings": {
+            "dropdown_link_title": "Pure Mushrooms",
+            "bg_col": "#f4e8dc",
+            "text_col": "rgba(0,0,0,0)",
+            "title": "Best Sellers",
+            "text": "Meet Our Best Selling Mushrooms",
+            "link_url": ""
+          }
+        },
+        "26a5a621-0e51-4873-b21e-36dc673216ae": {
+          "type": "menu-promotion-small",
+          "settings": {
+            "dropdown_link_title": "Pure Mushrooms",
+            "image": "shopify:\/\/shop_images\/B0BPYFKG5R.PT03.jpg",
+            "bg_col": "#f4e8dc",
+            "text_col": "rgba(0,0,0,0)",
+            "title": "Shroom Pack",
+            "text": "Save 20% When buying all 4 mushrooms",
+            "link_url": "shopify:\/\/products\/mushroom-cacao"
+          }
+        },
+        "e6b599fe-3252-4974-ba55-9567eb31076f": {
+          "type": "menu-promotion-small",
+          "settings": {
+            "dropdown_link_title": "Products",
+            "image": "shopify:\/\/shop_images\/B0BPYCV29F.PT04.jpg",
+            "bg_col": "#f4e8dc",
+            "text_col": "rgba(0,0,0,0)",
+            "title": "",
+            "text": "",
+            "link_url": "shopify:\/\/products\/mushroom-matcha"
+          }
+        },
+        "88a13bcb-a75f-478f-8be7-f04df120ca63": {
+          "type": "menu-promotion-small",
+          "settings": {
+            "dropdown_link_title": "Plans",
+            "image": "shopify:\/\/shop_images\/siwsoon_hyperrealistic_image_of_a_mushroom_planet_visible_from__da736d0f-f775-4485-82ec-6473c4696c9e.png",
+            "bg_col": "#f4e8dc",
+            "text_col": "rgba(0,0,0,0)",
+            "title": "Digestion Plan",
+            "text": "",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "2972d5ae-8c7c-4dae-b1bb-63d586007004",
+        "9da95e54-761f-4755-aad5-48c47fdf44f1",
+        "fa4e8090-bc6a-4c25-85c8-fc40b85958fa",
+        "e0f49ca7-eca5-4115-af9b-99e81afbf625",
+        "a3cab011-44b3-4b36-aa94-2c50fe6105f9",
+        "26a5a621-0e51-4873-b21e-36dc673216ae",
+        "e6b599fe-3252-4974-ba55-9567eb31076f",
+        "88a13bcb-a75f-478f-8be7-f04df120ca63"
+      ],
+      "custom_css": [
+        ".logo-area {font-family: \"FuturaPT Book\";}",
+        "@media screen and (min-width: 480px) {.navigation__tier-2-container .navigation__tier-2 > .navigation__item:first-child {display: none; }}"
+      ],
+      "settings": {
+        "logo": "shopify:\/\/shop_images\/Solve_Only_-_Black_-_Transparent_1a38ad7e-d11f-47c8-9d4f-6e2e0bceb2f0.png",
+        "logo_img_width_int": 170,
+        "mobile_logo_img_width_int": 100,
+        "logo_h1": true,
+        "enable_sticky": true,
+        "menu_linklist": "main-menu",
+        "menu_linklist_mobile": "",
+        "menu_layout": "inline-menu-left",
+        "nav_featured_link": "Sale",
+        "enable_mobile_promo_carousel": true,
+        "enable_nav_mob_products": true,
+        "nav_mob_products_title": "Best Sellers",
+        "nav_mob_products_collection": "best-sellers",
+        "enable_search": true,
+        "cart_icon": "cart",
+        "show_cart_icon_label": false
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

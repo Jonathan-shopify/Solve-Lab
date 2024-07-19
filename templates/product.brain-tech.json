@@ -1,0 +1,491 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-v2",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "52cc4543-0f4e-415c-a0a9-cce0d172455e": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div class=\"custom-btns-pdp\">\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Focus & Memory<\/a>\n    <\/div>\n<div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Deep Work<\/a>\n    <\/div>\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Brain Health<\/a>\n    <\/div>\n    \n<\/div>",
+            "show_in_quickbuy": false
+          }
+        },
+        "ddd78f4e-1655-4d28-8ba5-c2e81b80c3cc": {
+          "type": "shopify:\/\/apps\/trustoo-io-product-reviews\/blocks\/star-rating-widget\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {
+            "star_size": 16,
+            "font_size": 14,
+            "block_aligment": "flex-start"
+          }
+        },
+        "1b9a06ba-9de4-4474-a1ca-3a5fb43d6137": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "{{ product.metafields.custom.product_description | metafield_tag }}",
+            "icon": "",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#e0f4d5",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-2"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_single": true,
+            "select_first_variant": true,
+            "variant_style": "listed",
+            "disable_unavailable_variants": true,
+            "show_size_chart": true,
+            "size_chart_variant": "size guide",
+            "size_chart_page": "pop-up1"
+          }
+        },
+        "richtext_gpKDqg": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p><strong>COGNITIVE SUPPORT<br\/><\/strong>By promoting neuronal health, enhancing neurogenesis and modulating neurotransmitter levels, Lion's Mane can improve cognitive function and reduce the symptoms of brain fog. † (1),(6)<\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/BRAINBLACK.png",
+            "icon_size": "large",
+            "enable_box": false,
+            "box_color": "#e0f4d5",
+            "show_in_quickbuy": false,
+            "class0": ""
+          }
+        },
+        "price": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "show_tax_and_shipping": true,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "e5216295-d9d1-45f9-8d41-49086103cd68": {
+          "type": "inventory_level",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 21,
+            "enable_box": true,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "724817b5-fb19-46ff-9baa-a75a4e092ce0": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "text": "Learn More About",
+            "style": "primary",
+            "page": "pop-up1",
+            "show_in_quickbuy": false
+          }
+        },
+        "d72c0ef0-2ff4-4be7-9565-ed8b20cfc527": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "cfbb07df-873e-4d23-a0d0-dcd1fb0e192c": {
+          "type": "shopify:\/\/apps\/price-panda-price-per-unit\/blocks\/productBlock\/8fe89266-7c30-4ab1-946d-3dcc05d9c8b2",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_backorder_text": true,
+            "show_pickup_availability": true
+          }
+        },
+        "57f158a3-2de2-4a71-a5a7-5842807117b5": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p>Klarna Available At Checkout<\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/image_8a0533a5-c8c7-46c0-bfca-173cd5a6b3d6.png",
+            "icon_size": "large",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-7"
+          }
+        },
+        "80d408df-4e1c-41e5-9b84-0872e4c917a8": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p>30 Days Money-Back Guarantee<\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/image_1.png",
+            "icon_size": "large",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-8"
+          }
+        },
+        "a2d9590d-7c37-4ee5-b2cf-9567ad7b976f": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "enable_carousel": true,
+            "max_products": 10,
+            "show_in_quickbuy": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "52cc4543-0f4e-415c-a0a9-cce0d172455e",
+        "ddd78f4e-1655-4d28-8ba5-c2e81b80c3cc",
+        "1b9a06ba-9de4-4474-a1ca-3a5fb43d6137",
+        "variant_picker",
+        "richtext_gpKDqg",
+        "price",
+        "divider",
+        "e5216295-d9d1-45f9-8d41-49086103cd68",
+        "724817b5-fb19-46ff-9baa-a75a4e092ce0",
+        "d72c0ef0-2ff4-4be7-9565-ed8b20cfc527",
+        "cfbb07df-873e-4d23-a0d0-dcd1fb0e192c",
+        "buy_buttons",
+        "57f158a3-2de2-4a71-a5a7-5842807117b5",
+        "80d408df-4e1c-41e5-9b84-0872e4c917a8",
+        "a2d9590d-7c37-4ee5-b2cf-9567ad7b976f"
+      ],
+      "settings": {
+        "custom_rich": "",
+        "show_location_underneath": false,
+        "inventory_transfers_enable": false,
+        "enable_sticky_columns": true,
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-beside",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "image_cards": "bg",
+        "enable_var_img_grouping": true,
+        "var_img_grouping_option": "Form, Size"
+      }
+    },
+    "03ad7a50-b40c-4239-99a0-6949811c9294": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-0": {
+          "type": "heading",
+          "settings": {
+            "title": "6th gear for the brain",
+            "title_size": "hsl-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The brain is the most important organ in our body. It can be compared to the conductor of an orchestra - constantly coordinating the cascades of processes taking place in our body. Our mental condition and intellectual capacity depend on it. The current pace of life and the unprecedented amount of information reaching us every day is an additional challenge posed to the constantly adapting brain and nervous system.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-0",
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-1"
+      ],
+      "settings": {
+        "height": "large",
+        "text_alignment": "center",
+        "color_scheme": "3",
+        "full_width": false
+      }
+    },
+    "e4435349-a953-4df3-947d-b63b23c1fc28": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/image-2-test.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "What is  Brain Tech?",
+            "title_size": "hl-style",
+            "text": "<p>Brain Tech is a carefully designed blend of plant extracts, nutrients, adaptogens and vitamin B6 - selected to support mental function and provide support for healthy brain function.<\/p>",
+            "content": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "Brain Tech",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "#cd4d1e",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-0",
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-1"
+      ],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "543ea4ba-cac1-4cd8-b6d8-7703e137db48": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Adaptogens, vitamins and minerals to support the brain and nervous system",
+            "title_size": "h1-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-0",
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "color_scheme": "1",
+        "full_width": true
+      }
+    },
+    "1604f3bd-bd75-44d0-a3a5-730333f9a72f": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "GAME CHANGING INGREDIENTS",
+            "title_size": "hsl-style",
+            "text": "<p><strong>Bacopa monieri <\/strong>- Supports short and long-term memory, increases concentration, supports learning ability and influences intelligence.<br\/><strong>Gotu kola<\/strong> - is an adaptogen that acts on mental health and the cardiovascular system.<br\/><strong>Rhadiola rosea<\/strong> - categorised as an adaptogen, supports normal blood circulation, which contributes to optimal mental and cognitive activity.<br\/><strong>Ginseng<\/strong> - support mental and cognitive performance, has antioxidant effects and improves physical condition.<br\/><strong>Zinc gluconate<\/strong> - helps maintain normal cognitive function, supports normal DNA synthesis, supports vitamin A metabolism and participates in protein synthesis.<br\/><strong>Choline<\/strong> - contributes to the normal metabolism of homocysteine, too much of which promotes the development of dementia and Alzheimer's disease.<br\/><strong>Vitamin B6<\/strong> - helps in the proper functioning of the nervous system and mental functions. Additionally, it contributes to the reduction of feelings of fatigue and tiredness.<\/p>",
+            "content": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/hexagon-grafika-zabawy-gruby_b2d4f83d-2f2a-42f3-b00e-beb38a345903.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-1",
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-0"
+      ],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "ec2050ee-9e02-47d6-aa67-495d64f15c79": {
+          "type": "question",
+          "settings": {
+            "title": "What it supports?",
+            "answer": "<p>Cognitive function, including focus and attention (Zinc)<\/p><p>Concentration (Bacopa) Creation and storage of memory traces (Bacopa)<\/p><p>Mental alertness and responses to stimuli (Zinc)<\/p><p>Proper functioning of the brain and nervous system (Vit. B6)<\/p>"
+          }
+        },
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-0": {
+          "type": "question",
+          "settings": {
+            "title": "For who?",
+            "answer": "<p>Brain Tech has been developed for people in need of long-lasting concentration, improved learning ability, memory and increased resistance to stress.<br\/><br\/>It is a solution that will work well for white-collar workers, engineers, students, programmers and people subjected to a lot of stimuli during their daily tasks.<\/p>"
+          }
+        },
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1": {
+          "type": "question",
+          "settings": {
+            "title": "How to use?",
+            "answer": "<p>Recommended daily serving to show a beneficial effect: 2 capsules daily after a meal<br\/><br\/>Do not exceed the recommended daily serving. <br\/><br\/>In order to reduce the feeling of fatigue and to provide additional temporary support before mental activity, a serving of Brain Tech can be combined with caffeine in the form of a cup of coffee or a dietary supplement (100-200 mg caffeine per serving).<\/p>"
+          }
+        },
+        "44cc8dd3-03e0-4f2c-92d9-a2a35817485e": {
+          "type": "question",
+          "settings": {
+            "title": "What are nootropics?",
+            "answer": "<p>Nootropics is the term for substances (natural and synthetic) that are designed to safely support brain function. By definition, nootropics improve (restore to optimal levels) memory and overall cognitive functions even under distracting conditions, while being non-toxic and showing a protective effect on the brain.<\/p>"
+          }
+        },
+        "de6f2a6e-8806-4452-8622-298fa67d0a93": {
+          "type": "question",
+          "settings": {
+            "title": "What are adaptogens?",
+            "answer": "<p>Adaptogens are substances and raw materials (mainly botanicals) that support the body's adaptation (adjustment) to difficult, stressful conditions. This stress may include emotional, metabolic or physical factors. Some of the most popular adaptogens are: Rhodiola rosea, Ginseng, Bacopa monnieri and Gotu kola. In addition to reducing the effects of stress, each adaptogen also has its own unique package of properties. Often a whole complex of adaptogens is used, combining several species with differing effects for more comprehensive effects.<\/p>"
+          }
+        },
+        "fef10d94-b03d-405a-8a9e-20f3f4b4a9c6": {
+          "type": "question",
+          "settings": {
+            "title": "What influences brain efficiency?",
+            "answer": "<p>In order to function properly, the brain needs an efficient supply of substrates for cellular respiration (glucose, oxygen) to keep neurones supplied with energy. It also needs adequate amounts of essential vitamins (including B6) and minerals (including zinc). It also needs the good condition of cell membranes, which protect the neurons and determine the efficiency of communication between them. Cell membranes include phospholipids such as phosphatidylserine and phosphatidylcholine.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "ec2050ee-9e02-47d6-aa67-495d64f15c79",
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-0",
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1",
+        "44cc8dd3-03e0-4f2c-92d9-a2a35817485e",
+        "de6f2a6e-8806-4452-8622-298fa67d0a93",
+        "fef10d94-b03d-405a-8a9e-20f3f4b4a9c6"
+      ],
+      "settings": {
+        "title": "FAQ - Frequently Asked Questions"
+      }
+    },
+    "234c1298-7eda-4adc-a2ab-e8b16e25e8ae": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "title": "Blog posts",
+        "show_title": false,
+        "show_button": true,
+        "blog": "news",
+        "enable_carousel": true,
+        "post_limit": 3,
+        "show_author": false,
+        "show_date": false,
+        "show_excerpts": true,
+        "crop_ratio": "1.78",
+        "color_scheme": "1"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_title": true,
+        "show_vendor": false,
+        "grid": 4
+      }
+    },
+    "16930721474562ba19": {
+      "type": "apps",
+      "blocks": {
+        "871fb4e1-87b1-42a4-a912-45c8e3545327": {
+          "type": "shopify:\/\/apps\/trustoo-io-product-reviews\/blocks\/review-widget\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "871fb4e1-87b1-42a4-a912-45c8e3545327"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "03ad7a50-b40c-4239-99a0-6949811c9294",
+    "e4435349-a953-4df3-947d-b63b23c1fc28",
+    "543ea4ba-cac1-4cd8-b6d8-7703e137db48",
+    "1604f3bd-bd75-44d0-a3a5-730333f9a72f",
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1",
+    "234c1298-7eda-4adc-a2ab-e8b16e25e8ae",
+    "related-products",
+    "16930721474562ba19"
+  ]
+}

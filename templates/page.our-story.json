@@ -1,0 +1,237 @@
+{
+  "sections": {
+    "4e4f021d-71b5-42f7-af63-1bc484aaa385": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/kordycepina2.png",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "content_max_width": 1060,
+        "subheading": "OUR MISSION",
+        "title": "to use the power of mushrooms to unlock full cognitive and physical potential",
+        "title_size": "hl-style",
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "color_scheme": "1",
+        "heading_highlight_text": "",
+        "heading_highlight_font": true,
+        "heading_highlight_stencil": false,
+        "heading_highlight_color": "rgba(0,0,0,0)",
+        "heading_highlight_gradient": ""
+      }
+    },
+    "f6e885a6-1534-4994-bed0-1dfb1ffa746b": {
+      "type": "media-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/jakublion_8bb6f2fa-a2b6-4548-b8b1-a96ed0a25314.jpg",
+        "image_link": "",
+        "video_external": "",
+        "autoplay": false,
+        "content_max_width": 800,
+        "subheading": "",
+        "title": "Born to solve the problem   Grown to change the world",
+        "title_size": "h1-style",
+        "use_h1": false,
+        "text": "<p><strong>Welcome to SolveLabs.<\/strong> <\/p><p>The nexus where nature and science come together to promote wellness and performance enhancement. Our journey began with the personal trials of our founder, Jacob, a cognitive science scholar and avid CrossFit athlete who discovered the potential of natural ingredients under extraordinary circumstances.<br\/><br\/>While passionately pursuing his dual interests in academia and athletics, Jacob found himself overextending, relying heavily on synthetic pre-workouts to boost his performance. <br\/><br\/>This dependence led to a serious liver condition, signalling the urgent need for healthier, more sustainable alternatives. Thus, he ventured into the world of mycology.<br\/><br\/>His exploration led to the discovery of cordyceps, a functional mushroom renowned for its energy-boosting properties. This marked the beginning of Jacob's deep dive into functional mushrooms and adaptogens, revealing their potential to enhance cognition, physical performance, and overall well-being without the harmful side effects of synthetic substances.<br\/><br\/>He extends his mission to educate and inspire through his Instagram profile, sharing the captivating world of mushrooms, fascinating historical mycology stories, and cutting-edge research in the field. He uses this platform to engage and excite others about the potential and power of these natural marvels.<\/p>",
+        "enlarge_text": false,
+        "button_label": "Shop Pure Mushrooms",
+        "button_link": "shopify:\/\/collections\/pure-mushrooms",
+        "button_style": "primary",
+        "text_alignment": "left",
+        "media_position": "left",
+        "enable_media_spacing": false,
+        "media_shape": "1",
+        "color_scheme": "2",
+        "heading_highlight_text": "Grown to change the world",
+        "heading_highlight_font": false,
+        "heading_highlight_stencil": false,
+        "heading_highlight_color": "#cd4d1e",
+        "heading_highlight_gradient": ""
+      }
+    },
+    "04427aa7-b346-4b3f-88e3-137ec36de021": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19600192373045__04427aa7-b346-4b3f-88e3-137ec36de021-1687226667ac82ae47-0": {
+          "type": "heading",
+          "settings": {
+            "title": "SolveLabs Quality",
+            "title_size": "h1-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "#cd4d1e",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19600192373045__04427aa7-b346-4b3f-88e3-137ec36de021-1687226667ac82ae47-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Each SolveLabs product is grounded in rigorous research and is meticulously crafted to empower  people like you, to unlock full cognitive and physical potential. We stand as a testament to the boundless possibilities born from blending nature's wisdom with scientific innovation.<br\/><br\/>Join us on this journey of exploration, growth, and self-transcendence. Welcome to SolveLabs, your hub for natural, performance-focused solutions.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19600192373045__04427aa7-b346-4b3f-88e3-137ec36de021-1687226667ac82ae47-0",
+        "template--19600192373045__04427aa7-b346-4b3f-88e3-137ec36de021-1687226667ac82ae47-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "color_scheme": "1",
+        "full_width": false
+      }
+    },
+    "db590c07-17a3-4942-a29f-9a9d4f0d77f5": {
+      "type": "featured-collection",
+      "settings": {
+        "custom-class": "",
+        "title": "Shop Our Best Sellers",
+        "show_title": true,
+        "collection": "best-sellers",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "show_title_card": true,
+        "show_title_card_image": true,
+        "title_card_image": "shopify:\/\/shop_images\/vanilla_2_copy_d5887103-6f2f-4395-aeec-e996c6f6018e.jpg",
+        "overlay_style": "shadow",
+        "color_scheme": "1"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "ac1a3812-aef9-45f0-aa12-25c561708614": {
+      "type": "multi-column",
+      "blocks": {
+        "template--19600192373045__ac1a3812-aef9-45f0-aa12-25c561708614-1687227717e3b7bbc8-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Kuba_-_Circle.png",
+            "image_width": 50,
+            "title": "Jakub Jezierski",
+            "title_size": "h3-style",
+            "text": "<p>Founder - CEO<\/p><p>Favourite product:<\/p>",
+            "button_label": "Brain Tech",
+            "link": "shopify:\/\/products\/brain-tech",
+            "color_scheme": "2"
+          }
+        },
+        "template--19600192373045__ac1a3812-aef9-45f0-aa12-25c561708614-1687227717e3b7bbc8-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Kuba_-_Circle.png",
+            "image_width": 50,
+            "title": "Anna Bielak",
+            "title_size": "h3-style",
+            "text": "<p>CFO<\/p><p>Favourite Product<\/p>",
+            "button_label": "Collagen",
+            "link": "shopify:\/\/products\/collagen",
+            "color_scheme": "2"
+          }
+        },
+        "template--19600192373045__ac1a3812-aef9-45f0-aa12-25c561708614-1687227717e3b7bbc8-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/SIVI_-_CLIP.png",
+            "image_width": 50,
+            "title": "Przemyslaw Siwek",
+            "title_size": "h3-style",
+            "text": "<p>Head of Global<\/p><p>Favourite Product<\/p>",
+            "button_label": "Keto Creatine",
+            "link": "shopify:\/\/products\/creatine-with-plant-extracts",
+            "color_scheme": "2"
+          }
+        },
+        "a27608b7-aad8-4f94-912d-71bf691cdffe": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/BRIE_-_CIRCLE.png",
+            "image_width": 50,
+            "title": "BRIEANA TURNER",
+            "title_size": "h3-style",
+            "text": "<p>Customer Experiance<\/p><p>Favourite Product<\/p>",
+            "button_label": "Reishi Mushroom",
+            "link": "shopify:\/\/products\/reishi",
+            "color_scheme": "1"
+          }
+        },
+        "b3a840f7-d00f-4444-9176-f3f1e657d61c": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/EMILKA_-_CIRCLE.png",
+            "image_width": 50,
+            "title": "Emilia pasternak",
+            "title_size": "h3-style",
+            "text": "<p>Graphic Design<\/p><p>Favourite Product<\/p>",
+            "button_label": "Vegan Protein",
+            "link": "",
+            "color_scheme": "1"
+          }
+        },
+        "4f0dcbfc-e982-46ce-be37-317e37e1f59b": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/JJ_-_Camel_e5182ce1-cb96-48f1-aabf-82422fb5e11b.png",
+            "image_width": 50,
+            "title": "JUAN JOSE PEREZ BAREA",
+            "title_size": "h3-style",
+            "text": "<p>Head of Global Operations<\/p><p>Favourite Product<\/p>",
+            "button_label": "Mushroom Cacao",
+            "link": "shopify:\/\/products\/mushroom-cacao",
+            "color_scheme": "1"
+          }
+        }
+      },
+      "block_order": [
+        "template--19600192373045__ac1a3812-aef9-45f0-aa12-25c561708614-1687227717e3b7bbc8-0",
+        "template--19600192373045__ac1a3812-aef9-45f0-aa12-25c561708614-1687227717e3b7bbc8-1",
+        "template--19600192373045__ac1a3812-aef9-45f0-aa12-25c561708614-1687227717e3b7bbc8-2",
+        "a27608b7-aad8-4f94-912d-71bf691cdffe",
+        "b3a840f7-d00f-4444-9176-f3f1e657d61c",
+        "4f0dcbfc-e982-46ce-be37-317e37e1f59b"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Meet the Team",
+        "show_title": true,
+        "text_alignment": "center",
+        "button_style": "primary"
+      }
+    }
+  },
+  "order": [
+    "4e4f021d-71b5-42f7-af63-1bc484aaa385",
+    "f6e885a6-1534-4994-bed0-1dfb1ffa746b",
+    "04427aa7-b346-4b3f-88e3-137ec36de021",
+    "db590c07-17a3-4942-a29f-9a9d4f0d77f5",
+    "main",
+    "ac1a3812-aef9-45f0-aa12-25c561708614"
+  ]
+}

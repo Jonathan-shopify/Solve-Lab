@@ -1,0 +1,546 @@
+<div id="section-id-{{ section.id }}" class="slideshow-container card-br-oh" data-section-type="slideshow" data-cc-animate data-cc-animate-delay="0.2s">
+  {%- style -%}
+    {%- if section.settings.height == 'fixed' -%}
+    #section-id-{{ section.id }} {
+      --image-height: {{ section.settings.height_mobile }}px;
+    }
+    {%- elsif section.settings.height == 'adapt' and section.blocks.size > 0 and section.blocks.first.settings.image -%}
+      #section-id-{{ section.id }} .background-image {
+        --ar-padding: {{ 1 | divided_by: section.blocks.first.settings.image.aspect_ratio | times: 100 }}% !important;
+      }
+      {%- if section.blocks.first.settings.mobile_image -%}
+        @media (max-width: 767px) {
+          #section-id-{{ section.id }} .background-image.mobile-only {
+            --ar-padding: {{ 1 | divided_by: section.blocks.first.settings.mobile_image.aspect_ratio | times: 100 }}% !important;
+          }
+        }
+      {%- endif -%}
+    {%- endif -%}
+
+    @media (min-width: 768px) {
+      {%- if section.settings.height == 'fixed' -%}
+      #section-id-{{ section.id }} {
+        --image-height: {{ section.settings.height_desktop }}px;
+      }
+      {%- endif -%}
+    }
+    @media (min-width: 768px) {
+      #section-id-template--23014875595061__slideshow_V9YJhz .background-image {
+          --ar-padding: 41.24537% !important;
+      }
+    }
+  {%- endstyle -%}
+
+  <div class="card-scheme card-scheme--{{ section.settings.color_scheme }} slideshow slideshow--navigation-{{ section.settings.slide_navigation | split: ' ' | first }} slick-slider-overlay-dots-desktop {% if section.settings.mobile_overlay_under %}slick-slider--mobile-stack{% else %}slick-slider-overlay-dots{% endif %}" data-transition="{{ section.settings.slide_transition }}" data-autoplay="{{ section.settings.autoplay }}" data-autoplay-speed="{{ section.settings.autoplay_speed }}" data-navigation="{{ section.settings.slide_navigation | split: ' ' | first }}">
+    {%- for block in section.blocks -%}
+      {%- liquid
+        assign show_overlay_text = false
+        if block.settings.title != blank or block.settings.subheading != blank or block.settings.text != blank or block.settings.button_label_1 != blank or block.settings.button_label_2 != blank
+          assign show_overlay_text = true
+          assign wrap_slide_with_link = true
+          if block.settings.slide_link == blank or block.settings.text contains '</a>' or block.settings.button_url_1 != blank or block.settings.button_url_2 != blank
+            assign wrap_slide_with_link = false
+          endif
+        elsif block.settings.slide_link != blank
+          assign wrap_slide_with_link = true
+        endif
+
+        if section.settings.mobile_overlay_under and section.settings.color_scheme == 'none'
+          assign image_class = 'card-br-oh'
+        else
+          assign image_class = ''
+        endif
+      -%}
+      <div class="slide slide-{{ forloop.index }} {{ block.settings.custom_class }} height--{{ section.settings.height }} image-overlay image-overlay--bg-{{ section.settings.overlay_style }} {% if section.settings.mobile_overlay_under %}overlay-text-parent--mobile-stack{% endif %}" {{ block.shopify_attributes }}>
+        {%- if wrap_slide_with_link -%}
+          <a class="image-overlay__image-link focus-inset" href="{{ block.settings.slide_link }}">
+        {%- endif -%}
+
+        {%- if block.settings.image == blank -%}
+          <div class="placeholder-image placeholder--banner{% if show_overlay_text %} dark{% endif %} {{ image_class }}" {% if section.settings.height == 'adapt' %}style="padding-top: 50%"{% endif %}>
+            {% capture current %}{% cycle 1, 2 %}{% endcapture %}
+            {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+          </div>
+        {%- else -%}
+          {%-
+            render 'background-image',
+              image: block.settings.image,
+              mobile_image: block.settings.mobile_image,
+              mobile_image_position: block.settings.mobile_image.presentation.focal_point,
+              eager: forloop.first,
+              no_transition_in: true,
+              wide: true,
+              extra_classes: image_class
+          -%}
+        {%- endif -%}
+
+        {%- if show_overlay_text -%} 
+          <div class="overlay-text overlay-text--with-reveal overlay-text--for-banner overlay--v-{{ block.settings.text_alignment | split: ' ' | first }} overlay--h-{{ block.settings.text_alignment | split: ' ' | last }} image-overlay__over">
+            <div class="left-text-custom overlay-text__inner" style="max-width: {{ block.settings.content_max_width }}px">
+              <div class="overlay-text__text">
+                {%- if block.settings.subheading != blank -%}
+                  <div class="overlay-text__reveal desktop-show"><div class="overlay-text__subheading subheading subheading--over"><img src="https://solvelabs.world/cdn/shop/files/Group_1000004348.png?v=1718364500">{{ block.settings.subheading | escape }}</div></div>
+                {%- endif -%}
+                {%- if block.settings.title != blank -%}
+                  <div class="overlay-text__reveal">
+                    {% if block.settings.use_h1 %}
+                      <h1 class="overlay-text__title {{ block.settings.title_size }}">{{ block.settings.title }}</h1>
+                    {% else %}
+                      <h2 class="overlay-text__title {{ block.settings.title_size }}">{{ block.settings.title }}</h2>
+                    {% endif %}
+                  </div>
+                {%- endif -%}
+                {%- if block.settings.text != blank -%}
+                  <div class="overlay-text__reveal"><div class="overlay-text__rte rte{% if block.settings.enlarge_text %} large-text{% endif %}">{{ block.settings.text }}</div></div>
+                {%- endif -%}
+                {%- if block.settings.button_label_1 != blank or block.settings.button_label_2 != blank -%}
+                  <div class="overlay-text__button-row">
+                    {%- if wrap_slide_with_link -%}
+                      {%- if block.settings.button_label_1 != blank -%}
+                        <span class="overlay-text__button btn btn--secondary btn--link"><span class="btn__text">{{ block.settings.button_label_1 }}</span></span>
+                      {%- endif -%}
+                      {%- if block.settings.button_label_2 != blank -%}
+                        <span class="overlay-text__button btn btn--secondary btn--link"><span class="btn__text">{{ block.settings.button_label_2 }}</span></span>
+                      {%- endif -%}
+                    {%- else -%}
+                      {%- if block.settings.button_label_1 != blank -%}
+                        <a class="overlay-text__button btn btn--secondary btn--link" href="{{ block.settings.button_url_1 }}"><span class="btn__text">{{ block.settings.button_label_1 | escape }}</span></a>
+                      {%- endif -%}
+                      {%- if block.settings.button_label_2 != blank -%}
+                        <a class="overlay-text__button btn btn--secondary btn--link" href="{{ block.settings.button_url_2 }}"><span class="btn__text">{{ block.settings.button_label_2 | escape }}</span></a>
+                      {%- endif -%}
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+                {%- if block.settings.subheading != blank -%}
+                  <div class="overlay-text__reveal mobile-show"><div class="overlay-text__subheading subheading subheading--over"><img src="https://cdn.shopify.com/s/files/1/0777/0718/2389/files/Frame_1000004348.svg?v=1718461431">{{ block.settings.subheading | escape }}</div></div>
+                {%- endif -%}
+              </div>
+            </div>
+            <div class="banner__secondary-image">
+              <!--img class="overlay-text__inner" src="{{ block.settings.product_image |  image_url }}"-->
+            </div>
+          </div>
+        {%- endif -%}
+
+        {%- if wrap_slide_with_link -%}
+          </a>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+
+  {% if section.settings.slide_navigation contains 'arrows' and section.blocks.size > 1 %}
+    <div class="slideshow-controls slideshow-controls--count slideshow-controls--count-{{ section.settings.slide_navigation | split: ' ' | last }}">
+      <div class="slideshow-controls__count">1 / {{ section.blocks.size }}</div>
+    </div>
+  {% endif %}
+</div>
+
+
+{% schema %}
+  {
+    "name": "Slideshow",
+    "class": "section-slideshow card",
+    "max_blocks": 8,
+    "disabled_on": {
+      "groups": [
+        "aside"
+      ]
+    },
+    "settings": [
+      {
+        "type": "radio",
+        "id": "height",
+        "label": "Slide height",
+        "options": [
+          {
+            "value": "adapt",
+            "label": "Adapt to first image"
+          },
+          {
+            "value": "full",
+            "label": "Full screen"
+          },
+          {
+            "value": "fixed",
+            "label": "Fixed height"
+          }
+        ],
+        "default": "fixed"
+      },
+      {
+        "type": "range",
+        "id": "height_desktop",
+        "min": 200,
+        "max": 1000,
+        "step": 20,
+        "unit": "px",
+        "label": "Desktop fixed height",
+        "default": 600
+      },
+      {
+        "type": "range",
+        "id": "height_mobile",
+        "min": 100,
+        "max": 1000,
+        "step": 20,
+        "unit": "px",
+        "label": "Mobile fixed height",
+        "default": 460
+      },
+      {
+        "id": "mobile_overlay_under",
+        "type": "checkbox",
+        "label": "Show text below image on mobile",
+        "default": false
+      },
+      {
+        "id": "overlay_style",
+        "type": "select",
+        "label": "Overlay style",
+        "default": "shadow",
+        "options": [
+          {
+            "value": "full",
+            "label": "Tint"
+          },
+          {
+            "value": "shadow",
+            "label": "Text shadow"
+          },
+          {
+            "value": "full image-overlay--bg-shadow",
+            "label": "Text shadow and tint"
+          },
+          {
+            "value": "no_background",
+            "label": "No background"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "color_scheme",
+        "label": "Color scheme",
+        "info": "Only seen when text shows under image",
+        "default": "1",
+        "options": [
+          {
+            "value": "1",
+            "label": "Card 1"
+          },
+          {
+            "value": "2",
+            "label": "Card 2"
+          },
+          {
+            "value": "3",
+            "label": "Card 3"
+          },
+          {
+            "value": "none",
+            "label": "No card"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Slideshow navigation"
+      },
+      {
+        "type": "select",
+        "id": "slide_transition",
+        "label": "Transition",
+        "options": [
+          {
+            "value": "zoom",
+            "label": "Zoom"
+          },
+          {
+            "value": "fade",
+            "label": "Fade"
+          },
+          {
+            "value": "slide",
+            "label": "Slide"
+          },
+          {
+            "value": "slide_fade",
+            "label": "Slide & Fade"
+          },
+          {
+            "value": "instant",
+            "label": "Instant"
+          }
+        ],
+        "default": "fade"
+      },
+      {
+        "id": "slide_navigation",
+        "type": "select",
+        "label": "Slide navigation style",
+        "default": "arrows top-right",
+        "options": [
+          {
+            "value": "arrows top-left",
+            "label": "Arrows - top left"
+          },
+          {
+            "value": "arrows top-right",
+            "label": "Arrows - top right"
+          },
+          {
+            "value": "arrows bottom-left",
+            "label": "Arrows - bottom left"
+          },
+          {
+            "value": "arrows bottom-right",
+            "label": "Arrows - bottom right"
+          },
+          {
+            "value": "dots",
+            "label": "Dots"
+          },
+          {
+            "value": "none",
+            "label": "None"
+          }
+        ]
+      },
+      {
+        "id": "autoplay",
+        "type": "checkbox",
+        "label": "Auto-rotate slides",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "autoplay_speed",
+        "min": 1,
+        "max": 20,
+        "step": 1,
+        "unit": "s",
+        "label": "Change slides every",
+        "default": 7
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image",
+            "info": "2048 x 1024px recommended"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile_image",
+            "label": "Mobile image",
+            "info": "1024px x 1024px recommended"
+          },
+          {
+            "type": "image_picker",
+            "id": "product_image",
+            "label": "Product image"
+          },
+          {
+            "type": "url",
+            "id": "slide_link",
+            "label": "Slide link",
+            "info": "Not used if buttons or text contain links"
+          },
+          {
+            "type": "text",
+            "id": "custom_class",
+            "label": "Custom Class",
+            "info": "Use 'slide_left' for Left Aligned text 'slide_center' for Centered Align text."
+          },
+          {
+            "type": "header",
+            "content": "Overlay"
+          },
+          {
+            "type": "range",
+            "id": "content_max_width",
+            "min": 500,
+            "max": 1200,
+            "step": 20,
+            "unit": "px",
+            "label": "Maximum content width",
+            "default": 800
+          },
+          {
+            "type": "text",
+            "id": "subheading",
+            "label": "Subheading",
+            "default": "Tell your story"
+          },
+          {
+            "type": "html",
+            "id": "title",
+            "label": "Heading",
+            "info": "Enter <br> for a line-break",
+            "default": "<p>And optional heading</p>"
+          },
+          {
+            "type": "select",
+            "id": "title_size",
+            "label": "Heading size",
+            "default": "hsl-style",
+            "options": [
+              {
+                "label": "Regular",
+                "value": "h1-style"
+              },
+              {
+                "label": "Impact",
+                "value": "hl-style"
+              },
+              {
+                "label": "Extra impact",
+                "value": "hsl-style"
+              }
+            ]
+          },
+          {
+            "type": "checkbox",
+            "id": "use_h1",
+            "label": "Set as primary page heading",
+            "info": "Use <h1> tag. One per page recommended. [Read more](https://cleancanvas.co.uk/support/mode/section-h1-setting)",
+            "default": false
+          },
+          {
+            "type": "html",
+            "id": "text",
+            "label": "Text"
+          },
+          {
+            "type": "checkbox",
+            "id": "enlarge_text",
+            "label": "Enlarge text",
+            "default": true
+          },
+          {
+            "type": "text",
+            "id": "button_label_1",
+            "label": "Button 1 label",
+            "default": "Shop this"
+          },
+          {
+            "type": "url",
+            "id": "button_url_1",
+            "label": "Button 1 link"
+          },
+          {
+            "type": "text",
+            "id": "button_label_2",
+            "label": "Button 2 label",
+            "default": "Shop all"
+          },
+          {
+            "type": "url",
+            "id": "button_url_2",
+            "label": "Button 2 link"
+          },
+          {
+            "type": "select",
+            "id": "text_alignment",
+            "label": "Text overlay position",
+            "options": [
+              {
+                "value": "top left",
+                "label": "Top left"
+              },
+              {
+                "value": "top center",
+                "label": "Top center"
+              },
+              {
+                "value": "top right",
+                "label": "Top right"
+              },
+              {
+                "value": "center left",
+                "label": "Middle left"
+              },
+              {
+                "value": "center center",
+                "label": "Middle center"
+              },
+              {
+                "value": "center right",
+                "label": "Middle right"
+              },
+              {
+                "value": "bottom left",
+                "label": "Bottom left"
+              },
+              {
+                "value": "bottom center",
+                "label": "Bottom center"
+              },
+              {
+                "value": "bottom right",
+                "label": "Bottom right"
+              }
+            ],
+            "default": "center center"
+          },
+          {
+            "type": "header",
+            "content": "Heading text highlight"
+          },
+          {
+            "type": "text",
+            "id": "heading_highlight_text",
+            "label": "Text to highlight",
+            "info": "Case-sensitive. To highlight words or phrases that are not next to each other, use a comma. For example 'free shipping, returns'"
+          },
+          {
+            "type": "checkbox",
+            "id": "heading_highlight_font",
+            "label": "Enable highlight font",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "heading_highlight_stencil",
+            "label": "Enable stencil",
+            "default": false
+          },
+          {
+            "type": "color",
+            "id": "heading_highlight_color",
+            "label": "Color",
+            "default": "rgba(0,0,0,0)"
+          },
+          {
+            "type": "color_background",
+            "id": "heading_highlight_gradient",
+            "label": "Color gradient",
+            "info": "A gradient stencil is not possible"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Slideshow",
+        "settings": {
+        },
+        "blocks": [
+          {
+            "type": "image"
+          },
+          {
+            "type": "image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,948 @@
+{
+  "sections": {
+    "16359276425da8ce46": {
+      "type": "slideshow",
+      "blocks": {
+        "16359276425da8ce46-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mushrooms-2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/mobile2.png",
+            "slide_link": "shopify:\/\/products\/mushroom-starter-pack",
+            "custom_class": "",
+            "content_max_width": 800,
+            "subheading": "",
+            "title": "Start your <br> Mushroom Journey",
+            "title_size": "hl-style",
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": false,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "Here",
+            "button_url_2": "shopify:\/\/products\/mushroom-starter-pack",
+            "text_alignment": "center center",
+            "heading_highlight_text": "Your Mushroom JOURNEY",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "#ffffff",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "c1513f87-0b9e-4f9d-8555-29e7a2196353": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banner_Header_2.webp",
+            "mobile_image": "shopify:\/\/shop_images\/Banner_Header_Mobile_1_copy_ddf1b85e-b0a9-4dfc-9a34-df693181db08.webp",
+            "slide_link": "",
+            "custom_class": "slide_center",
+            "content_max_width": 800,
+            "subheading": "black week IS HERE",
+            "title": "40% OFF  FOR ALL PRODUCTS",
+            "title_size": "hsl-style",
+            "use_h1": false,
+            "text": "<p>Use Code \"BLACK\"<\/p>",
+            "enlarge_text": true,
+            "button_label_1": "Shop All",
+            "button_url_1": "shopify:\/\/collections\/shop-all",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "top center",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "16359276425da8ce46-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_1000004488.png",
+            "mobile_image": "shopify:\/\/shop_images\/Iphone_13_-_2.png",
+            "slide_link": "",
+            "custom_class": "slide_left",
+            "content_max_width": 800,
+            "subheading": "",
+            "title": "",
+            "title_size": "hl-style",
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": false,
+            "button_label_1": "",
+            "button_url_1": "shopify:\/\/products\/lions-mane",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center left",
+            "heading_highlight_text": "",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": true,
+            "heading_highlight_color": "#ffffff",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "16359276425da8ce46-1",
+        "c1513f87-0b9e-4f9d-8555-29e7a2196353",
+        "16359276425da8ce46-0"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".overlay-text__subheading {padding: 0px; margin-top: 20px; margin-bottom: 0px; color: #000; font-weight: 900; letter-spacing: 10px;}",
+        ".overlay-text__inner {display: flex; box-sizing: border-box; max-width: 100vw; margin: 0px; padding: 0px;}",
+        ".btn {border-radius: 15px; text-transform: uppercase;}",
+        ".background-image {border-radius: 30px;}"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 500,
+        "height_mobile": 480,
+        "mobile_overlay_under": false,
+        "overlay_style": "no_background",
+        "color_scheme": "none",
+        "slide_transition": "zoom",
+        "slide_navigation": "arrows top-right",
+        "autoplay": true,
+        "autoplay_speed": 15
+      }
+    },
+    "bdfe56bf-18d3-4b55-9439-05d4b99d3160": {
+      "type": "gallery",
+      "blocks": {
+        "template--20926528192821__bdfe56bf-18d3-4b55-9439-05d4b99d3160-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_26308_1_ae865f6d-baa5-49eb-9d35-30939f90dcaa.webp",
+            "enlarge_image": false,
+            "subheading": "subscription",
+            "title": "Done right",
+            "desription": "<li>25% Discount <\/li>\n<li>Cancel, Skip, Pause Anytime<\/li>\n<li>Free Gift Every 5th renewal<\/li>",
+            "button_label": "SHOP NOW",
+            "link": "shopify:\/\/products\/chaga",
+            "bg_color": "#dabb97",
+            "text_alignment": "top left"
+          }
+        },
+        "template--20926528192821__bdfe56bf-18d3-4b55-9439-05d4b99d3160-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elixirs.webp",
+            "enlarge_image": false,
+            "subheading": "Mushroom",
+            "title": "Elixirs",
+            "desription": "<li>Great Taste<\/li>\n<li>Coffee Substitute<\/li>\n<li>Improves Focus and Memory<\/li>",
+            "button_label": "TRY TODAY",
+            "link": "shopify:\/\/products\/mushroom-matcha",
+            "bg_color": "#6a7b35",
+            "text_alignment": "top left"
+          }
+        }
+      },
+      "block_order": [
+        "template--20926528192821__bdfe56bf-18d3-4b55-9439-05d4b99d3160-image-2",
+        "template--20926528192821__bdfe56bf-18d3-4b55-9439-05d4b99d3160-image-1"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "grid": 2,
+        "height": "fixed",
+        "desktop_image_height": 350,
+        "mobile_image_height": 290,
+        "title_size": "h3-style",
+        "enable_margin": true,
+        "enable_carousel": true,
+        "overlay_style": "no_background",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_fwAhUQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tibrHQ": {
+          "type": "heading",
+          "settings": {
+            "title": "BLOG",
+            "title_size": "h1-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_tibrHQ"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "color_scheme": "none",
+        "full_width": false,
+        "custom_class": ""
+      }
+    },
+    "7119323e-750e-4748-8940-529924370410": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Elixir_Pattern_-_Matcha.webp",
+        "mobile_image": "shopify:\/\/shop_images\/Elixir_Pattern_-_Matcha_mobile.webp",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "shopify:\/\/pages\/our-story",
+        "content_max_width": 800,
+        "subheading": "Nature. Science. Performance.",
+        "title": "OUR STORY",
+        "title_size": "hsl-style",
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": false,
+        "button_label_1": "READ MORE",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "no_background",
+        "color_scheme": "none",
+        "heading_highlight_text": "",
+        "heading_highlight_font": true,
+        "heading_highlight_stencil": false,
+        "heading_highlight_color": "rgba(0,0,0,0)",
+        "heading_highlight_gradient": ""
+      }
+    },
+    "slideshow_V9YJhz": {
+      "type": "slideshow",
+      "blocks": {
+        "image_Lx7Dei": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banner1.png",
+            "mobile_image": "shopify:\/\/shop_images\/bannerMobile1.png",
+            "slide_link": "",
+            "custom_class": "",
+            "content_max_width": 800,
+            "subheading": "12,000 verified 5-star reviews",
+            "title": "Maximise your focus With The Ultimate Lion’s Mane extract",
+            "title_size": "h1-style",
+            "use_h1": true,
+            "text": "<ul>\n<li>10x More Potent than standard extracts<\/li>\n<li>Experience Calm-Stress Free Focus<\/li>\n<li>100% Organic Fruiting Bodies<\/li>\n<\/ul>",
+            "enlarge_text": false,
+            "button_label_1": "SUBSCRIBE & SAVE 33%",
+            "button_url_1": "#",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center",
+            "heading_highlight_text": "",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "image_aj676F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/baner-short_f21e5e2e-2f69-490b-9aeb-ceecb9a22f70.png",
+            "mobile_image": "shopify:\/\/shop_images\/MobileHQ.png",
+            "slide_link": "",
+            "custom_class": "",
+            "content_max_width": 800,
+            "subheading": "20,000+ Customers Worldwide",
+            "title": "Focus On Your Dreams<br> With <b>High Strength<\/b><br> <b>Lion's Mane<\/b> Extract",
+            "title_size": "h1-style",
+            "use_h1": true,
+            "text": "<ul>\n<li>Experience calm stress focus<\/li>\n<li>100% organic fruiting bodies<\/li>\n<li>5x more potent<\/li>\n<\/ul>",
+            "enlarge_text": false,
+            "button_label_1": "TRY FROM £16.00 \/ MONTTH",
+            "button_url_1": "#",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "#ffffff",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Lx7Dei",
+        "image_aj676F"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 840,
+        "height_mobile": 460,
+        "mobile_overlay_under": false,
+        "overlay_style": "no_background",
+        "color_scheme": "1",
+        "slide_transition": "fade",
+        "slide_navigation": "arrows top-right",
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "scrolling_banner_q3LkWf": {
+      "type": "scrolling-banner",
+      "blocks": {
+        "text_Vn9yCd": {
+          "type": "text",
+          "settings": {
+            "text": "60-DAY SATISFACTION GUARANTEE",
+            "color": "#000000",
+            "link": "",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "#000000",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "text_dQEzHt": {
+          "type": "text",
+          "settings": {
+            "text": "20,000+ HAPPY CUSTOMERS",
+            "color": "rgba(0,0,0,0)",
+            "link": "",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "text_8JxAG8": {
+          "type": "text",
+          "settings": {
+            "text": "1-DAY EU & UK DELIVERY AVAILABLE",
+            "color": "rgba(0,0,0,0)",
+            "link": "",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_Vn9yCd",
+        "text_dQEzHt",
+        "text_8JxAG8"
+      ],
+      "settings": {
+        "custom-class": "banner-bottom-sec",
+        "text_size": 66,
+        "vertical_padding": 20,
+        "speed": 18.5,
+        "direction": "left",
+        "font": "heading",
+        "space": 115,
+        "color_scheme": "none",
+        "custom_scheme_bg": "#f6f6ef",
+        "custom_scheme_bg_second": ""
+      }
+    },
+    "rich_text_z4nJWB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tKJ3QT": {
+          "type": "heading",
+          "settings": {
+            "title": "I’ve tried many mushroom supplements over the past few years,<br> and none have worked as well as Solve Labs.”",
+            "title_size": "h3-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "image_BfH9tX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edible-ethics-vegan-food-and-recipe-blog-logo-design-1-300x143_1.png",
+            "image_width": 140,
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_tKJ3QT",
+        "image_BfH9tX"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "color_scheme": "none",
+        "full_width": true,
+        "custom_class": "rich-quote"
+      }
+    },
+    "17185669772a0cbba2": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_JYtnyJ": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_JYtnyJ"
+      ],
+      "settings": {}
+    },
+    "41a31508-69f6-47ab-a526-0e3525e7f75b": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "code": "<div class=\"collection_tabs\">\n<li class=\"collection_tab_item active_tab\" id=\"filtertab-1\">FOCUS<\/li>\n<li class=\"collection_tab_item\" id=\"filtertab-2\" style=\"margin: 0 40px;\">SLEEP<\/li>\n<li class=\"collection_tab_item\" id=\"filtertab-3\">ENERGY<\/li>\n<li class=\"collection_tab_item\" id=\"filtertab-4\">STRESS<\/li>\n<\/div>",
+        "custom_class": ""
+      }
+    },
+    "0764d400-e506-4ff8-a45a-8f27432fde5a": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        ".block-inner {background-color: #f8f8f8; border-radius: 6px;}"
+      ],
+      "settings": {
+        "custom-class": "FOCUS",
+        "title": "Featured collection",
+        "show_title": false,
+        "collection": "athletic-performance",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 5,
+        "rows": 1,
+        "show_title_card": false,
+        "show_title_card_image": true,
+        "overlay_style": "shadow",
+        "color_scheme": "none"
+      }
+    },
+    "custom_liquid_TnWh4q": {
+      "type": "custom-liquid",
+      "settings": {
+        "code": "<div class=\"tab-formatting\">\n<h2 class=\"tab_heading\">Optimise your even biggest goals<\/h2>\n<p>Turning dreams into reality isn't easy-it requires top condition of body and mind\nOur game-changing supplements boosts your performance, helping you to thrive in the pursuit of your goals. <b>SOLVE YOUR<\/b><\/p>\n<div class=\"collection_tabs\">\n<li class=\"collection_tab_item active_tab\" id=\"filtertab-1\" style=\"margin: 0px 10px 0px 0px\">FOCUS<\/li>\n<li class=\"collection_tab_item\" id=\"filtertab-2\" style=\"margin: 0 10px;\">SLEEP<\/li>\n<li class=\"collection_tab_item\" id=\"filtertab-3\" style=\"margin: 0 10px;\">ENERGY<\/li>\n<li class=\"collection_tab_item\" id=\"filtertab-4\" style=\"margin:0 10px;\">STRESS<\/li>\n<\/div>\n<\/div>",
+        "custom_class": "optimise-tab"
+      }
+    },
+    "featured_collection_zyeget": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".block-inner {background-color: #f8f8f8; border-radius: 20px;}"
+      ],
+      "settings": {
+        "custom-class": "focus",
+        "title": "Featured collection",
+        "show_title": false,
+        "collection": "best-sellers",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "show_title_card": false,
+        "show_title_card_image": true,
+        "overlay_style": "shadow",
+        "color_scheme": "1"
+      }
+    },
+    "featured_collection_fB7eQR": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".block-inner {background-color: #f8f8f8; border-radius: 20px;}"
+      ],
+      "settings": {
+        "custom-class": "sleep",
+        "title": "Featured collection",
+        "show_title": false,
+        "collection": "athletic-performance",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 5,
+        "rows": 1,
+        "show_title_card": false,
+        "show_title_card_image": true,
+        "overlay_style": "shadow",
+        "color_scheme": "2"
+      }
+    },
+    "featured_collection_kFUAdG": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".block-inner {background-color: #f8f8f8; border-radius: 20px;}"
+      ],
+      "settings": {
+        "custom-class": "energy",
+        "title": "Featured collection",
+        "show_title": false,
+        "collection": "frontpage",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 5,
+        "rows": 1,
+        "show_title_card": false,
+        "show_title_card_image": true,
+        "overlay_style": "shadow",
+        "color_scheme": "3"
+      }
+    },
+    "featured_collection_4AMYwp": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".block-inner {background-color: #f8f8f8; border-radius: 20px;}"
+      ],
+      "settings": {
+        "custom-class": "stress",
+        "title": "Featured collection",
+        "show_title": false,
+        "collection": "shop-all",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 5,
+        "rows": 1,
+        "show_title_card": false,
+        "show_title_card_image": true,
+        "overlay_style": "shadow",
+        "color_scheme": "none"
+      }
+    },
+    "multi_column_eTMMte": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_3mEgVd": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 100,
+            "title": "Meet Pure Nature",
+            "title_size": "h3-style",
+            "text": "",
+            "button_label": "",
+            "link": "",
+            "color_scheme": "none"
+          }
+        },
+        "text_block_emAzGE": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/ezgif.com-animated-gif-maker.gif",
+            "image_width": 100,
+            "title": "",
+            "title_size": "h3-style",
+            "text": "",
+            "button_label": "",
+            "link": "",
+            "color_scheme": "none"
+          }
+        },
+        "text_block_jiTb4Q": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 100,
+            "title": "",
+            "title_size": "h2-style",
+            "text": "<p>Discover mushroom's potential.<\/p><p>Mushrooms are qualified as adaptogens, which means that they support both physical and mental resistance to environmental stimuli and stress. How does this happen? Fungi have spent almost 1.5 billion years optimising their defence strategies, and today we can enjoy their remarkable wisdom.<\/p>",
+            "button_label": "EXPLORE MUSHROOMS",
+            "link": "shopify:\/\/collections\/pure-mushrooms",
+            "color_scheme": "none"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_3mEgVd",
+        "text_block_emAzGE",
+        "text_block_jiTb4Q"
+      ],
+      "settings": {
+        "title": "Multi-column",
+        "show_title": false,
+        "text_alignment": "left",
+        "button_style": "primary"
+      }
+    },
+    "scrolling_banner_qej9nW": {
+      "type": "scrolling-banner",
+      "blocks": {
+        "text_xM7DwY": {
+          "type": "text",
+          "settings": {
+            "text": "100% FRUITING BODIES",
+            "color": "rgba(0,0,0,0)",
+            "link": "",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "text_cggEBW": {
+          "type": "text",
+          "settings": {
+            "text": "ABSOLUTELY ZERO FILLERS",
+            "color": "rgba(0,0,0,0)",
+            "link": "",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "text_BeRFCr": {
+          "type": "text",
+          "settings": {
+            "text": "10:1 Extracts",
+            "color": "rgba(0,0,0,0)",
+            "link": "",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_xM7DwY",
+        "text_cggEBW",
+        "text_BeRFCr"
+      ],
+      "disabled": true,
+      "settings": {
+        "custom-class": "",
+        "text_size": 50,
+        "vertical_padding": 82,
+        "speed": 5.5,
+        "direction": "left",
+        "font": "heading",
+        "space": 140,
+        "color_scheme": "none",
+        "custom_scheme_bg": "#f6f6ef",
+        "custom_scheme_bg_second": ""
+      }
+    },
+    "image_with_text_iazWMC": {
+      "type": "image-with-text",
+      "settings": {
+        "revert_section": false,
+        "title": "Find Your Flow",
+        "color_title": "",
+        "hero_image": "shopify:\/\/shop_images\/lion_smane_a16348a8-364b-4fbf-9586-4a0c9d72a0fa.png",
+        "hide_left_right_space": false,
+        "content": "<p>Boost your productivity and push your limits with natural nootropic supplements, crafted to enhance your mental performance.<\/p>",
+        "list_item": "<p>Achieve <strong>flow states<\/strong> more efficiently<\/p><p>Increase <strong>mental clarity<\/strong> and concentration<\/p><p>Elevate your <strong>decision-making<\/strong> capabilities<\/p>",
+        "button_text": "EXPLORE NOOTROPICS",
+        "button_url": "\/",
+        "padding_top": 70,
+        "padding_bottom": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "image_with_text_kKpdQY": {
+      "type": "image-with-text",
+      "settings": {
+        "revert_section": true,
+        "title": "Protein With <br>Purpose",
+        "color_title": "",
+        "hero_image": "shopify:\/\/shop_images\/hero-2.png",
+        "hide_left_right_space": true,
+        "content": "<p>Fuel your body the smart way with our all-in-one protein blend that combines plant power and naturalboosters for your daily wellness.<\/p>",
+        "list_item": "<p><strong>Wellness-boosting<\/strong> mushrooms<\/p><p><strong>Smooth digestion<\/strong> with enzymes<\/p><p><strong>22g protein<\/strong> per serving<\/p><p>With yeast protein for <strong>silky, smooth texture<\/strong><\/p>",
+        "button_text": "EXPLORE VEGAN PROTEIN",
+        "button_url": "shopify:\/\/products\/vegan-protein",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "hero_video_nB3ABL": {
+      "type": "hero-video",
+      "blocks": {
+        "image_BFmfc6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SOLVETHEDAY.png",
+            "image_width": 400,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_BFmfc6"
+      ],
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/Coffee Making Montage (Organic Peru _ Lion's Mane)   Solve Labs-1.mp4",
+        "button_text": "EXPLORE MUSHROOM COFFEE",
+        "button_url": "shopify:\/\/collections\/all",
+        "text_size": 50,
+        "vertical_padding": 30,
+        "vertical_padding_mobile": 14,
+        "speed": 35,
+        "direction": "left",
+        "font": "heading",
+        "space": 140,
+        "color_scheme": "none",
+        "custom_scheme_bg": "#141414",
+        "padding_top": 30,
+        "padding_bottom": 30,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "testimonials_GgpiRE": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_T3jqnN": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "As a nutritionist, I appreciate SOLVELabs' commitment to sourcing premium ingredients. Their products offer the purity and potency my clients need for optimal health.\"",
+            "author": "Author's name",
+            "image": "shopify:\/\/shop_images\/ketobulkasilka.webp",
+            "image_caption": ""
+          }
+        },
+        "testimonial_Af8fEa": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "\"Recovery is crucial in MMA, and SOLVELabs' products have significantly improved my sleep quality and post-training recovery.\"",
+            "author": "Author's name",
+            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2023-08-11_at_12.36.59_1.webp",
+            "image_caption": ""
+          }
+        },
+        "testimonial_TqYzDx": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "\"I recommend SOLVELabs to anyone looking to elevate their fitness regimen. Their products boost performance sustainably.\"",
+            "author": "Author's name",
+            "image": "shopify:\/\/shop_images\/mbrela.webp",
+            "image_caption": ""
+          }
+        },
+        "testimonial_mfXVi6": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "\"SOLVELabs' nootropics help maintain my concentration on long design projects. It’s a game-changer for meeting tight deadlines with precision.\"",
+            "author": "Author's name",
+            "image": "shopify:\/\/shop_images\/ewaketonewa.webp",
+            "image_caption": ""
+          }
+        },
+        "testimonial_URArpD": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "\"Training for competitions demands high energy and endurance, which I’ve significantly enhanced since using SOLVELabs’ specialised supplements.\"",
+            "author": "Author's name",
+            "image": "shopify:\/\/shop_images\/17_8b4d4e50-9272-486e-b6f7-2cc523e9316d.png",
+            "image_caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_T3jqnN",
+        "testimonial_Af8fEa",
+        "testimonial_TqYzDx",
+        "testimonial_mfXVi6",
+        "testimonial_URArpD"
+      ],
+      "settings": {
+        "title": "ENDORSED BY ATHLETESBacked by 55,000+ Verified Buyers",
+        "show_title": false,
+        "enable_images": true,
+        "image_shape": "square",
+        "color_scheme": "1",
+        "text_caps": false,
+        "title_size": "h3-style",
+        "autoplay": true,
+        "autoplay_speed": 13
+      }
+    },
+    "collapsible_tabs_jRpTgW": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_xWi6W6": {
+          "type": "question",
+          "settings": {
+            "title": "What is SOLVELabs?",
+            "answer": "<p>SOLVELabs is dedicated to enhancing human performance and wellness through scientifically-backed, natural supplements. Our products leverage the power of functional mushrooms and adaptogens to support mental clarity, physical energy, and overall health.<\/p>"
+          }
+        },
+        "question_r6X4Fn": {
+          "type": "question",
+          "settings": {
+            "title": "How do SOLVELabs products enhance performance?",
+            "answer": "<p>Our products are formulated with ingredients proven to boost cognitive function, increase stamina, and improve recovery times, making them ideal for athletes, professionals, and anyone looking to optimize their daily performance.<\/p>"
+          }
+        },
+        "question_LYMWNH": {
+          "type": "question",
+          "settings": {
+            "title": "Are SOLVELabs products safe and tested?",
+            "answer": "<p><em>Yes, all our products undergo rigorous testing for safety and efficacy. We are committed to transparency and use only high-quality, sustainably sourced ingredients.<\/em><\/p><p><\/p>"
+          }
+        },
+        "question_TDNbYE": {
+          "type": "question",
+          "settings": {
+            "title": "Can I use SOLVELabs products with other supplements?",
+            "answer": "<p>While SOLVELabs products are designed to be safe and effective on their own, we recommend consulting with a healthcare professional before combining them with other supplements, especially if you have underlying health conditions.<\/p><p><\/p>"
+          }
+        },
+        "question_QKkfET": {
+          "type": "question",
+          "settings": {
+            "title": "What makes SOLVELabs different from other supplement brands?",
+            "answer": "<p>SOLVELabs stands out due to our commitment to natural, clean ingredients, our innovative use of functional mushrooms and adaptogens, and our focus on holistic health solutions rather than quick fixes.<\/p>"
+          }
+        },
+        "question_rr9tiA": {
+          "type": "question",
+          "settings": {
+            "title": "Are your mushrooms legal?",
+            "answer": "<p>Absolutely, all the mushrooms featured in SOLVELabs products are legal and safe for consumption. We exclusively use functional mushrooms that are recognised for their health-enhancing properties and comply with dietary supplement regulations.<\/p>"
+          }
+        },
+        "question_zMmqXK": {
+          "type": "question",
+          "settings": {
+            "title": "What are adaptogens?",
+            "answer": "<p><em>Adaptogens are natural substances that help your body manage stress more effectively. They work by stabilizing physiological processes and promoting homeostasis. Common adaptogens include herbs and mushrooms that help enhance your body's resilience to physical, chemical, and biological stressors, thereby aiding in maintaining balance during stressful situations.<\/em><\/p><p><\/p>"
+          }
+        },
+        "question_QtmdLa": {
+          "type": "question",
+          "settings": {
+            "title": "What are functional mushrooms?",
+            "answer": "<p>Functional mushrooms refer to specific mushroom species known for their health-supportive properties. These include varieties like Lion's Mane, Reishi, and Cordyceps, which have been used in traditional medicine across various cultures to support immune function, enhance mental clarity, and boost energy levels. Functional mushrooms contain bioactive compounds that contribute to their wellness-promoting effects.<\/p>"
+          }
+        },
+        "question_Nqtnz6": {
+          "type": "question",
+          "settings": {
+            "title": "How should I start my journey with mushrooms?",
+            "answer": "<p>To begin exploring the benefits of functional mushrooms, start with a single mushroom supplement to see how your body reacts. Educate yourself about different types of mushrooms and their benefits, and consider integrating them gradually into your wellness routine.<\/p><p><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_xWi6W6",
+        "question_r6X4Fn",
+        "question_LYMWNH",
+        "question_TDNbYE",
+        "question_QKkfET",
+        "question_rr9tiA",
+        "question_zMmqXK",
+        "question_QtmdLa",
+        "question_Nqtnz6"
+      ],
+      "settings": {
+        "title": "FAQ"
+      }
+    },
+    "rich_text_mjza9G": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LijeXL": {
+          "type": "heading",
+          "settings": {
+            "title": "Join all mushroom lovers and see what they are saying about SOLVELabs™",
+            "title_size": "h1-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_LijeXL"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "color_scheme": "1",
+        "full_width": false,
+        "custom_class": ""
+      }
+    },
+    "171854499808e78ed6": {
+      "type": "apps",
+      "blocks": {
+        "trustoo_io_reviews_card_carousel_fH46Dr": {
+          "type": "shopify:\/\/apps\/trustoo-io-reviews\/blocks\/card-carousel\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "trustoo_io_reviews_card_carousel_fH46Dr"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "16359276425da8ce46",
+    "bdfe56bf-18d3-4b55-9439-05d4b99d3160",
+    "rich_text_fwAhUQ",
+    "7119323e-750e-4748-8940-529924370410",
+    "slideshow_V9YJhz",
+    "scrolling_banner_q3LkWf",
+    "rich_text_z4nJWB",
+    "17185669772a0cbba2",
+    "41a31508-69f6-47ab-a526-0e3525e7f75b",
+    "0764d400-e506-4ff8-a45a-8f27432fde5a",
+    "custom_liquid_TnWh4q",
+    "featured_collection_zyeget",
+    "featured_collection_fB7eQR",
+    "featured_collection_kFUAdG",
+    "featured_collection_4AMYwp",
+    "multi_column_eTMMte",
+    "scrolling_banner_qej9nW",
+    "image_with_text_iazWMC",
+    "image_with_text_kKpdQY",
+    "hero_video_nB3ABL",
+    "testimonials_GgpiRE",
+    "collapsible_tabs_jRpTgW",
+    "rich_text_mjza9G",
+    "171854499808e78ed6"
+  ]
+}

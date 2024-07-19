@@ -1,0 +1,69 @@
+<div class="yotpo-widget-instance" 
+  data-yotpo-instance-id="494701" 
+  product-handle="{{product.handle}}" 
+  widget-type="SubscriptionsAddToCartWidget" 
+  full-format-product-price="{{ product.price | money }}"
+  hooks_on = "true"
+  hooks-selling-plan-changed= "yotpoSelectedSellingPlanChanged(selectedSellingPlanGroup, selectedSellingPlan, isBuyOnce, selectedProductPrice)"
+  hooks-widget-ready = "yotpoAddToCartIsReady()"
+></div>
+
+<script>
+  function yotpoUpdatePrice(priceText) {
+    var no_of_units = $('#appattic_price_app_div input').val();
+    var selectedProductPrice = priceText.match(/\d/g);
+    selectedProductPrice = selectedProductPrice.join("");
+
+    const price = (selectedProductPrice / 100).toFixed(2);
+    var perunitprice = (price/no_of_units).toFixed(2);
+    
+    $('#unit-price-calc').html(perunitprice);
+    // const priceElements = document.querySelectorAll('.appattic_price_app_div');
+    // for (var i=0;i<priceElements.length;i++) {
+    //   priceElements[i].textContent = priceText;
+    // }
+  }
+
+
+  
+  function yotpoSelectedSellingPlanChanged(selectedSellingPlanGroup, selectedSellingPlan, isBuyOnce, selectedProductPrice) {
+ 
+    var no_of_units = $('#appattic_price_app_div input').val();
+    
+    const price = (selectedProductPrice / 100).toFixed(2);
+    var perunitprice = (price/no_of_units).toFixed(2);
+
+    $('#unit-price-calc').html(perunitprice);
+  }
+  function yotpoAddToCartIsReady() {
+    setTimeout(function() {
+      const selectedPriceEl = document.querySelector('.yotpo-selected .yotpo-subscription-label-price');
+      if (selectedPriceEl) {
+        yotpoUpdatePrice(selectedPriceEl.textContent );
+      }  
+    }, 500);      
+  }
+
+  function yotpoSetPriceAtRender() {
+  const priceElement = document.querySelector('.yotpo-selected .yotpo-subscription-label-price');
+    if (priceElement) {
+      yotpoUpdatePrice(priceElement.textContent);
+      return true;
+    }
+    return false;
+  }
+  function yotpoTrySetPriceAtRender(interval, timeout) {
+    if (timeout <= 0) {
+      console.log('yotpo set price at render timeout reached')
+      return;
+    }
+    
+    setTimeout(function() {
+      success = yotpoSetPriceAtRender();
+      if (!success) {
+        yotpoTrySetPriceAtRender(interval, timeout - 1);
+      }
+    }, interval);
+  }
+  yotpoTrySetPriceAtRender(1000, 15);
+</script>

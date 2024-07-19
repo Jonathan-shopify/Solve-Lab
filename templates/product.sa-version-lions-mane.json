@@ -1,0 +1,531 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": true,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_single": false,
+            "select_first_variant": true,
+            "variant_style": "listed",
+            "disable_unavailable_variants": true,
+            "show_size_chart": true,
+            "size_chart_variant": "size guide",
+            "size_chart_page": "pop-up1"
+          }
+        },
+        "e5216295-d9d1-45f9-8d41-49086103cd68": {
+          "type": "inventory_level",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 21,
+            "enable_box": true,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "724817b5-fb19-46ff-9baa-a75a4e092ce0": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "text": "Learn More About",
+            "style": "primary",
+            "page": "pop-up1",
+            "show_in_quickbuy": false
+          }
+        },
+        "d72c0ef0-2ff4-4be7-9565-ed8b20cfc527": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "cfbb07df-873e-4d23-a0d0-dcd1fb0e192c": {
+          "type": "shopify:\/\/apps\/price-panda-price-per-unit\/blocks\/productBlock\/8fe89266-7c30-4ab1-946d-3dcc05d9c8b2",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": true,
+            "show_pickup_availability": true
+          }
+        },
+        "a2d9590d-7c37-4ee5-b2cf-9567ad7b976f": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well withh",
+            "enable_carousel": true,
+            "max_products": 10,
+            "show_in_quickbuy": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "divider",
+        "variant_picker",
+        "e5216295-d9d1-45f9-8d41-49086103cd68",
+        "724817b5-fb19-46ff-9baa-a75a4e092ce0",
+        "d72c0ef0-2ff4-4be7-9565-ed8b20cfc527",
+        "cfbb07df-873e-4d23-a0d0-dcd1fb0e192c",
+        "buy_buttons",
+        "a2d9590d-7c37-4ee5-b2cf-9567ad7b976f"
+      ],
+      "settings": {
+        "show_location_underneath": false,
+        "inventory_transfers_enable": false,
+        "enable_sticky_columns": true,
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "image_cards": "bg",
+        "enable_var_img_grouping": true,
+        "var_img_grouping_option": "Form, Size"
+      }
+    },
+    "3ee5fc6e-754b-4ff2-be2c-b10d631afcaa": {
+      "type": "scrolling-banner",
+      "blocks": {
+        "template--19456452985141__3ee5fc6e-754b-4ff2-be2c-b10d631afcaa-16863958346fe2d413-0": {
+          "type": "text",
+          "settings": {
+            "text": "BOOST YOUR FOCUS",
+            "color": "#ffffff",
+            "link": "",
+            "use_h1": false,
+            "heading_highlight_text": "FOCUS",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": "linear-gradient(57deg, rgba(255, 255, 255, 1) 8%, rgba(255, 144, 54, 1) 47%, rgba(255, 194, 167, 1) 83%)"
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__3ee5fc6e-754b-4ff2-be2c-b10d631afcaa-16863958346fe2d413-0"
+      ],
+      "settings": {
+        "text_size": 132,
+        "vertical_padding": 30,
+        "speed": 35,
+        "direction": "left",
+        "font": "base",
+        "space": 50,
+        "color_scheme": "custom",
+        "custom_scheme_bg": "#000000",
+        "custom_scheme_bg_grad": ""
+      }
+    },
+    "e4435349-a953-4df3-947d-b63b23c1fc28": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/jesien_6copy.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "What is  Brain Tech?",
+            "title_size": "h1-style",
+            "text": "<p>Your brain requires a well-balanced composition of ingredients to achieve optimal functioning.<br\/><br\/>Brain Tech is a carefully designed blend of plant extracts, nutrients, adaptogens and vitamin B6 - selected to support mental function and provide support for healthy brain function.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "Brain Tech",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "#cd4d1e",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-0",
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-1"
+      ],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "1"
+      }
+    },
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "ec2050ee-9e02-47d6-aa67-495d64f15c79": {
+          "type": "question",
+          "settings": {
+            "title": "Ingredients",
+            "answer": "<p>Answer<\/p>"
+          }
+        },
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-0": {
+          "type": "question",
+          "settings": {
+            "title": "The Benefits",
+            "answer": "<p>The Benefits<\/p><p>Experience heightened focus, mental clarity, and improved cognitive function with our Lion's Mane mushroom supplement, crafted to support your cognitive performance and overall well-being.<\/p><ul><li><strong>Experience heightened focus<\/strong>, mental clarity, and improved cognitive function with our Lion's Mane mushroom supplement, crafted to support your cognitive performance and overall well-being.<br\/><br\/><\/li><li><strong>Neuroprotection<\/strong> - Lion's mane mushroom exhibits neuroprotective properties. It can help protect brain cells from damage caused by oxidative stress, inflammation, and other factors. This neuroprotective effect may contribute to long-term brain health and potentially reduce the risk of developing neurodegenerative diseases.<br\/><br\/><\/li><li><strong>Nerve Growth Factor<\/strong> - Lion's mane mushroom is known for its ability to stimulate the production of nerve growth factor (NGF). NGF is a protein that plays a crucial role in the growth, maintenance, and survival of nerve cells in the brain. By promoting NGF production, lion's mane may support the development of new neurons and the overall health of the nervous system.<br\/><br\/><\/li><li><strong>Mood & Mental Wellness<\/strong> - Lion's mane mushroom isn't just about cognition. It's also your secret weapon for mood and mental well-being. By modulating neurotransmitters like serotonin and dopamine, it helps regulate your mood and emotions. So, whether you're feeling low or just want to maintain your sunny disposition, lion's mane can support a positive mood and overall mental wellness.<br\/><br\/><\/li><li><strong>Age with Grace<\/strong> - Aging doesn't have to mean cognitive decline. With SolveLabs™ Lion's Mane, you can fight back against age-related cognitive impairments. Its neuroprotective and neuroregenerative properties help preserve your cognitive function and reduce the risk of age-associated cognitive impairments.<\/li><\/ul>"
+          }
+        },
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1": {
+          "type": "question",
+          "settings": {
+            "title": "Comparison Table",
+            "answer": "<p>Answer<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "ec2050ee-9e02-47d6-aa67-495d64f15c79",
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-0",
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1"
+      ],
+      "settings": {
+        "title": "Collapsible tabs"
+      }
+    },
+    "35d6a989-a282-46b3-86b2-177ceccfd92e": {
+      "type": "custom-row",
+      "blocks": {
+        "55c46111-29ee-4038-a550-f0fc866cafd6": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/Group_5.png",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "059e002e-ea68-41b2-a432-291ce3d10689": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "YEARS OF WISDOM",
+            "title": "Medicinal Mushroom",
+            "title_size": "hl-style",
+            "text": "<p><\/p><h4>Mushrooms have spent nearly 1.5 billion years optimising their defence strategies, and today we can benefits from their legacy.<\/h4>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "Brain Tech",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "#cd4d1e",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "55c46111-29ee-4038-a550-f0fc866cafd6",
+        "059e002e-ea68-41b2-a432-291ce3d10689"
+      ],
+      "custom_css": [],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "2"
+      }
+    },
+    "13e06e48-c55d-486c-a9c3-b566dcc13f07": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19456452985141__13e06e48-c55d-486c-a9c3-b566dcc13f07-1686483678fc49265b-0": {
+          "type": "heading",
+          "settings": {
+            "title": "SERUM FOR EVERY BRAIN",
+            "title_size": "h1-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__13e06e48-c55d-486c-a9c3-b566dcc13f07-1686483678fc49265b-0"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "color_scheme": "1",
+        "full_width": false
+      }
+    },
+    "bdcc127c-81a8-49ac-be19-af1c1d4e326d": {
+      "type": "multi-column",
+      "blocks": {
+        "template--19456452985141__bdcc127c-81a8-49ac-be19-af1c1d4e326d-1686481521b79a2dd3-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Eye.png",
+            "image_width": 100,
+            "title": "FOCUS SEEKERS",
+            "title_size": "h1-style",
+            "text": "<p>People of all ages lookingfor better mental clarityand improved focus<\/p>",
+            "button_label": "",
+            "link": "",
+            "color_scheme": "1"
+          }
+        },
+        "template--19456452985141__bdcc127c-81a8-49ac-be19-af1c1d4e326d-1686481521b79a2dd3-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Brain.png",
+            "image_width": 100,
+            "title": "MENTAL WORKERS",
+            "title_size": "h1-style",
+            "text": "<p>Students, Creatives, Developers, Architects, CEO’s, Gamers, Content Creators<\/p>",
+            "button_label": "",
+            "link": "",
+            "color_scheme": "1"
+          }
+        },
+        "template--19456452985141__bdcc127c-81a8-49ac-be19-af1c1d4e326d-1686481521b79a2dd3-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Run.png",
+            "image_width": 100,
+            "title": "ATHLETES",
+            "title_size": "h1-style",
+            "text": "<p>Fitness Freaks, Gym Rats, BJJ, MMA, Runners, Athletes of all kinds. Focus is everything.<\/p>",
+            "button_label": "",
+            "link": "",
+            "color_scheme": "1"
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__bdcc127c-81a8-49ac-be19-af1c1d4e326d-1686481521b79a2dd3-0",
+        "template--19456452985141__bdcc127c-81a8-49ac-be19-af1c1d4e326d-1686481521b79a2dd3-1",
+        "template--19456452985141__bdcc127c-81a8-49ac-be19-af1c1d4e326d-1686481521b79a2dd3-2"
+      ],
+      "settings": {
+        "title": "Multi-column",
+        "show_title": false,
+        "text_alignment": "center",
+        "button_style": "primary"
+      }
+    },
+    "5de4a21e-bf90-4ad6-b077-d7a9f530568a": {
+      "type": "media-with-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hexagon-grafika-zabawy-gruby.jpg",
+        "image_link": "",
+        "video_external": "",
+        "autoplay": false,
+        "content_max_width": 740,
+        "subheading": "",
+        "title": "Adaptogens, vitamins and minerals to support the brain and nervous system",
+        "title_size": "h1-style",
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": false,
+        "button_label": "Read more",
+        "button_link": "",
+        "button_style": "primary",
+        "text_alignment": "left",
+        "media_position": "left",
+        "enable_media_spacing": false,
+        "media_shape": "1",
+        "color_scheme": "1",
+        "heading_highlight_text": "",
+        "heading_highlight_font": true,
+        "heading_highlight_stencil": false,
+        "heading_highlight_color": "rgba(0,0,0,0)",
+        "heading_highlight_gradient": ""
+      }
+    },
+    "1686482219dc138412": {
+      "type": "apps",
+      "settings": {}
+    },
+    "d7d20b19-a9e1-4c36-8b71-ed70d771a5e1": {
+      "type": "multi-column",
+      "blocks": {
+        "template--19456452985141__d7d20b19-a9e1-4c36-8b71-ed70d771a5e1-1686609307ef195340-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 100,
+            "title": "BACOPA MONERI",
+            "title_size": "h3-style",
+            "text": "<p>Has a positive effect on the brain, supports short and long-term memory, increases concentration, supports learning ability and affects intelligence. In addition, bacopa has a positive effect on the hippocampus.<\/p>",
+            "button_label": "",
+            "link": "",
+            "color_scheme": "1"
+          }
+        },
+        "template--19456452985141__d7d20b19-a9e1-4c36-8b71-ed70d771a5e1-1686609307ef195340-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 100,
+            "title": "Gotu kola",
+            "title_size": "h3-style",
+            "text": "<p> Is an adaptogen that works on mental health and the cardiovascular system.<br\/><\/p>",
+            "button_label": "",
+            "link": "",
+            "color_scheme": "1"
+          }
+        },
+        "template--19456452985141__d7d20b19-a9e1-4c36-8b71-ed70d771a5e1-1686609307ef195340-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 100,
+            "title": "Rhadiola rosea",
+            "title_size": "h3-style",
+            "text": "<p>Counted among adaptogens, supports proper blood circulation, which contributes to optimal mental and cognitive activity.<\/p>",
+            "button_label": "",
+            "link": "",
+            "color_scheme": "1"
+          }
+        },
+        "56103ead-facb-48ed-ad8c-9f158c16ff2b": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 100,
+            "title": "Add a title or tagline",
+            "title_size": "h3-style",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "",
+            "link": "",
+            "color_scheme": "1"
+          }
+        },
+        "814d7860-5a70-436c-836a-d7174acb231c": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 100,
+            "title": "Add a title or tagline",
+            "title_size": "h3-style",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "",
+            "link": "",
+            "color_scheme": "1"
+          }
+        },
+        "68e17c74-10d1-4083-9003-93bc79f5dbc3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_width": 100,
+            "title": "Add a title or tagline",
+            "title_size": "h3-style",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "",
+            "link": "",
+            "color_scheme": "1"
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__d7d20b19-a9e1-4c36-8b71-ed70d771a5e1-1686609307ef195340-0",
+        "template--19456452985141__d7d20b19-a9e1-4c36-8b71-ed70d771a5e1-1686609307ef195340-1",
+        "template--19456452985141__d7d20b19-a9e1-4c36-8b71-ed70d771a5e1-1686609307ef195340-2",
+        "56103ead-facb-48ed-ad8c-9f158c16ff2b",
+        "814d7860-5a70-436c-836a-d7174acb231c",
+        "68e17c74-10d1-4083-9003-93bc79f5dbc3"
+      ],
+      "settings": {
+        "title": "Multi-column",
+        "show_title": false,
+        "text_alignment": "center",
+        "button_style": "primary"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "3ee5fc6e-754b-4ff2-be2c-b10d631afcaa",
+    "e4435349-a953-4df3-947d-b63b23c1fc28",
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1",
+    "35d6a989-a282-46b3-86b2-177ceccfd92e",
+    "13e06e48-c55d-486c-a9c3-b566dcc13f07",
+    "bdcc127c-81a8-49ac-be19-af1c1d4e326d",
+    "5de4a21e-bf90-4ad6-b077-d7a9f530568a",
+    "1686482219dc138412",
+    "d7d20b19-a9e1-4c36-8b71-ed70d771a5e1"
+  ]
+}

@@ -1,0 +1,71 @@
+{% assign query = request.query_params.q | escape %}
+{% if query %}
+  <h2>Search results for "{{ query }}"</h2>
+  {% assign blog_posts = article.blog.articles | where: 'title', query %}
+  {% for post in blog_posts %}
+    <h3>{{ post.title }}</h3>
+    <!-- Display other post details -->
+  {% endfor %}
+{% else %}
+  <!-- Your regular blog post listing code goes here -->
+  
+<div class="mafi main-blog article-block{% unless no_grid_classes %} column column--third{% endunless %} {{ extra_classes }}" data-cc-animate {{ attrs }}>
+  <div class="article-block__inner card-scheme card-scheme--{{ section.settings.color_scheme }} card-br-oh">
+    {% if article.image %}
+      <div class="article-image scale-on-hover{% if section.settings.color_scheme == 'none' %} card-br-oh{% endif %}">
+        <a href="{{ article.url }}">
+          {% render 'responsive-image', image: article.image, aspect_ratio: section.settings.crop_ratio, cover: true, extra_classes: 'scale-on-hover__target' %}
+        </a>
+      </div>
+    {% endif %}
+
+
+    <div class="article-block__text card-content-padding-x padded-row-bottom--medium{% unless article.image %} lightish-spaced-row-above{% endunless %}">
+      <{{ heading_tag | default: 'h3' }} class="h3-style heading-font">{{ article.title | escape | link_to: article.url }}</{{ heading_tag | default: 'h3' }}>
+
+      <div class="side-date">
+        {% if section.settings.show_author %}
+            <span class="author aname">BY {{ article.author }}</span>
+          {% endif %}
+          <span class="iconmeta time">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="14" height="14" viewBox="0 0 24 24">
+              <path d="M 12 2 C 6.4889971 2 2 6.4889971 2 12 C 2 17.511003 6.4889971 22 12 22 C 17.511003 22 22 17.511003 22 12 C 22 6.4889971 17.511003 2 12 2 z M 12 4 C 16.430123 4 20 7.5698774 20 12 C 20 16.430123 16.430123 20 12 20 C 7.5698774 20 4 16.430123 4 12 C 4 7.5698774 7.5698774 4 12 4 z M 11 6 L 11 12.414062 L 15.292969 16.707031 L 16.707031 15.292969 L 13 11.585938 L 13 6 L 11 6 z"></path>
+              </svg>
+            {% if section.settings.show_date %}
+              {{ article.published_at | date: format: 'month_date_year' }}
+            {% endif %}
+          </span>
+        </div>
+
+      {%- if section.settings.show_excerpts -%}
+        <div class="rte cf">
+          {%- if article.excerpt.size > 0 -%}
+            {{ article.excerpt }}
+          {%- else -%}
+            {{ article.content | strip_html | truncatewords: 30 }}
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.show_button -%}
+        <a class="blog_read_now_btn dd" href="{{ article.url }}">Read more <span> {% render 'right-arrows' %}</span></a>
+      {%- endif -%}
+
+      <div class="article-meta">
+        {% if section.settings.show_article_tags %}
+          {% capture tag_markup %}
+            <div class="iconmeta tags">
+              <span class="label">{{ 'blogs.article.tags' | t }}:</span>
+              {% for tag in article.tags %}
+                {{ tag | link_to_tag: tag }}
+              {% endfor %}
+            </div>
+          {% endcapture %}
+          {% if tag_markup contains '</a>' %}{{ tag_markup }}{% endif %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+

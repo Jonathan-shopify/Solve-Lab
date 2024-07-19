@@ -1,0 +1,47 @@
+{% assign query = request.query_params.q | escape %}
+{% if query %}
+  <h2>Search results for "{{ query }}"</h2>
+  {% assign blog_posts = article.blog.articles | where: 'title', query %}
+  {% for post in blog_posts %}
+    <h3>{{ post.title }}</h3>
+    <!-- Display other post details -->
+  {% endfor %}
+{% else %}
+  <!-- Your regular blog post listing code goes here -->
+  
+<div class="mafi madi main-blog article-block{% unless no_grid_classes %} column column--third{% endunless %} {{ extra_classes }}" data-cc-animate {{ attrs }}>
+  <div class="article-block__inner card-scheme card-scheme--{{ section.settings.color_scheme }} card-br-oh">
+    {% if article.image %}
+      <div class="article-image scale-on-hover{% if section.settings.color_scheme == 'none' %} card-br-oh{% endif %}">
+        <a href="{{ article.url }}">
+          {% render 'responsive-image', image: article.image, aspect_ratio: section.settings.crop_ratio, cover: true, extra_classes: 'scale-on-hover__target' %}
+        </a>
+      </div>
+    {% endif %}
+
+
+    <div class="article-block__text card-content-padding-x padded-row-bottom--medium{% unless article.image %} lightish-spaced-row-above{% endunless %}">
+      <{{ heading_tag | default: 'h3' }} class="h3-style heading-font">{{ article.title | escape | link_to: article.url }}</{{ heading_tag | default: 'h3' }}>
+
+      
+
+
+      
+      <div class="article-meta">
+        {% if section.settings.show_article_tags %}
+          {% capture tag_markup %}
+            <div class="iconmeta tags">
+              <span class="label">{{ 'blogs.article.tags' | t }}:</span>
+              {% for tag in article.tags %}
+                {{ tag | link_to_tag: tag }}
+              {% endfor %}
+            </div>
+          {% endcapture %}
+          {% if tag_markup contains '</a>' %}{{ tag_markup }}{% endif %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+

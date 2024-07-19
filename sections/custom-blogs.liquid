@@ -1,0 +1,142 @@
+{% comment %} <div class="custom-b">
+    {%- assign blog = blogs[section.settings.blog] -%}
+<div class="card-margin" data-section-type="featured-blog">
+  {% unless blog.empty? %}
+
+    {% if section.settings.title != blank %}
+      <h2 class="mas section-title {% unless section.settings.show_title %} visually-hidden{% endunless %}"><a href="{{ blog.url }}" data-cc-animate>{{ section.settings.title | escape }}</a></h2>
+    {% endif %}
+
+    {% if blog.articles.size == 0 %}
+
+      <p class="align-center" data-cc-animate>{{ 'onboarding.blog.empty' | t }}</p>
+
+    {% else %}
+
+      {%- if section.settings.enable_carousel -%}
+        <cc-carousel class="cc-carousel cc-carousel--off-edge-mobile card-margin" allow-mouse-drag data-cc-animate="cc-fade-in-up">
+          <div class="cc-carousel-buttons cc-carousel-buttons--overlay-top">
+            <button class="cc-carousel-button cc-carousel-button--prev tap-target" aria-label="{{ 'general.accessibility_labels.previous' | t }}"><span class="icon--small ltr-icon">{% render 'svg-chevron-left' %}</span></button>
+            <button class="cc-carousel-button cc-carousel-button--next tap-target" aria-label="{{ 'general.accessibility_labels.next' | t }}"><span class="icon--small ltr-icon">{% render 'svg-chevron-right' %}</span></button>
+          </div>
+          <div class="cc-carousel__scroll-outer">
+      {%- endif -%}
+
+      <div class="{% if section.settings.enable_carousel %}cc-carousel__scroll-area carousel-layout{% else %}flexible-layout{% endif %}">
+        {%- for article in blog.articles limit: section.settings.post_limit -%}
+          {%- capture article_block_attrs -%}data-cc-animate-delay="{{ forloop.index | times: 0.15 }}s"{%- endcapture -%}
+          {%- render 'article-block', article: article, heading_tag: 'h3', attrs: article_block_attrs -%}
+        {%- endfor -%}
+      </div>
+
+      {%- if section.settings.enable_carousel -%}
+          </div>
+        </cc-carousel>
+      {%- endif -%}
+
+    {% endif %}
+
+  {% else %}
+
+
+    {% if section.settings.title != blank %}
+      <h2 class="section-title{% unless section.settings.show_title %} visually-hidden{% endunless %}" data-cc-animate>{{ section.settings.title | escape }}</h2>
+    {% endif %}
+
+    <div class="flexible-layout">
+      {% for i in (1..section.settings.post_limit) %}
+      <div class="article-block column column--third card-scheme card-scheme--{{ section.settings.color_scheme }} card-br-oh">
+
+        <div class="card-content-padding-x padded-row-bottom--medium">
+          <h3>{{ 'onboarding.article.title' | t }}</h3>
+
+
+      
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  {% endunless %}
+</div>
+
+</div>
+
+
+ {% endcomment %}
+<div class="mob-blog">
+ {% if section.settings.title != blank %}
+  <h2 class="mm-bbs mas section-title"><a href="{{ blog.url }}" data-cc-animate>{{ section.settings.title | escape }}</a></h2>
+{% endif %}
+
+<div class="mm-bb blog-container">
+  {% for block in section.blocks %}
+    <div class="blog">
+      <a href="{{ block.settings.burl }}">
+        <div class="blog-content">
+          <div class="blog-image">
+            <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.btitle }}">
+          </div>
+          <h3>{{ block.settings.btitle }}</h3>
+          <!-- Add other content like date, author, etc., if needed -->
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+</div>
+
+
+
+
+
+
+</div> 
+{% schema %}
+  {
+    "name": "Custom Blog posts",
+    "class": "section-featured-blog",
+    "disabled_on": {
+      "groups": [
+        "aside"
+      ]
+    },
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Blog posts"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Blog",
+        "type": "blog",
+        "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Upload image here"
+      },
+      {
+        "type": "text",
+        "id": "btitle",
+        "label": "Title"
+      },
+      {
+        "type": "url",
+        "id": "burl",
+        "label": "paste your link here"
+      }
+    ]
+  }
+],
+    "presets": [
+      {
+        "name": "Custom Blog posts",
+        "settings": {
+        }
+      }
+    ]
+  }
+{% endschema %}

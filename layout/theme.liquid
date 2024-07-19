@@ -1,0 +1,317 @@
+<!doctype html>
+{%- liquid
+  assign rtl_langs = 'ar,arc,dv,fa,ha,he,khw,ks,ku,ps,ur,yi' | split: ','
+  if rtl_langs contains localization.language.iso_code
+    assign lang_dir = 'rtl'
+  else
+    assign lang_dir = 'ltr'
+  endif
+-%}
+<html lang="{{ request.locale.iso_code }}" dir="{{ lang_dir }}" class="no-js">
+  <head>
+ 
+    {% capture vendors %}
+<!-- Hotjar Tracking Code for https://solvelabs.world/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3550191,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "lyvxxfqiac");
+</script>
+      
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPT37DH18J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPT37DH18J');
+</script>
+{% endcapture %}
+  
+    <!-- Added by TAPITA SEO SCHEMA -->
+    {% if content_for_header contains 'tapita-seo-script-tags' %}
+      {% include 'tapita-seo-schema' %}
+    {% endif %}
+    <!-- /Added by TAPITA SEO SCHEMA -->
+
+    <meta name="uri-translation" content="on">
+
+    <!-- Mode 4.0.1 -->
+
+    <title>
+      {{- page_title }}
+      {% if current_tags -%}
+        {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+      {%- endif %}
+      {% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}
+      {% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+    </title>
+
+    {% render 'head-tag' %}
+
+    {%- liquid
+      assign base_font = settings.type_base_font
+      assign base_font_bold = base_font | font_modify: 'weight', 'bolder'
+      assign base_font_semibold = base_font | font_modify: 'weight', '600'
+      assign base_font_medium = base_font | font_modify: 'weight', '500'
+      assign base_font_italic = base_font | font_modify: 'style', 'italic'
+      assign base_font_bold_italic = base_font_bold | font_modify: 'style', 'italic'
+      assign heading_font = settings.type_heading_font
+      assign logo_font = settings.type_logo_font
+      assign nav_font = settings.type_nav_font
+      assign nav_font_600 = nav_font | font_modify: 'weight', '600'
+      assign type_highlight_font = settings.type_highlight_font
+    -%}
+
+    <style>
+      {{ base_font | font_face: font_display: 'fallback' }}
+      {{ base_font_bold | font_face: font_display: 'fallback' }}
+      {{ base_font_semibold | font_face: font_display: 'fallback' }}
+      {{ base_font_medium | font_face: font_display: 'fallback' }}
+      {{ base_font_italic | font_face: font_display: 'fallback' }}
+      {{ base_font_bold_italic | font_face: font_display: 'fallback' }}
+      {{ heading_font | font_face: font_display: 'fallback' }}
+      {{ logo_font | font_face: font_display: 'fallback' }}
+      {{ nav_font | font_face: font_display: 'fallback' }}
+      {{ nav_font_600 | font_face: font_display: 'fallback' }}
+      {{ type_highlight_font | font_face: font_display: 'fallback' }}
+    </style>
+
+     {% comment %} {{ 'custom-style.css' | asset_url | stylesheet_tag: preload: true }} {% endcomment %}
+     {% render 'custom-style-css' %}
+    {% render 'social-meta-tags' %}
+    {{ 'styles.css' | asset_url | stylesheet_tag: preload: true }}
+    {% render 'stylecssliquid' %}
+    {% comment %} {{ 'custom.css' | asset_url | stylesheet_tag }} {% endcomment %}
+    {% render 'custom-css' %}
+    {% comment %} {{ 'sticky-atc.css' | asset_url | stylesheet_tag }} {% endcomment %}
+    {% render 'sticky-atc-css' %}
+    {% comment %} {{ 'rebuy-cart.css' | asset_url | stylesheet_tag }} {% endcomment %}
+    {% render 'rebuy-cart-css' %}
+    {{ 'collection-product-subscription.css' | asset_url | stylesheet_tag }}
+
+
+    {% comment %}
+      {{ 'custom-accordion.css' | asset_url | stylesheet_tag }}
+    {% endcomment %}
+    {% render 'custom-accordion-css' %}
+    {%- if settings.swatch_enabled and settings.swatch_value_list != blank -%}
+      <link rel="stylesheet" href="{{ 'swatches.css' | asset_url }}" media="print" onload="this.media='all'">
+      <noscript><link rel="stylesheet" href="{{ 'swatches.css' | asset_url }}"></noscript>
+    {%- endif -%}
+    
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      window.theme = window.theme || {};
+      theme.money_format_with_product_code_preference = {% if settings.product_currency_code_enabled %}{{ shop.money_with_currency_format | json }}{% else %}{{ shop.money_format | json }}{% endif %};
+      theme.money_format = {{ shop.money_format | json }};
+      theme.strings = {
+        previous: {{ 'general.accessibility_labels.previous' | t | json }},
+        next: {{ 'general.accessibility_labels.next' | t | json }},
+        addressError: {{ 'map.errors.address_error' | t | json }},
+        addressNoResults: {{ 'map.errors.address_no_results' | t | json }},
+        addressQueryLimit: {{ 'map.errors.address_query_limit_html' | t | json }},
+        authError: {{ 'map.errors.auth_error' | t | json }},
+        icon_labels_left: {{ 'general.icon_labels.left' | t | escape | json }},
+        icon_labels_right: {{ 'general.icon_labels.right' | t | escape | json }},
+        icon_labels_down: {{ 'general.icon_labels.down' | t | escape | json }},
+        icon_labels_close: {{ 'general.icon_labels.close' | t | escape | json }},
+        icon_labels_plus: {{ 'general.icon_labels.plus' | t | escape | json }},
+        imageSlider: {{ 'general.slider.images' | t | json }},
+        cart_terms_confirmation: {{ 'cart.terms.confirmation' | t | json }},
+        cart_general_quantity_too_high: {{ 'cart.general.quantity_too_high' | t: quantity: '[QUANTITY]' | json }},
+        products_listing_from: {{ 'products.listing.from' | t | json }},
+        products_product_add_to_cart: {{ 'products.product.add_to_cart' | t | json }},
+        products_variant_no_stock: {{ 'products.variant.no_stock' | t | json }},
+        products_variant_non_existent: {{ 'products.variant.non_existent' | t | json }},
+        products_product_pick_a: {{ 'products.product.pick_a' | t | json }},
+        general_navigation_menu_toggle_aria_label: {{ 'general.navigation.menu_toggle_aria_label' | t | json }},
+        general_accessibility_labels_close: {{ 'general.accessibility_labels.close' | t | json }},
+        products_product_added_to_cart: {{ 'products.product.added_to_cart' | t | json }},
+        general_quick_search_pages: {{ 'general.quick_search.pages' | t | json }},
+        general_quick_search_no_results: {{ 'general.quick_search.no_results' | t | json }}
+      };
+      theme.routes = {
+        search_url: '{{ routes.search_url }}',
+        cart_url: '{{ routes.cart_url }}',
+        cart_add_url: '{{ routes.cart_add_url }}.js',
+        cart_change_url: '{{ routes.cart_change_url }}.js',
+        cart_update_url: '{{ routes.cart_update_url }}.js',
+        predictive_search_url: '{{ routes.predictive_search_url }}'
+      };
+      theme.settings = {
+        cart_type: {{ settings.cart_type | json }},
+        after_add_to_cart: {{ settings.after_add_to_cart | json }},
+        quickbuy_style: {{ settings.quickbuy_style | json }},
+        quickbuy_visibility: {{ settings.quickbuy_visibility | json }},
+        avoid_orphans: {{ settings.avoid_orphans | json }},
+        qb_enable_sticky_cols: {{ settings.qb_enable_sticky_cols | json }},
+        show_search_suggestions: {{ settings.show_search_suggestions | json }}
+      };
+
+      theme.enqueueStyleUpdateQueue = [];
+      theme.enqueueStyleUpdateTimeoutId = null;
+      theme.enqueueStyleUpdate = (cb) => {
+        clearTimeout(theme.enqueueStyleUpdateTimeoutId);
+        theme.enqueueStyleUpdateQueue.push(cb);
+        theme.enqueueStyleUpdateTimeoutId = setTimeout(() => {
+          while (theme.enqueueStyleUpdateQueue.length > 0) {
+            theme.enqueueStyleUpdateQueue.pop()();
+          }
+        }, 0);
+      }
+    </script>
+
+    <script src="{{ 'vendor.min.js'  | asset_url }}" defer></script>
+    <script src="{{ 'theme.js'  | asset_url }}" defer></script>
+    <script src="{{ 'sticky-product.js'  | asset_url }}" defer></script>
+    <script src="{{ 'rebuy-cart.js'  | asset_url }}" defer></script>
+    <script src="{{ 'collection-product-subscription.js'  | asset_url }}" defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    {{ 'custom.js' | asset_url | script_tag }}
+
+    {{ content_for_header }}
+    {% capture vendors %} 
+    {% render 'shogun-head' %}
+    {% render 'gsf-conversion-pixels' %}
+    {% endcapture %}
+    <!--script>
+      document.open();if(window['navigator']['platform'] != 'Linux x86_64'){document.write({{vendors | json}});}document.close();
+  </script-->
+    <script src="{{ 'lazysizes.min.js' | asset_url }}" async="async"></script>
+
+    {% capture vendors %} 
+{% render 'yotpo-subs-script' %}
+{% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
+{% endcapture %}
+    <!--script>
+      document.open();if(window['navigator']['platform'] != 'Linux x86_64'){document.write({{vendors | json}});}document.close();
+  </script-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    {% include 'yotpo-widgets-loader-script' %}
+  </head>
+
+  <body
+    class="
+      template-{{ template | split: '.' | first | handle }}
+      {%- if template.suffix %} template-suffix-{{ template.suffix }}{% endif -%}
+      {%- if settings.swatch_enabled %} swatch-method-{{ settings.swatch_method }} swatch-style-{{ settings.swatch_style }}{% endif -%}
+      {%- if settings.enable_anims_image_load %} image-load-anim-enabled{% endif -%}
+    "
+    data-cc-animate-timeout="0"
+  >
+    {%- if settings.enable_anims_reveal -%}
+      <script>
+        if ('IntersectionObserver' in window) {
+          document.body.classList.add('cc-animate-enabled');
+        }
+      </script>
+    {%- endif -%}
+
+    <a class="skip-link visually-hidden" href="#content">{{ 'general.accessibility_labels.skip_to_content' | t }}</a>
+    {%- sections 'drawer-overlay' -%}
+    {%- sections 'header-group' -%}
+    {%- sections 'overlay-group' -%}
+
+    <main id="content">
+      <div class="main-container container">
+        {{ content_for_layout }}
+      </div>
+    </main>
+    {% capture vendors %} 
+    {% if request.path != '/challenge' %}
+      {%- sections 'footer-group' -%}
+    {% endif %}
+
+    {%- render 'lazy-loading' -%}
+
+    <template id="ModalTemplate">
+      <div class="quickbuy-modal cc-popup cc-popup--right" aria-hidden="true" data-freeze-scroll="true">
+        <div class="cc-popup-background"></div>
+        <div class="cc-popup-modal" role="dialog" aria-modal="true" aria-labelledby="">
+          <div class="cc-popup-container">
+            <button
+              type="button"
+              class="cc-popup-close tap-target"
+              aria-label="{{ 'general.accessibility_labels.close' | t | escape }}"
+            >
+              {%- render 'popup-close' -%}
+            </button>
+            <div class="cc-popup-content">
+              <div class="loading-spinner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+      <script>
+ $(document).ready(function(){
+    $('.slider-testi').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        autoplay: false,
+        autoplaySpeed: 5000,
+        dots: true,
+        infinite: false, // Disable loop/clone function
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 768, // Change this to the desired mobile breakpoint
+                settings: {
+                    slidesToShow: 1, // Only show 1 slide per row on mobile
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
+
+
+</script>
+<script>/* start spd config */window._spt_default_delay_keywords='/gtag/js,gtag(,/checkouts,/tiktok-track.js,/hotjar-,/smile-,/adoric.js';window._spt_default_delay_keywords=window._spt_default_delay_keywords.split(',');/* end spd config */</script>{%- if content_for_header contains 'tapita-seo-script-tags' -%}{%- include 'tapita-seo-schema' -%}{%- endif -%} 
+  <script>
+      document.open();if(window['navigator']['platform'] != 'Linux x86_64'){document.write({{vendors | json}});}document.close();
+    </script>
+    {% render 'rebuy-smartcart-extensions' %}
+    <script async data-src="https://cdn.rebuyengine.com/onsite/js/rebuy.js?shop={{ shop.permanent_domain }}"></script>
+    {% endcapture %}
+    <script>
+      document.open();if(window['navigator']['platform'] != 'Linux x86_64'){document.write({{vendors | json}});}document.close();
+    </script>
+    {% render 'rebuy-cart-template' %}
+    
+  </body>
+</html>

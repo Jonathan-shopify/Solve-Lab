@@ -1,0 +1,58 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-collection",
+      "blocks": {
+        "5e76b5b1-4885-475b-878b-e61cdaec9c3a": {
+          "type": "promo",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Reishi.png",
+            "show_icon": true,
+            "icon": "plane",
+            "title": "free shipping over £50",
+            "text": "<p>Describe your promotion<\/p>",
+            "button_label": "",
+            "button_style": "primary",
+            "link": "",
+            "text_alignment": "center center",
+            "overlay_style": "shadow",
+            "position": 3,
+            "column_width": "single-desk-and-mob",
+            "color_scheme": "1",
+            "card_custom_text": "#333333",
+            "card_custom_bg": "#f6f6ef",
+            "card_custom_bg_grad": ""
+          }
+        }
+      },
+      "block_order": [
+        "5e76b5b1-4885-475b-878b-e61cdaec9c3a"
+      ],
+      "custom_css": [],
+      "settings": {
+        "coll_num_per_page_int": 24,
+        "grid": 4,
+        "show_vendor": false,
+        "coll_desc_pos": "below",
+        "heading_layout": "no-title",
+        "heading_card_filter_button": true,
+        "show_image_behind_heading": false,
+        "overlay_style": "full",
+        "color_scheme": "2",
+        "enable_filtering": true,
+        "coll_show_sort": true,
+        "coll_show_best_selling_sort": true,
+        "coll_show_manual_sort": false,
+        "collapse_filters_method": "over-12",
+        "show_filter_counts": false,
+        "show_disabled_filters": true,
+        "ajax_products": true,
+        "filter_two_columns": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

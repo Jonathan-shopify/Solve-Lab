@@ -1,0 +1,152 @@
+{
+  "sections": {
+    "main": {
+      "type": "new-artical-page",
+      "blocks": {
+        "0ad225f1-92f9-424d-84f7-6f48fb40791b": {
+          "type": "blog",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Magnesium-Glycinate-for-Sleep-_1.jpg",
+            "btitle": "Sleep hacks Does Magnesium Glycinate Help Sleep?",
+            "burl": "shopify:\/\/blogs\/news\/cordyceps-sinensis-cordyceps-health-properties"
+          }
+        },
+        "3b41798c-e33d-4548-bf3b-9b6c9bf997f2": {
+          "type": "blog",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Magnesium-Glycinate-for-Sleep-_1.jpg",
+            "btitle": "Sleep hacks Does Magnesium Glycinate Help Sleep?",
+            "burl": "shopify:\/\/blogs\/news\/cordyceps-sinensis-cordyceps-health-properties"
+          }
+        },
+        "08c4a5d1-eb3c-4627-bd60-d315dd7d3d6f": {
+          "type": "blog",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Magnesium-Glycinate-for-Sleep-_1.jpg",
+            "btitle": "Sleep hacks Does Magnesium Glycinate Help Sleep?",
+            "burl": "shopify:\/\/blogs\/news\/how-does-chaga-work-the-longevity-mushroom"
+          }
+        },
+        "7d70ba77-e2d3-4a7f-95b7-43e3cafdcd91": {
+          "type": "blog",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Magnesium-Glycinate-for-Sleep-_1.jpg",
+            "btitle": "Sleep hacks Does Magnesium Glycinate Help Sleep?",
+            "burl": "shopify:\/\/blogs\/news"
+          }
+        },
+        "38c7a0a2-664f-41c5-9203-8f2c30d03180": {
+          "type": "blog",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Magnesium-Glycinate-for-Sleep-_1.jpg",
+            "btitle": "Sleep hacks Does Magnesium Glycinate Help Sleep?",
+            "burl": "shopify:\/\/blogs\/news\/how-does-chaga-work-the-longevity-mushroom"
+          }
+        },
+        "8199b4a1-4d01-4bc4-83b9-ccd88ad4078b": {
+          "type": "blog",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Magnesium-Glycinate-for-Sleep-_1.jpg",
+            "btitle": "Sleep hacks Does Magnesium Glycinate Help Sleep?",
+            "burl": "shopify:\/\/blogs\/news\/beta-glucan-the-most-important-polysaccharide-in-functional-mushrooms"
+          }
+        },
+        "9d419e3a-f898-4125-9530-28d652517859": {
+          "type": "text",
+          "settings": {
+            "image-left": "shopify:\/\/shop_images\/Magnesium-Glycinate-for-Sleep-_1.jpg",
+            "btitle-left": "Sleep hacks Does Magnesium Glycinate Help Sleep?",
+            "burl-left": "shopify:\/\/blogs\/news"
+          }
+        },
+        "e76bc0ff-32cb-4263-bf00-69baa96151ef": {
+          "type": "text",
+          "settings": {
+            "image-left": "shopify:\/\/shop_images\/Magnesium-Glycinate-for-Sleep-_1.jpg",
+            "btitle-left": "Sleep hacks Does Magnesium Glycinate Help Sleep?",
+            "burl-left": "shopify:\/\/blogs\/news\/beta-glucan-the-most-important-polysaccharide-in-functional-mushrooms"
+          }
+        },
+        "2699c1f2-cd8f-4a59-8b62-4a069ee6ff88": {
+          "type": "text",
+          "settings": {
+            "image-left": "shopify:\/\/shop_images\/Magnesium-Glycinate-for-Sleep-_1.jpg",
+            "btitle-left": "Sleep hacks Does Magnesium Glycinate Help Sleep?",
+            "burl-left": "shopify:\/\/blogs\/news\/reishi-ganoderma-lucidum-the-extraordinary-properties-of-the-king-of-medicinal-mushrooms"
+          }
+        },
+        "71cae86f-d064-4304-b5c6-6973770a556c": {
+          "type": "text",
+          "settings": {
+            "image-left": "shopify:\/\/shop_images\/Magnesium-Glycinate-for-Sleep-_1.jpg",
+            "btitle-left": "Sleep hacks Does Magnesium Glycinate Help Sleep?",
+            "burl-left": "shopify:\/\/blogs\/news\/reishi-ganoderma-lucidum-the-extraordinary-properties-of-the-king-of-medicinal-mushrooms"
+          }
+        }
+      },
+      "block_order": [
+        "0ad225f1-92f9-424d-84f7-6f48fb40791b",
+        "3b41798c-e33d-4548-bf3b-9b6c9bf997f2",
+        "08c4a5d1-eb3c-4627-bd60-d315dd7d3d6f",
+        "7d70ba77-e2d3-4a7f-95b7-43e3cafdcd91",
+        "38c7a0a2-664f-41c5-9203-8f2c30d03180",
+        "8199b4a1-4d01-4bc4-83b9-ccd88ad4078b",
+        "9d419e3a-f898-4125-9530-28d652517859",
+        "e76bc0ff-32cb-4263-bf00-69baa96151ef",
+        "2699c1f2-cd8f-4a59-8b62-4a069ee6ff88",
+        "71cae86f-d064-4304-b5c6-6973770a556c"
+      ],
+      "settings": {
+        "com-text": "",
+        "show_date": true,
+        "show_author": true,
+        "show_article_tags": true,
+        "show_sharing_icons": true,
+        "show_featured_image": true,
+        "featured_image_height": "huge",
+        "enable_title_overlay": false,
+        "overlay_style": "shadow",
+        "title": "News",
+        "show_title": true,
+        "show_button": true,
+        "blog": "news",
+        "enable_carousel": false,
+        "post_limit": 1,
+        "show_author_side": true,
+        "show_date_side": true,
+        "show_excerpts": true,
+        "crop_ratio": "1.78",
+        "color_scheme": "none",
+        "btitle": "More from Learn"
+      }
+    },
+    "f942393c-1b00-4a54-a254-a6b7a54fbb5c": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "title": "More reading",
+        "show_title": true,
+        "show_button": true,
+        "blog": "news",
+        "enable_carousel": false,
+        "post_limit": 12,
+        "show_author": true,
+        "show_date": true,
+        "show_excerpts": true,
+        "crop_ratio": "",
+        "color_scheme": "none"
+      }
+    },
+    "b18fd59d-580e-41fc-904c-e3c5385c7372": {
+      "type": "blogs-com",
+      "settings": {
+        "comment": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f942393c-1b00-4a54-a254-a6b7a54fbb5c",
+    "b18fd59d-580e-41fc-904c-e3c5385c7372"
+  ]
+}

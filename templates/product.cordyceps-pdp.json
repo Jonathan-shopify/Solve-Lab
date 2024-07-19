@@ -1,0 +1,641 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-v2",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "4c673bc8-16fc-456e-bbfc-cadc5cb1a6f1": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div class=\"custom-btns-pdp\">\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Energy Levels<\/a>\n    <\/div>\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Athletic Performance<\/a>\n    <\/div>\n    <div class=\"btn-wrap\">\n        <a href=\"javascript:void(0)\">Immunity<\/a>\n    <\/div>\n<\/div>",
+            "show_in_quickbuy": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": true,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "abc4c98c-1576-41c6-b947-a8a7bd83014c": {
+          "type": "shopify:\/\/apps\/trustoo-io-reviews\/blocks\/star-rating-widget\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {
+            "star_size": 16,
+            "font_size": 14,
+            "block_aligment": "flex-start"
+          }
+        },
+        "883a894b-2efd-4657-9138-cb99e5e8f6dd": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "{{ product.metafields.custom.product_description | metafield_tag }}",
+            "icon": "",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#e0f4d5",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-2"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_single": false,
+            "select_first_variant": true,
+            "variant_style": "listed",
+            "disable_unavailable_variants": true,
+            "show_size_chart": true,
+            "size_chart_variant": "size guide",
+            "size_chart_page": "pop-up1"
+          }
+        },
+        "e5216295-d9d1-45f9-8d41-49086103cd68": {
+          "type": "inventory_level",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 21,
+            "enable_box": true,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "724817b5-fb19-46ff-9baa-a75a4e092ce0": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "text": "Learn More About",
+            "style": "primary",
+            "page": "pop-up1",
+            "show_in_quickbuy": false
+          }
+        },
+        "d72c0ef0-2ff4-4be7-9565-ed8b20cfc527": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_backorder_text": true,
+            "show_pickup_availability": true
+          }
+        },
+        "57f158a3-2de2-4a71-a5a7-5842807117b5": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p>Klarna Available At Checkout<\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/image_8a0533a5-c8c7-46c0-bfca-173cd5a6b3d6.png",
+            "icon_size": "large",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-7"
+          }
+        },
+        "80d408df-4e1c-41e5-9b84-0872e4c917a8": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p>30 Days Money-Back Guarantee<\/p>",
+            "icon": "",
+            "custom_icon": "shopify:\/\/shop_images\/image_1.png",
+            "icon_size": "large",
+            "enable_box": false,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": false,
+            "class0": "custom-list custom-style-8"
+          }
+        },
+        "a2d9590d-7c37-4ee5-b2cf-9567ad7b976f": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "enable_carousel": true,
+            "max_products": 10,
+            "show_in_quickbuy": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "4c673bc8-16fc-456e-bbfc-cadc5cb1a6f1",
+        "price",
+        "divider",
+        "abc4c98c-1576-41c6-b947-a8a7bd83014c",
+        "883a894b-2efd-4657-9138-cb99e5e8f6dd",
+        "variant_picker",
+        "e5216295-d9d1-45f9-8d41-49086103cd68",
+        "724817b5-fb19-46ff-9baa-a75a4e092ce0",
+        "d72c0ef0-2ff4-4be7-9565-ed8b20cfc527",
+        "buy_buttons",
+        "57f158a3-2de2-4a71-a5a7-5842807117b5",
+        "80d408df-4e1c-41e5-9b84-0872e4c917a8",
+        "a2d9590d-7c37-4ee5-b2cf-9567ad7b976f"
+      ],
+      "settings": {
+        "custom_rich": "",
+        "show_location_underneath": false,
+        "inventory_transfers_enable": false,
+        "enable_sticky_columns": true,
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "image_cards": "bg",
+        "enable_var_img_grouping": true,
+        "var_img_grouping_option": "Form, Size"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_title": true,
+        "show_vendor": false,
+        "grid": 5
+      }
+    },
+    "03ad7a50-b40c-4239-99a0-6949811c9294": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-0": {
+          "type": "heading",
+          "settings": {
+            "title": "ATP BOOSTER",
+            "title_size": "hsl-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cordyceps is a fungus naturally occurring in the high Himalayas. It is one of the most fascinating species in the mushroom kingdom. Cordyceps is renowned for its performance-enhancing, fatigue-reducing and immune-supporting properties.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-0",
+        "template--19603408716085__03ad7a50-b40c-4239-99a0-6949811c9294-1687244468cc73d2c4-1"
+      ],
+      "settings": {
+        "height": "large",
+        "text_alignment": "center",
+        "color_scheme": "3",
+        "full_width": false
+      }
+    },
+    "e4435349-a953-4df3-947d-b63b23c1fc28": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/cordyceps-zdjecie-nr-1.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Functional mushrooms",
+            "title_size": "hl-style",
+            "text": "<p>Mushrooms are qualified as adaptogens, which means that they support both physical and mental resistance to environmental stimuli and stress. How does this happen? Fungi have spent almost 1.5 billion years optimising their defence strategies, and today we can benefit from them.<\/p>",
+            "content": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "Brain Tech",
+            "heading_highlight_font": false,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "#cd4d1e",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-0",
+        "template--19456452985141__e4435349-a953-4df3-947d-b63b23c1fc28-168648153841e1e0a5-1"
+      ],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "1604f3bd-bd75-44d0-a3a5-730333f9a72f": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Energy boost",
+            "title_size": "hsl-style",
+            "text": "<p>Cordyceps stands out from other functional mushrooms in a significant way. Beginning with its unusual method of cultivation, to its anecdotal fame as a powerful energy booster among athletes.<br\/><br\/>Cordyceps is often used as an alternative to caffeinated energy drinks, acting at a cellular level, literally recharging our biological batteries.<\/p>",
+            "content": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "2",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/cordy2compress.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-1",
+        "template--19456452985141__1604f3bd-bd75-44d0-a3a5-730333f9a72f-1686608865e9627090-0"
+      ],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "144bfaba-7b41-4f39-8d79-ed64fc74b908": {
+      "type": "custom-row",
+      "blocks": {
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-0": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify:\/\/shop_images\/cordy1compress.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow",
+            "color_scheme": "none",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-1": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Recharge your batteries",
+            "title_size": "hsl-style",
+            "text": "<p>One of the ways in which Cordyceps supports physical performance and reduces fatigue is through its effect on the production of the basic energy unit, ATP (adenosine triphosphate). We can think of ATP as our body's batteries. The more charged they are, the longer we are able to perform an activity.<br\/><br\/>ATP is produced in the mitochondria - the energy factories inside our cells. Their contribution to energy production is as high as 90%. Cordyceps contains adenosine, which is required to produce ATP.<\/p>",
+            "content": "<p>Block content<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "left",
+            "color_scheme": "1",
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-0",
+        "template--19605829812533__144bfaba-7b41-4f39-8d79-ed64fc74b908-1687258827c0fbe2c7-1"
+      ],
+      "settings": {
+        "alignment": "middle",
+        "color_scheme": "3"
+      }
+    },
+    "543ea4ba-cac1-4cd8-b6d8-7703e137db48": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Adaptogens, vitamins and minerals to support the brain and nervous system",
+            "title_size": "h1-style",
+            "use_h1": false,
+            "heading_highlight_text": "",
+            "heading_highlight_font": true,
+            "heading_highlight_stencil": false,
+            "heading_highlight_color": "rgba(0,0,0,0)",
+            "heading_highlight_gradient": ""
+          }
+        },
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-0",
+        "template--19603408716085__543ea4ba-cac1-4cd8-b6d8-7703e137db48-168724595383bb5ded-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "color_scheme": "1",
+        "full_width": true
+      }
+    },
+    "63f6fbc3-cca1-426b-89ab-ae4f2229e162": {
+      "type": "accordions",
+      "blocks": {
+        "5198d136-4af3-426b-99cd-e8912788acea": {
+          "type": "block",
+          "settings": {
+            "acc_title": "Ingredients",
+            "acc_content": "<ul class=\"features-list list1\">\n<li>100% Fruiting Body of Cordyceps<\/li>\n<\/ul>",
+            "mobile_image": "shopify:\/\/shop_images\/Cordyceps_II_1.png"
+          }
+        },
+        "36fd53f5-aea6-431f-b31a-e3c9499fdb6e": {
+          "type": "block",
+          "settings": {
+            "acc_title": "The Benefits",
+            "acc_content": "<p>Your secret weapon for achieving peak athletic performance and pushing to new limits.\n<\/p>\n\n\n\n<ul class=\"features-list list1\">\n\n\n   <li>\n      <strong> Enhanced Energy and Stamina<\/strong> - Cordyceps is renowned for its potential to increase energy levels and improve stamina. It known to support efficient oxygen utilisation, enhance ATP production, and improve overall energy metabolism, helping combat fatigue and enhancing physical performance. [4] [11]\n   <\/li>\n   \n   \n   \n   <li>\n     <strong> Improved Athletic Performance <\/strong>- Cordyceps is often favoured by athletes for its potential to enhance endurance, increase oxygen uptake, and improve overall performance. It may boost oxygen delivery to the muscles, delay fatigue, and support faster recovery post-exercise. [5] [11]\n   <\/li>\n   \n   \n   \n   \n   <li>\n   <strong>  Immune Regulation <\/strong> - Cordyceps possess properties that may modulate the immune system and as research suggests, may exhibit notable anti-tumor activities. There is considerable potential for Cordyceps to both regulate immune function and reduce the levels of cell cycle proteins. [6]\n   <\/li>\n   \n   \n   \n   <li>\n      <strong>Anti-Inflammatory Properties <\/strong> - Cordyceps exhibits anti-inflammatory effects, potentially helping to reduce chronic inflammation in the body. By mitigating inflammation, it may aid in managing inflammatory condition. [7]\n   <\/li>\n<li>\n      <strong>Sexual Health and Libido Enhancement - <\/strong>Cordyceps have traditionally been used for their potential aphrodisiac properties and its positive effects on sexual health. Cordyceps may support hormone balance, enhance libido, and contribute to improved sexual performance. [11]<\/li>\n<\/ul>"
+          }
+        },
+        "33716c70-cca7-40b6-af00-9b002805c267": {
+          "type": "block",
+          "settings": {
+            "acc_title": "Comparison Table",
+            "acc_content": "Information can be overwhelming sometimes, and there’s a lot of it out there. So we\nwanted to show you a few differences between Solve Labs and Other brands on the market.\n  <br>\n<table class=\"data-table\">\n   <tbody>\n<tr>\n      <th><\/th>\n      <th style=\"\n    background-color: #ffbb6b;\n    opacity: 69%;\n\">Solve Labs<\/th>\n      <th>Competitors<\/th>\n   <\/tr>\n   \n   \n   \n   <tr>\n      <td>Active compounds derived from mushrooms\n      \n      \n      <\/td>\n<td style=\"\n    background-color: #ffbb6b;\n    opacity: 69%;\n\"><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n      <td><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/cross.svg\" class=\"cross\" alt=\"cross\"><\/td>\n      \n  <\/tr>\n   \n   \n      <tr>\n      <td>Very high levels of active compounds\n      \n      \n      <\/td>\n<td style=\"\n    background-color: #ffbb6b;\n    opacity: 69%;\n\"><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n      <td><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/cross.svg\" class=\"cross\" alt=\"cross\"><\/td>\n      \n  <\/tr>\n<tr>\n      <td>Made from 100% Fruiting bodies\n      \n      \n      <\/td>\n<td style=\"\n    background-color: #ffbb6b;\n    opacity: 69%;\n\"><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n      <td><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/cross.svg\" class=\"cross\" alt=\"cross\"><\/td>\n      \n  <\/tr>\n      <tr>\n      <td>No binders, fillers or preservatives\n      \n      \n      <\/td>\n<td style=\"\n    background-color: #ffbb6b;\n    opacity: 69%;\n\"><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n      <td><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/cross.svg\" class=\"cross\" alt=\"cross\"><\/td>\n      \n  <\/tr>\n      <tr>\n      <td>100% Vegan\n      \n      \n      <\/td>\n<td style=\"\n    background-color: #ffbb6b;\n    opacity: 69%;\n\"><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n       <td><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n  <\/tr>\n      <tr>\n      <td>Real Plant-based capsules\n      \n      \n      <\/td>\n<td style=\"\n    background-color: #ffbb6b;\n    opacity: 69%;\n\"><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n      <td><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n      \n  <\/tr>\n      <tr>\n      <td>Bioavailable nutrient forms\n      \n      \n      <\/td>\n<td style=\"\n    background-color: #ffbb6b;\n    opacity: 69%;\n\"><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/check-mark.svg\" class=\"cross\" alt=\"checkmark\"><\/td>\n      <td><img src=\"https:\/\/solvelabs.world\/cdn\/shop\/t\/18\/assets\/cross.svg\" class=\"cross\" alt=\"cross\"><\/td>\n      \n  <\/tr>\n<\/tbody>\n<\/table>"
+          }
+        },
+        "b1babf53-7cf3-4d05-9922-8078ced27456": {
+          "type": "block",
+          "settings": {
+            "acc_title": "Concentration & Potency",
+            "acc_content": "<p>When it comes to choosing the best Cordyceps product, SolveLabs™ Cordyceps stands out as the clear choice - prioritising concentration and potency above all else.<\/p>\n<ul class=\"features-list list1\">\n\n\n   <li>\n     <strong> Concentration<\/strong> refers to the quantity of active compounds found within the supplement, including Cordycepin, Adenosine, and Beta-d-Glucans, all of which contribute to the mushroom's cognitive benefits. Solve Labs Lion’s Mane is a 10:1 extract, meaning that for every gram of our extract, it's as if you're consuming ten grams of the pure mushroom. \n\n\n   <\/li>\n   \n   \n   \n   <li>\n    <strong> Potency<\/strong> is therefore high thanks to the concentration of mushroom and active compounds. Our Lion’s Mane supplement is derived exclusively from 100% mature dry fruiting bodies, guaranteeing that you will receive the maximum benefits of the mushroom's natural properties.\n   <\/li>\n   \n   \n   \n   \n   <p>\n     Equally important is the<strong> avoidance of fillers derived from starch and grains<\/strong>. These fillers not only dilute the concentration and potency of the active compounds but may also introduce unnecessary additives or allergens. It is, after all, Beta-D-Glucans 1,3 and 1,6 that we are after.\n   <\/p>\n   \n   \n<\/ul>"
+          }
+        },
+        "c94854fe-4c9c-4943-b7c2-0e9d8d5b1b32": {
+          "type": "block",
+          "settings": {
+            "acc_title": "Beta-D-Glucans",
+            "acc_content": "<p>What are Beta-D-glucans? Great question!<\/p>\n\nBeta-D-glucans are a type of complex sugar made from long chains of glucose molecules. They are found in nature, especially in mushrooms, and are known for their strong ability to support and regulate the immune system. [2]\n<br><br>\nBeta-D-glucans from mushrooms are considered to be more beneficial than those sourced from cereals like oats and barley, yeasts, or certain algae. This is due to their distinct structural features and the health advantages they offer. At Solve Labs, we exclusively utilise mushroom-sourced Beta-D-Glucans for these reasons. There are two key attributes that are particularly noteworthy about mushroom beta-d-glucans:\n\n\t<div class=\"recipes-block\" style=\"text-align: center;align-items: center;\">\n                \n                \n\t\t\t\t\t<div class=\"recip-box\">\n\t\t\t\t\t\t<strong class=\"heading\">MOLECULAR STRUCTURE<\/strong>\n\t\t\t\t\t<\/div>\n\t\t\t\t\t\t<d style=\"font-size: 68px;\">=<\/d>\n\t\t\t\t\n                    \n                \n                    \n\t\t\t\t\t<div class=\"recip-box\">\n\t\t\t\t\t\t<strong class=\"heading\">HIGHER BIO ACTIVITY<\/strong>\n\t\t\t\t\t<\/div>\n\n\n<\/div>\n                \n                \n                        Beta-D-glucans from mushrooms have a complex branching structure with β-(1,3) and β-(1,6) linkages. These is different from those found in grains, yeasts and algae. This branching pattern is believed to be responsible for their biological activity and potential health benefits. The unique molecular structure of mushroom beta-d-glucans allows them to interact with specific receptors in the immune system and exert immunomodulatory effects."
+          }
+        },
+        "e08ebd3b-61c8-4f81-81c1-709ffba0eb56": {
+          "type": "block",
+          "settings": {
+            "acc_title": "Athletic Performance",
+            "acc_content": "<ol class=\"features-list number-list\">\n\n\n   <li>\n   <strong>Increased ATP Production<\/strong> - Adenosine triphosphate (ATP) is the energy currency of cells. Cordyceps is thought to increase the body's production of ATP, which could potentially improve muscle energy during exercise, leading to enhanced endurance and strength. [11]\u2028\n   <\/li>\n   \n    \n   \n   <li>\n    <strong> Improved Oxygen Utilisation <\/strong>- Some studies suggest that cordyceps may improve the way the body uses oxygen, which is particularly beneficial for endurance athletes by potentially increasing aerobic capacity and delaying fatigue. [11]\u2028\n   <\/li>\n   \n    \n   \n   \n   <li>\n    <strong>Anti-Fatigue Effects<\/strong> - Cordyceps can help in reducing fatigue by influencing the way the body produces and utilises energy - one of those being improved oxygen use - which can be helpful for athletes during long training sessions or competitions. [11]\u2028\n   <\/li>\n    \n    \n      <li>\n    <strong>Antioxidant Source<\/strong> - Exercise can increase oxidative stress, which can damage cells. Cordyceps contain antioxidants that may help protect cells from such damage. [12]\u2028\n   <\/li>\n   \n   \n   \n    <li>\n    <strong>Anti-Inflammatory Properties<\/strong> - The anti-inflammatory effects of Cordyceps can aid in recovery by reducing muscle inflammation and soreness after intense training \/ workouts,  shortening recovery time. [13]\u2028\n   <\/li>\n    \n    <li>\n    <strong>Blood Flow Improvement<\/strong> - Improved blood flow is essential for delivering oxygen and nutrients to muscles during exercise. Cordyceps may help improve blood circulation, contributing to better performance and muscle health. [14]\n   <\/li>\n<\/ol>"
+          }
+        },
+        "795faa8b-bf3b-4924-aab4-3f917d7a22c0": {
+          "type": "block",
+          "settings": {
+            "acc_title": "Cordyceps Accumulation Phases",
+            "acc_content": "Depending on your body's response and unique metabolic rate, the time taken to feel the effects of Cordyceps supplementation can vary. \n\n<ol class=\"features-list number-list\">\n\n\n   <li>\n   <strong>Phase 1 - Initial Response (2-4 weeks)<\/strong>: In the early weeks, your body commences its adaptation to the Cordyceps. You might observe preliminary enhancements in energy levels and endurance, this is the body’s initial response.\n\n\n   <\/li>\n   \n    \n   \n   <li>\n<strong>PHASE 2 - Intermediate Accumulation (1-3 Months)<\/strong>: As you progress into the second phase, the effects of the Cordyceps might become more prominent. You could find yourself benefitting from improved oxygen utilisation, increased stamina, and a harmonised immune response. Essentially, this phase represents the body's further acclimatisation to Cordyceps, paving the way for stepwise enhancements in athletic performance.\n\n\n   <\/li>\n   \n    \n   \n   \n   <li>\n    <strong>PHASE 3 - Long-term Accumulation (3-6 Months and Beyond)<\/strong>: This is the stage where the comprehensive range of benefits start to shine through. Expect to experience an optimised energy metabolism, a balanced hormonal environment, and a marked increase in overall athletic performance. Many athletes choose to sustain their Cordyceps supplementation beyond this phase, incorporating it as a staple in their daily regimen.\n\n\n   <\/li>\n    \n    \n      <p>It's essential to exercise patience throughout these phases. While Cordyceps gets to work right from the initial response phase, experiencing its full potential in enhancing your performance might take time.\n <\/p>\n<p>\nDifferent athletes, depending on their sport, intensity of training, and individual body responses, might observe varying timelines for benefits. Thus, it's crucial to stay observant, adjust as needed, and remain consistent in your supplementation journey.\n<\/p>\n <br>Life is not a linear journey.\n <br>\n<\/ol>"
+          }
+        },
+        "7eb95bb6-88c9-471c-b1b1-0070edcf6576": {
+          "type": "block",
+          "settings": {
+            "acc_title": "References",
+            "acc_content": "<ol class=\"features-list number-list\">\n\n\n   <li>\nDavid Dudgeon, W. (2017) ‘The effects of high and low-dose cordyceps militaris-containing mushroom blend supplementation after seven and twenty-eight days’, American Journal of Sports Science, 6(1), pp. 1–7. doi:10.11648\/j.ajss.20180601.11.\n\n   <\/li>\n   \n    <br>\n   \n   <li>\nIssa, Qays M. (2023) ‘Medicinal and nutritional importance of mushrooms’, South Asian Research Journal of Pharmaceutical Sciences, 5(03), pp. 48–52. doi:10.36346\/sarjps.2023.v05i03.002.\n   <\/li>\n   <br>\n   \n   \n   \n   <li>\nKhan, Md.A. et al. (2010) ‘Cordyceps mushroom: A potent anticancer nutraceutical’, The Open Nutraceuticals Journal, 3(1), pp. 179–183. doi:10.2174\/18763960010030100179.\n   <\/li>\n   <br>\n\n   \n   <li>\nKumar, R. et al. (2011) ‘Cordyceps sinensis promotes exercise endurance capacity of rats by activating skeletal muscle metabolic regulators’, Journal of Ethnopharmacology, 136(1), pp. 260–266. doi:10.1016\/j.jep.2011.04.040.\n\n   \n   <\/li>\n   \n    <br>\n   \n<li>\nMayer, E.A. (2011) ‘Gut feelings: The emerging biology of Gut–Brain Communication’, Nature Reviews Neuroscience, 12(8), pp. 453–466. doi:10.1038\/nrn3071.\n\n   \n   <\/li>\n   <br>\n   \n<li>\nMirończuk-Chodakowska, I. et al. (2017) ‘QUANTITATIVE EVALUATION OF 1,3-1,6-β-D-GLUCAN CONTENTS IN WILD–GROWING SPECIES OF EDIBLE POLISH MUSHROOMS’, National Institute of Public Health, 68(3), pp. 281–290. doi:PMID: 28895671.\n     \n     <br>\n   \n    <\/li>\n<li> \nNajafzadeh, M. et al. (2008) ‘Chaga mushroom extract inhibits oxidative DNA damage in lymphocytes of patients with inflammatory bowel disease’, BioFactors, 31(3–4), pp. 191–200. doi:10.1002\/biof.5520310306.\n     \n     <\/li>\n     <br>\n     <li> \n     \nPeng, H. and Shahidi, F. (2020) ‘Bioactive compounds and bioactive properties of chaga (inonotus obliquus) mushroom: A Review’, Journal of Food Bioactives, 12. doi:10.31665\/jfb.2020.12245.\n     <\/li>\n     <br>\n     <li> \n     \nSAITSU, Y. et al. (2019) ‘Improvement of cognitive functions by oral intake of Hericium erinaceus’, Biomedical Research, 40(4), pp. 125–131. doi:10.2220\/biomedres.40.125.\n      <\/li>\n     <br>\n     <li>\n     \nTan, L. et al. (2020) ‘Anti‐inflammatory effects of cordycepin: A Review’, Phytotherapy Research, 35(3), pp. 1284–1297. doi:10.1002\/ptr.6890.\n     \n      <\/li>\n     <br>\n     <li>\nZ Assefa, S. et al. (2015) ‘The functions of sleep’, AIMS Neuroscience, 2(3), pp. 155–171. doi:10.3934\/neuroscience.2015.3.155.\n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n<\/li>\n<\/ol><ol class=\"features-list number-list\">\n\n\n   <li>\nDavid Dudgeon, W. (2017) ‘The effects of high and low-dose cordyceps militaris-containing mushroom blend supplementation after seven and twenty-eight days’, American Journal of Sports Science, 6(1), pp. 1–7. doi:10.11648\/j.ajss.20180601.11.\n\n   <\/li>\n   \n    <br>\n   \n   <li>\nIssa, Qays M. (2023) ‘Medicinal and nutritional importance of mushrooms’, South Asian Research Journal of Pharmaceutical Sciences, 5(03), pp. 48–52. doi:10.36346\/sarjps.2023.v05i03.002.\n   <\/li>\n   <br>\n   \n   \n   \n   <li>\nKhan, Md.A. et al. (2010) ‘Cordyceps mushroom: A potent anticancer nutraceutical’, The Open Nutraceuticals Journal, 3(1), pp. 179–183. doi:10.2174\/18763960010030100179.\n   <\/li>\n   <br>\n\n   \n   <li>\nKumar, R. et al. (2011) ‘Cordyceps sinensis promotes exercise endurance capacity of rats by activating skeletal muscle metabolic regulators’, Journal of Ethnopharmacology, 136(1), pp. 260–266. doi:10.1016\/j.jep.2011.04.040.\n\n   \n   <\/li>\n   \n    <br>\n   \n<li>\nMayer, E.A. (2011) ‘Gut feelings: The emerging biology of Gut–Brain Communication’, Nature Reviews Neuroscience, 12(8), pp. 453–466. doi:10.1038\/nrn3071.\n\n   \n   <\/li>\n   <br>\n   \n<li>\nMirończuk-Chodakowska, I. et al. (2017) ‘QUANTITATIVE EVALUATION OF 1,3-1,6-β-D-GLUCAN CONTENTS IN WILD–GROWING SPECIES OF EDIBLE POLISH MUSHROOMS’, National Institute of Public Health, 68(3), pp. 281–290. doi:PMID: 28895671.\n     \n     <br>\n   \n    <\/li>\n<li> \nNajafzadeh, M. et al. (2008) ‘Chaga mushroom extract inhibits oxidative DNA damage in lymphocytes of patients with inflammatory bowel disease’, BioFactors, 31(3–4), pp. 191–200. doi:10.1002\/biof.5520310306.\n     \n     <\/li>\n     <br>\n     <li> \n     \nPeng, H. and Shahidi, F. (2020) ‘Bioactive compounds and bioactive properties of chaga (inonotus obliquus) mushroom: A Review’, Journal of Food Bioactives, 12. doi:10.31665\/jfb.2020.12245.\n     <\/li>\n     <br>\n     <li> \n     \nSAITSU, Y. et al. (2019) ‘Improvement of cognitive functions by oral intake of Hericium erinaceus’, Biomedical Research, 40(4), pp. 125–131. doi:10.2220\/biomedres.40.125.\n      <\/li>\n     <br>\n     <li>\n     \nTan, L. et al. (2020) ‘Anti‐inflammatory effects of cordycepin: A Review’, Phytotherapy Research, 35(3), pp. 1284–1297. doi:10.1002\/ptr.6890.\n     \n      <\/li>\n     <br>\n     <li>\nZ Assefa, S. et al. (2015) ‘The functions of sleep’, AIMS Neuroscience, 2(3), pp. 155–171. doi:10.3934\/neuroscience.2015.3.155.\n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n<\/li>\n<\/ol>"
+          }
+        }
+      },
+      "block_order": [
+        "5198d136-4af3-426b-99cd-e8912788acea",
+        "36fd53f5-aea6-431f-b31a-e3c9499fdb6e",
+        "33716c70-cca7-40b6-af00-9b002805c267",
+        "b1babf53-7cf3-4d05-9922-8078ced27456",
+        "c94854fe-4c9c-4943-b7c2-0e9d8d5b1b32",
+        "e08ebd3b-61c8-4f81-81c1-709ffba0eb56",
+        "795faa8b-bf3b-4924-aab4-3f917d7a22c0",
+        "7eb95bb6-88c9-471c-b1b1-0070edcf6576"
+      ],
+      "settings": {}
+    },
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "ec2050ee-9e02-47d6-aa67-495d64f15c79": {
+          "type": "question",
+          "settings": {
+            "title": "Why our Cordyceps extract?",
+            "answer": "<p><strong>10:1 extract <\/strong>- concentrated form of extract to ensure bioavailability of raw material<\/p><p><strong>100% Natural<\/strong> - no unnecessary additives or fillers<\/p><p><strong>Vegetable capsules<\/strong> - suitable for vegans and vegetarians<\/p><p><strong>100% Fruiting bodies<\/strong> - no mycelium mixed with grain <\/p><p><strong>Grown on wood<\/strong> - fruited on enriched sawdust to ensure high synthesis of active compounds<\/p><p><strong>High beta-glucan content<\/strong> - tested in independent laboratories to ensure high beta glucan content<\/p>"
+          }
+        },
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-0": {
+          "type": "question",
+          "settings": {
+            "title": "For whom?",
+            "answer": "<p>Cordyceps has been formulated for those looking for increased energy, improved stamina, enhanced lung capacity, better immunity, and improved sleep quality. This solution is perfect for athletes, busy professionals, individuals with active lifestyles, students, and anyone wanting to optimize their sleep and deal with daily challenges more effectively.<\/p>"
+          }
+        },
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1": {
+          "type": "question",
+          "settings": {
+            "title": "How to use Cordyceps?",
+            "answer": "<p>Recommended daily allowance: 1000 mg (2 capsules) sipped with water.<\/p><p>Do not exceed the recommended daily allowance.<\/p><p>This dietary supplement must not be used as a substitute for a varied diet. Leading a healthy lifestyle and eating a balanced diet are essential for good health.<\/p><p>Not recommended for use by pregnant or breastfeeding women. Keep out of the reach of small children, in a dry and cool place.<\/p><p>Check out the other mushrooms in the capsule line<\/p>"
+          }
+        },
+        "44cc8dd3-03e0-4f2c-92d9-a2a35817485e": {
+          "type": "question",
+          "settings": {
+            "title": "Where do the mushrooms come from?",
+            "answer": "<p>Our mushrooms come from farms located in the mountainous regions of China's Fujian Province, where mushrooms have been cultivated using traditional methods for hundreds of years.<\/p><p>They are grown on natural wood where they occur wild in nature. We cut only the fruiting bodies of the mushrooms, without any additives or unnecessary fillers.<\/p><p>All mushrooms undergo testing for the presence of heavy metals, polycyclic aromatic hydrocarbons and key microbiological parameters to ensure maximum food safety.<\/p>"
+          }
+        },
+        "de6f2a6e-8806-4452-8622-298fa67d0a93": {
+          "type": "question",
+          "settings": {
+            "title": "What is the best way to dissolve the mushrooms?",
+            "answer": "<p>If you are having difficulty dissolving the yellow lacquer mushrooms, we recommend adding the extract to the bottom of the cup and then gradually pouring in the coffee\/tea, stirring all the time. <br\/><br\/>You can also use a handheld milk frother to dissolve the mushrooms.<\/p>"
+          }
+        },
+        "fef10d94-b03d-405a-8a9e-20f3f4b4a9c6": {
+          "type": "question",
+          "settings": {
+            "title": "What part of the mushroom was the extract prepared from?",
+            "answer": "<p>We only use the fruiting bodies of the mushroom. This is due to the desire to obtain a pure mushroom extract. When dealing with mycelium-based supplements, unfortunately it may turn out that up to 60-70% of such an extract will be starch instead of mushroom without the health-promoting effects attributed to mushrooms. <\/p><p>This is due to the inability to separate the mycelium from the medium on which it grew. Once the fungus has colonised the medium, the whole thing is ground up and subjected to extraction processes. This is a cheap and quick way of growing mushrooms without bringing them to the fruiting stage.<\/p>"
+          }
+        },
+        "ccf643cd-f9f3-4b65-8b27-f989a2f45ca7": {
+          "type": "question",
+          "settings": {
+            "title": "How many polysaccharides does the extract contain?",
+            "answer": "<p>Our mushroom extracts are not standardised to a specific amount of polysaccharides, as this is not an indicator of the quality of the extract.<br\/><br\/>Mushroom-based products contain many types of polysaccharides (polysaccharides), such as chitin, alpha glucans or beta glucans.<br\/><br\/>Alpha glucans are compounds that do not have the properties attributed to fungi. They are usually derived from the starchy medium on which the fungus grows. They are used in mycelium products or mushroom biomass, which is a mixture of mycelium and fruiting bodies.<br\/><br\/>Active substances are also polysaccharides, but in a different configuration - Beta-D-glucans 1-3 and 1-6. These are found in the fruiting bodies of mushrooms.<br\/><br\/>For more on beta-glucan and a survey of our mushrooms, see the article:<\/p>"
+          }
+        },
+        "b97170dc-da4f-4e53-8f89-72e261330848": {
+          "type": "question",
+          "settings": {
+            "title": "What is the mushroom extraction process like?",
+            "answer": "<p>Dried mushroom fruiting bodies are ground to a fine dust and then extracted using hot water and alcohol.<br\/><br\/>The water dissolves the cell walls of the mushrooms, which are made of chitin, and extracts compounds such as beta glucans (biologically active polysaccharides in mushrooms). Since we do not have an enzyme that can effectively digest chitin - hot water extraction is fundamental to the bioavailability of fungal preparations. Alcohol, on the other hand, allows the extraction of water-insoluble compounds such as triterpenes.<br\/><br\/>Once the extract has been concentrated, spray drying follows, leaving a final dry extract. Spray drying is the optimum dehydration process for wet extracts - keeping nutrient losses to a minimum.<\/p>"
+          }
+        },
+        "87c56917-c435-4e82-b7b3-0012681f9fc6": {
+          "type": "question",
+          "settings": {
+            "title": "What distinguishes an extract from a ground mushroom?",
+            "answer": "<p>Extraction is the optimal way of processing mushrooms to extract the active substances. These are encapsulated in the cell walls of the mushrooms, which are made up of chitin. <\/p><p>We do not have an enzyme that is able to digest chitin and for this reason mushrooms must be subjected to extraction processes. Extraction makes the raw material fully assimilable by our body.<\/p>"
+          }
+        },
+        "c0fe3482-fc0a-4e27-8e39-210fdc2f52a0": {
+          "type": "question",
+          "settings": {
+            "title": "What is the best time to take mushroom supplements?",
+            "answer": "<p>Lion's mane and Cordyceps, as mushrooms support alertness and increase energy levels, are best taken in the first part of the day or before a workout. If you're adding mushrooms to your coffee, it's a good idea to limit your coffee intake to between 13:00 and 14:00. This will reduce the negative effects of caffeine on sleep quality. A good alternative to coffee is to drink mushrooms in tea.<br\/><br\/>Reishi, due to its tonic and calming properties on the nervous system, is worth taking in the evening, preferably with green tea or cocoa.<br\/>In the case of Chaga mushrooms, the time of consumption does not matter.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "ec2050ee-9e02-47d6-aa67-495d64f15c79",
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-0",
+        "template--19456452985141__8b7d9fa7-04da-498b-9854-4fc47a63add1-168648143825cf78ed-1",
+        "44cc8dd3-03e0-4f2c-92d9-a2a35817485e",
+        "de6f2a6e-8806-4452-8622-298fa67d0a93",
+        "fef10d94-b03d-405a-8a9e-20f3f4b4a9c6",
+        "ccf643cd-f9f3-4b65-8b27-f989a2f45ca7",
+        "b97170dc-da4f-4e53-8f89-72e261330848",
+        "87c56917-c435-4e82-b7b3-0012681f9fc6",
+        "c0fe3482-fc0a-4e27-8e39-210fdc2f52a0"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "FAQ - Frequently Asked Questions"
+      }
+    },
+    "234c1298-7eda-4adc-a2ab-e8b16e25e8ae": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "title": "Blog posts",
+        "show_title": false,
+        "show_button": true,
+        "blog": "news",
+        "enable_carousel": true,
+        "post_limit": 3,
+        "show_author": true,
+        "show_date": true,
+        "show_excerpts": true,
+        "crop_ratio": "1.78",
+        "color_scheme": "1"
+      }
+    },
+    "1687258188c5af77ac": {
+      "type": "apps",
+      "settings": {}
+    },
+    "1693131118c35c4b8f": {
+      "type": "apps",
+      "blocks": {
+        "37ec7bd4-c4e8-4253-8bb6-a32fd8b977ac": {
+          "type": "shopify:\/\/apps\/trustoo-io-reviews\/blocks\/review-widget\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "37ec7bd4-c4e8-4253-8bb6-a32fd8b977ac"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "03ad7a50-b40c-4239-99a0-6949811c9294",
+    "e4435349-a953-4df3-947d-b63b23c1fc28",
+    "1604f3bd-bd75-44d0-a3a5-730333f9a72f",
+    "144bfaba-7b41-4f39-8d79-ed64fc74b908",
+    "543ea4ba-cac1-4cd8-b6d8-7703e137db48",
+    "63f6fbc3-cca1-426b-89ab-ae4f2229e162",
+    "8b7d9fa7-04da-498b-9854-4fc47a63add1",
+    "234c1298-7eda-4adc-a2ab-e8b16e25e8ae",
+    "1687258188c5af77ac",
+    "1693131118c35c4b8f"
+  ]
+}

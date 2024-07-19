@@ -1,0 +1,24 @@
+<div class="mob-blog">
+    {% if section.settings.btitle != blank %}
+     <h2 class="mm-bbs mas section-title"><a href="{{ blog.url }}" data-cc-animate>{{ section.settings.btitle | escape }}</a></h2>
+   {% endif %}
+   
+   <div class="mm-bb blog-container">
+     {% for block in section.blocks %}
+        {% if block.settings.btitle != blank %}
+       <div class="blog">
+         <a href="{{ block.settings.burl }}">
+           <div class="blog-content">
+             <div class="blog-image">
+               <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.btitle }}">
+             </div>
+             <h3>{{ block.settings.btitle }}</h3>
+             <!-- Add other content like date, author, etc., if needed -->
+           </div>
+         </a>
+       </div>
+    {% endif %}
+     {% endfor %}
+   </div>
+
+   

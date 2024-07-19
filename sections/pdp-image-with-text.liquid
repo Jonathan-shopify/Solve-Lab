@@ -1,0 +1,285 @@
+{{ 'pdp-image-with-text.css' | asset_url | stylesheet_tag }}
+{%  style  %}
+    .pdp-image-with-text-{{ section.id }} {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+    @media (max-width: 749px) {
+        .pdp-image-with-text-{{ section.id }} {
+            padding-top: {{ section.settings.padding_top_mobile }}px;
+            padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+        } 
+    }
+    .pdp-image-with-text-{{ section.id }} .cc-accordion-item__content p::before {
+        background-image: url({{ section.settings.tab_desc_icon | image_url: width: section.settings.tab_desc_icon.width }});
+    }
+{% endstyle %}
+<section class="pdp-image-with-text-{{ section.id }}">
+    <div class="pdp-image-with-text-section">
+        <div class="pdp-image-with-text-container">
+            <div class="pdp-image-with-text-content">
+                <div class="pdp-image-with-text-left">
+                    <div class="pdp-image-with-text-left-inner">
+                        {% if section.settings.title != blank %}
+                          <div class="subheading subheading--over paddig-bottom-cust">{{ section.settings.title }}</div>
+                         {% if section.settings.color_title != blank %}
+                           <h2 class="majortitle h1-style in-content">{{ section.settings.color_title }}</h2>{% endif %}
+                        {% endif %}
+                        {% if section.settings.content_1 != blank or section.settings.desc_title_1 != blank %}
+                            <div class="pdp-image-with-text-left-text">
+                                <p>{{ section.settings.desc_title_1 }}</p>
+                               <div class="bottom-content">{{ section.settings.content_1 }}</div>
+                            </div>
+                        {% endif %}
+                        {% if section.settings.content_2 != blank or section.settings.desc_title_2 != blank %}
+                            <div class="pdp-image-with-text-left-text">
+                                <p>{{ section.settings.desc_title_2 }}</p>
+                                {{ section.settings.content_2 }}
+                            </div>
+                        {% endif %}
+                      {% if section.settings.content_3 != blank or section.settings.desc_title_3 != blank %}
+                            <div class="pdp-image-with-text-left-text">
+                                <p>{{ section.settings.desc_title_3 }}</p>
+                                {{ section.settings.content_3 }}
+                            </div>
+                        {% endif %}
+                      {% if section.settings.content_4 != blank or section.settings.desc_title_4 != blank %}
+                            <div class="pdp-image-with-text-left-text">
+                                <p>{{ section.settings.desc_title_4 }}</p>
+                                {{ section.settings.content_4 }}
+                            </div>
+                        {% endif %}
+                      {% if section.settings.content_5 != blank or section.settings.desc_title_5 != blank %}
+                            <div class="pdp-image-with-text-left-text">
+                                <p>{{ section.settings.desc_title_5 }}</p>
+                                {{ section.settings.content_5 }}
+                            </div>
+                        {% endif %}
+                      {% if section.settings.content_6 != blank or section.settings.desc_title_6 != blank %}
+                            <div class="pdp-image-with-text-left-text">
+                                <p>{{ section.settings.desc_title_6 }}</p>
+                                {{ section.settings.content_6 }}
+                            </div>
+                        {% endif %}
+                        {% if section.settings.tab_title != blank or section.settings.tab_desc != blank %}
+                          <div class="pdp-image-with-text-left-accordion js" id="faq-faq">
+                            <div class="cc-accordion cc-initialized" data-allow-multi-open="false">
+                              <div class="collapsible-tabs__block">
+                                  <div class="collapsible-tabs__tab">
+                                    <details class="cc-accordion-item custom-accordion">
+                                        <summary class="cc-accordion-item__title">
+                                          {{ section.settings.tab_title }}
+                                          <div class="accordion-title-icons">
+                                              {% comment %} <img src="https://cdn.shopify.com/s/files/1/0777/0718/2389/files/plus-icon.png?v=1718637481" class="" height="" width="" style="margin-bottom: 1px;"> {% endcomment %}
+                                              {% comment %} <img src="https://cdn.shopify.com/s/files/1/0777/0718/2389/files/plus-icon.png?v=1718637481" class="acn-open-icon" height="" width=""> {% endcomment %}
+                                              {% comment %} <img src="https://cdn.shopify.com/s/files/1/0777/0718/2389/files/minus-icon.png?v=1718637481" class="acn-close-icon" height="" width=""> {% endcomment %}
+                                          </div>
+                                        </summary>
+                                        <div class="cc-accordion-item__panel">
+                                          <div class="cc-accordion-item__content rte">
+                                            {{ section.settings.tab_desc }}
+                                          </div>
+                                        </div>
+                                    </details>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                            {% comment %} <div class="pdp-image-with-text-left-accordion js" id="faq-faq">
+                                <details class="cc-accordion-item custom-accordion is-open" open>
+                                    <summary class="cc-accordion-item__title">
+                                        {{ section.settings.tab_title }}
+                                        <div class="accordion-title-icons">
+                                            <img src="https://cdn.shopify.com/s/files/1/0777/0718/2389/files/plus-icon.png?v=1718637481" class="acn-open-icon" height="" width="">
+                                            <img src="https://cdn.shopify.com/s/files/1/0777/0718/2389/files/minus-icon.png?v=1718637481" class="acn-close-icon" height="" width="">
+                                        </div>
+                                    </summary>
+                                    <div class="cc-accordion-item__panel">
+                                        <div class="cc-accordion-item__content rte">
+                                            {{ section.settings.tab_desc }}
+                                        </div>
+                                    </div>
+                                </details>
+                            </div> {% endcomment %}
+                        {% endif %}
+
+                       
+
+                    </div>
+                </div>
+                {% if section.settings.hero_image != blank %}
+                    <div class="pdp-image-with-text-right">
+                      {% if section.settings.video %}
+             {{
+            section.settings.video
+            | video_tag:
+              image_size: '500x',
+              autoplay: true,
+              loop: section.settings.enable_video_looping,
+              controls: false,
+              muted: false
+          }}
+       {% else %}
+                        <img src="{{ section.settings.hero_image | image_url: width: section.settings.hero_image.width }}" loading="lazy" class="pdp-image-with-text-hero-image" height="" width="">
+                  {% endif %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+{% comment %} <script>
+    var accordionItems = document.querySelectorAll('.custom-accordion');
+
+    // Add click event listeners to each accordion item
+    accordionItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            // Toggle the 'is-open' class on the clicked item
+            item.classList.toggle('is-open');
+        });
+    });
+</script> {% endcomment %}
+
+{% schema %}
+    {
+      "name": "PDP Image with text",
+      "class": "pdp-image-with-text",
+      "disabled_on": {
+        "groups": [
+          "aside"
+        ]
+      },
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "title",
+          "label": "Section Title",
+          "default": "Secret weapon of<br>High achievers"
+        },
+        {
+          "type": "text",
+          "id": "color_title",
+          "label": "Section Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "hero_image",
+          "label": "Image"
+        },
+        {
+          "type": "video",
+          "id": "hero_video",
+          "label": "Video"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "desc_title_1",
+          "label": "Description Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content_1",
+          "label": "Description",
+          "default": "<p>Answer goes here...</p>"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "desc_title_2",
+          "label": "Description Title"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "content_2",
+          "label": "Description"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "desc_title_3",
+          "label": "Description Title"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "content_3",
+          "label": "Description"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "desc_title_4",
+          "label": "Description Title"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "content_4",
+          "label": "Description"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "desc_title_5",
+          "label": "Description Title"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "content_5",
+          "label": "Description"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "desc_title_6",
+          "label": "Description Title"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "content_6",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "tab_title",
+          "label": "Tab Title"
+        },
+        {
+          "type": "richtext",
+          "id": "tab_desc",
+          "label": "Tab Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "tab_desc_icon",
+          "label": "Tab Description Icon"
+        },
+        {
+          "type": "header",
+          "content": "Section style"
+        },
+        {
+          "type": "number",
+          "id": "padding_top",
+          "label": "Spacing top",
+          "default": 50
+        },
+        {
+          "type": "number",
+          "id": "padding_bottom",
+          "label": "Spacing bottom",
+          "default": 50
+        },
+        {
+          "type": "number",
+          "id": "padding_top_mobile",
+          "label": "Spacing top [mobile]",
+          "default": 50
+        },
+        {
+          "type": "number",
+          "id": "padding_bottom_mobile",
+          "label": "Spacing bottom [mobile]",
+          "default": 50
+        }
+      ],
+      "presets": [
+        {
+          "name": "PDP Image with text"
+        }
+      ]
+    }
+  {% endschema %}

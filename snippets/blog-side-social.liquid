@@ -1,0 +1,7 @@
+<div class="social-i" >
+    {% if section.settings.show_sharing_icons %}  
+      {% render 'custom-social-sharing', share_title: blog.title, share_permalink: blog.url, share_image: false %}
+    {% endif %}
+  </div>
+  
+

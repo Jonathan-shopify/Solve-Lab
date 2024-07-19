@@ -1,0 +1,36 @@
+
+<div class="comment-sec">
+    <div class="comment-section-title">
+    <div class="comment-t">
+      <h2>Leave a Comment</h2>
+      <p>Your email address will not be published. Required fields are marked * </p>
+    </div>
+    </div>
+    <div class="b-comment">
+    {% form 'new_comment', article %}
+      {{ form.errors | default_errors }}
+
+      <div class="comment">
+        <label for="comment">Comment *</label>
+        <textarea name="comment[body]" placeholder="Type Your Comment">{{ form.body }}</textarea>
+      </div>
+    
+      <div class="name">
+        <label for="name">Name *</label>
+        <input type="text" placeholder="Type Your Name" name="comment[author]" value="{{ form.author }}">
+      </div>
+    
+      <div class="email">
+        <label for="email">Email *</label>
+        <input type="email" placeholder="Type Your E-mail" name="comment[email]" value="{{ form.email }}">
+      </div>
+    
+      <div class="submit">
+        <input type="submit" value="Post Comment">
+      </div>
+    {% endform %}
+    
+  </div>
+  </div>
+  
+  

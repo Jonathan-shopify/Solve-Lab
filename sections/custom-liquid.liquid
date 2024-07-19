@@ -1,0 +1,37 @@
+<div class="full-width-{{ section.settings.custom_class }}">
+<div id="section-id-{{ section.id }}" class="fully-spaced-row--medium section-id-{{ section.id }}" data-section-type="custom-liquid">
+  <div class="custom-html">
+    {{ section.settings.code }}
+  </div>
+</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Custom Liquid",
+    "disabled_on": {
+      "groups": [
+        "aside"
+      ]
+    },
+    "settings": [
+      {
+        "type": "liquid",
+        "id": "code",
+        "label": "Custom Liquid"
+      },
+      {
+		"type": "text",
+		"id": "custom_class",
+		"label": "Custom Class"
+    	}
+    ],
+    "presets": [
+      {
+        "name": "Custom Liquid",
+        "settings": {
+        }
+      }
+    ]
+  }
+{% endschema %}
